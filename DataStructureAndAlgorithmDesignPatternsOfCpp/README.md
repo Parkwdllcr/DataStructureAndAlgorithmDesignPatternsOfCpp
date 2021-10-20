@@ -1,0 +1,2 @@
+# StudyDesModeStructMultithreadingOfC
+#only stud githb
