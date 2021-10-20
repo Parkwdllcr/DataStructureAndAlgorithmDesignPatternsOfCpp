@@ -1,6 +1,7 @@
 
 #include"DesMode/Iterator/ConcreteAggregate.h"
 
+
 ConcreteAggregate::~ConcreteAggregate()
 {
 	delete[] m_pData;

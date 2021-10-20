@@ -24,7 +24,7 @@ CProcessingData::~CProcessingData()
 void CProcessingData::TestThisClass()
 {
     ComputSizeOfVar();
-    PrintFloat(0.3,2.0);
+	PrintSomeClass(0.3);
     //这里不能Startwork，没有注册函数地址
    // StartWork();
 
@@ -49,20 +49,21 @@ void CProcessingData::ComputSizeOfVar()
 
 }
 
-
-void CProcessingData::PrintFloat(float fTest,float fTestSecond)
+void CProcessingData::PrintSomeClass(float fTest)
 {
-    if (0.0 != fTestSecond)
-    {
-        float   fTub = fTest/fTestSecond;
-        std::cout<<"PrintFloat value: "<<fTub<<std::endl;
-    }
-    else
-    {
-        std::cout<<"this is a wrong value"<<std::endl;
-    }
-
+	float fTestSecond = 2.0;
+	if (0.0 != fTestSecond)
+	{
+		float   fTub = fTest / fTestSecond;
+		std::cout << "PrintFloat value: " << fTub << std::endl;
+	}
+	else
+	{
+		std::cout << "this is a wrong value" << std::endl;
+	}
 }
+
+
 
 void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string strNmae)
 {

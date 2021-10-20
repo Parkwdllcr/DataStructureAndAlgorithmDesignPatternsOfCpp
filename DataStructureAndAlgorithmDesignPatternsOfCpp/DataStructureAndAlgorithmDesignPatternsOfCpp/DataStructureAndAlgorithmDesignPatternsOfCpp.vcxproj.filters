@@ -111,9 +111,6 @@
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp">
       <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CDataProcess.cpp">
-      <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
-    </ClCompile>
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp">
       <Filter>src\DesMode\AbstractFactory</Filter>
     </ClCompile>
@@ -185,6 +182,9 @@
     </ClCompile>
     <ClCompile Include="src\DesMode\State\CContext.cpp">
       <Filter>src\DesMode\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp">
+      <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

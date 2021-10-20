@@ -14,11 +14,12 @@ public:
     ~CProcessingData();
 
 public:
-    void TestThisClass();//
+    void TestThisClass();
 
 public:
     void ComputSizeOfVar();
-    void PrintFloat(float fTest,float fTestSecond);
+	//重载一下各个基本类型
+	void PrintSomeClass(float fTest);
     void StudyConstChar(const char* const pConstChar,std::string strNmae);
  
 
@@ -67,4 +68,6 @@ private:
     MyCallBack m_func;
 
 };
+
+
 
