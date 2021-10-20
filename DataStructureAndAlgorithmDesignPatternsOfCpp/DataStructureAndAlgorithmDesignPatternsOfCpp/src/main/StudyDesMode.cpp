@@ -45,6 +45,7 @@ int main()
 	int	iadd = pProduct->operation(1, 2);
 	pFactory->Destory();
 
+
 	pProduct = pFactory->Creat(PRODUCT_MUL);
 	int	imul = pProduct->operation(1, 2);
 	pFactory->Destory();
