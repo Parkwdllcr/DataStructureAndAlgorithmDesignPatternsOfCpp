@@ -1,0 +1,445 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						11,
+						13
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/DesMode",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/DesMode"
+				},
+				{
+					"build" : "src/DesMode/AbstractFactory",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "src/DesMode/AbstractFactory",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/DesMode/Adapter",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "src/DesMode/Adapter",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/DesMode/FactoryMode",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "src/DesMode/FactoryMode",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/DesMode/Iterator",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 4,
+					"source" : "src/DesMode/Iterator",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src/DesMode/Observer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 5,
+					"source" : "src/DesMode/Observer",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/DesMode/SimpleFactory",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 6,
+					"source" : "src/DesMode/SimpleFactory",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "src/DesMode/Singleton",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 7,
+					"source" : "src/DesMode/Singleton",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src/DesMode/State",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 8,
+					"source" : "src/DesMode/State",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "src/CPrimerPlus",
+					"childIndexes" : 
+					[
+						12
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/CPrimerPlus"
+				},
+				{
+					"build" : "src/CPrimerPlus/3thDataProcessing",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 9,
+					"source" : "src/CPrimerPlus/3thDataProcessing",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/main",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 10,
+					"source" : "src/main",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						11
+					],
+					"name" : "StudyDesMode"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "AbstractFactory",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Adapter",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "FactoryMode",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "Iterator",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "Observer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "SimpleFactory",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "Singleton",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "State",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "3thDataProcessing",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "DesMode",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 12,
+					"id" : "3thDataProcessing::@77c5c2ef3d230f147452",
+					"jsonFile" : "target-3thDataProcessing-Debug-3d2e7ad8b9d71e6d451c.json",
+					"name" : "3thDataProcessing",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "AbstractFactory::@5d097461318f714eff53",
+					"jsonFile" : "target-AbstractFactory-Debug-0eb20a1482f67a652e14.json",
+					"name" : "AbstractFactory",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Adapter::@0b559374eb7085fac148",
+					"jsonFile" : "target-Adapter-Debug-3df4cb73ccdd9d93e36c.json",
+					"name" : "Adapter",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "DesMode::@5f1512723eddbe79ddaa",
+					"jsonFile" : "target-DesMode-Debug-22aa775b53fd0215a871.json",
+					"name" : "DesMode",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "FactoryMode::@46db3d3dce59aee981a3",
+					"jsonFile" : "target-FactoryMode-Debug-d0290325c63533cf7473.json",
+					"name" : "FactoryMode",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Iterator::@ee412361a97eade2e32a",
+					"jsonFile" : "target-Iterator-Debug-28fccef8323bcce46945.json",
+					"name" : "Iterator",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "Observer::@ec5daeecf62513cfca2d",
+					"jsonFile" : "target-Observer-Debug-d011423bf4bc124acef5.json",
+					"name" : "Observer",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "SimpleFactory::@81abac5039617040c640",
+					"jsonFile" : "target-SimpleFactory-Debug-c5aa13bc7a2d696240ef.json",
+					"name" : "SimpleFactory",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "Singleton::@71b7bc9eac6481d2a1c2",
+					"jsonFile" : "target-Singleton-Debug-2b7297b57ea82220e13c.json",
+					"name" : "Singleton",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "State::@55c206f6a74c4098ec36",
+					"jsonFile" : "target-State-Debug-f5caf7901f4aea7fe010.json",
+					"name" : "State",
+					"projectIndex" : 8
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/media/lcr/办公/c++/study of c++ ubuntu/DataStructureAndAlgorithmDesignPatternsOfCpp/DataStructureAndAlgorithmDesignPatternsOfCpp/DataStructureAndAlgorithmDesignPatternsOfCpp/build",
+		"source" : "/media/lcr/办公/c++/study of c++ ubuntu/DataStructureAndAlgorithmDesignPatternsOfCpp/DataStructureAndAlgorithmDesignPatternsOfCpp/DataStructureAndAlgorithmDesignPatternsOfCpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
