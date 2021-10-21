@@ -103,6 +103,12 @@
     <Filter Include="src\DesMode\Observer">
       <UniqueIdentifier>{0cd1f00c-99a5-4271-b584-90329a9f2af6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\CPrimerPlus\4thComplexDataType">
+      <UniqueIdentifier>{b1248fa7-d204-43e0-a11d-a037bf640ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CPrimerPlus\4thComplexDataType">
+      <UniqueIdentifier>{88be30e0-aab1-48fd-88c7-08f6ea5c2ab3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructureAndAlgorithmDesignPatternsOfCpp.cpp">
@@ -186,6 +192,9 @@
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp">
       <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
     </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp">
+      <Filter>src\CPrimerPlus\4thComplexDataType</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h">
@@ -268,6 +277,12 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\Observer\CStudentB.h">
       <Filter>include\DesMode\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h">
+      <Filter>include\CPrimerPlus\4thComplexDataType</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h">
+      <Filter>include\CPrimerPlus\3thDataProcessing</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

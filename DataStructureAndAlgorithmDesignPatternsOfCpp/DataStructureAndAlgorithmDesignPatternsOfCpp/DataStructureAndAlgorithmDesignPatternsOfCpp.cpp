@@ -203,7 +203,8 @@ int main()
 	std::cout << "------<<<<<<<<<<<<<-----" << std::endl;
 
 
-	CProcessingData proessData(1000);
+	//CProcessingData proessData(1000);
+	CProcessingData proessData;
 	proessData.TestThisClass();
 
 	std::cout << "I will start !" << std::endl;

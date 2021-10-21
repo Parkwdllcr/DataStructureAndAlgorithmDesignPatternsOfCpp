@@ -5,16 +5,22 @@ const int CProcessingData::m_iConstStatic = 500;
 const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
 
 
-// CProcessingData::CProcessingData()
-// {
-//     //注意这种初始化与赋值是不一样的，
-//     //这种初始化不用再创建临时变量，从而更加高效
-// }
-CProcessingData::CProcessingData(int iSize):m_iSize(iSize)
+//CProcessingData::CProcessingData(int& iSize) :m_iSize(iSize), m_iArray({}),
+//                                             m_iTestArray({}),m_iTestCall(0),m_iTestCallSecond(0),m_func(nullptr)
+//{
+//    //注意这种初始化与赋值是不一样的，
+//    //这种初始化不用再创建临时变量，从而更加高效
+//}
+
+CProcessingData::CProcessingData():m_iSize(10)
 {
-    //注意这种初始化与赋值是不一样的，
-    //这种初始化不用再创建临时变量，从而更加高效
+	m_iArray[FRISTSIZE] = { 0 };
+	m_iTestArray[SECONDSIZE] = { 0 };
+	m_iTestCall = 0;
+	m_iTestCallSecond = 0;
+	m_func = nullptr;
 }
+
 CProcessingData::~CProcessingData()
 {
 
@@ -24,7 +30,7 @@ CProcessingData::~CProcessingData()
 void CProcessingData::TestThisClass()
 {
     ComputSizeOfVar();
-	PrintSomeClass(0.3);
+	PrintSomeClass(3);
     //这里不能Startwork，没有注册函数地址
    // StartWork();
 

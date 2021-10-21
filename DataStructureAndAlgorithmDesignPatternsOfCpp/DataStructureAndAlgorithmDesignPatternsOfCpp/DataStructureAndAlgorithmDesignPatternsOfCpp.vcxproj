@@ -155,6 +155,7 @@
     <ClCompile Include="DataStructureAndAlgorithmDesignPatternsOfCpp.cpp" />
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp" />
+    <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
     <ClCompile Include="src\DesMode\Adapter\CAdapter.cpp" />
@@ -183,6 +184,8 @@
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\CCallBackReceiver.h" />
+    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h" />
+    <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />

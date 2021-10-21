@@ -4,13 +4,18 @@
 //#include <unistd.h>
 
 
+
+const int FRISTSIZE = 100;
+const int SECONDSIZE = 200;
 typedef void (*MyCallBack)(int a,int b);
 
 class CProcessingData
 {
 public:
-   // CProcessingData();
-    CProcessingData(int iSize);
+	//关于构造函数的初始化列表也是需要学习一下，我写的有问题，已经注释掉了，
+	//有时间要研究一下
+    CProcessingData();
+   // CProcessingData(int iSize);
     ~CProcessingData();
 
 public:
@@ -31,22 +36,18 @@ private:
     // Initialze member variables through the constructor initialization list,
     // but the constants in this way only belong to the object,not to the class.
     //this is very important
-    //(1)
+
+    //(1)use Constructor initialization list
     const   int m_iSize;
     // To get a const belonging to the class ,there are the following methods:
-    //(2)
-     enum color
-    {
-        FRISTSIZE = 200,
-        SECONDSIZE = 300
-    } enCorlor;
+	//(2) this way can define any class
+	static int               m_iStaticTest;
+	const static int         m_iConstStatic;
+	const static std::string m_strTestName;
 
+    //(3) use enum constants
     int m_iArray[FRISTSIZE];
     int m_iTestArray[SECONDSIZE];
-    //(3) this way can define any class
-    static int               m_iStaticTest;
-    const static int         m_iConstStatic;
-    const static std::string m_strTestName;
 
     //study call back 
     //(1)声明一个callback，typedef一个
