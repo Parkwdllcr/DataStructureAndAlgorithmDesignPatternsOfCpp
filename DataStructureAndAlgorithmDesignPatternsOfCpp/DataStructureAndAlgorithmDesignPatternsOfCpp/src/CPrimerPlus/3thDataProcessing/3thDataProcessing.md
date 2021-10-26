@@ -71,8 +71,8 @@ int *iNum = &6;//这种是错误的
 
     }
     const Integer int_1;
-    Integer *pInt = (Integer*)&int_1;
-    pInt->m_lng = 1000;
+    Integer *pInt = (Integer*)&int_1;//将一个const地址变成了一个非const地址
+    pInt->m_lng = 1000;//这里就可以改变值，编译不会出错
     std::cout<<pInt->m_lng<<std::endl;//1000
     std::cout<<int_1.m_lng<<std::endl;//1000
 
@@ -101,8 +101,8 @@ char * const strSoure
 **这两者的区别是什么？**
 
 （2）对于ADT/UDT类型，复制，析构，效率比较低，所以一般使用引用传递。
-（3）非ADT/UDT类型，就不需要引用
-（4）担心变化就加const，多次使用输入初值，不改变。
+（3）非ADT/UDT类型，就不需要引用。
+（4）多次使用输入初值，不改变,担心变化就加const。
     
 3.函数输出参数
 

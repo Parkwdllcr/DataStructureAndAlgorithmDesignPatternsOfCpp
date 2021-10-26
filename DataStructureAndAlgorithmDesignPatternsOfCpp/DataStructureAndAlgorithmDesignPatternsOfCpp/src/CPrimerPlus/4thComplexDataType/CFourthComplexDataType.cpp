@@ -1,19 +1,19 @@
 #include"CPrimerPlus/4thComplexDataType/CFourthComplexDataType.h"
+#include <iostream>
 #include<cstdlib>
 #include <cstring>
-#include <iostream>
 
 
-//注释掉得都是有问题错误的，需要慢慢研究
+//All commented out are wrong
 void CFourthComplexDataType::TestFourthComplexDataType()
 {
 	std::cout << "test this void CFourthComplexDataType::GetMemory(char* pChar, int iNum)" << std::endl;
 	size_t iSize = 0;
 	char* pChar = nullptr;
-	GetMemory(pChar, 100);//pChar 依然还是nullptr
+	GetMemory(pChar, 100);//pChar 锟斤拷然锟斤拷锟斤拷nullptr
 	iSize = sizeof(pChar);
 	std::cout << "pChar size is :" << iSize << std::endl;
-	//std::strcpy(pChar,"hello");//运行时候错误，why?
+	//std::strcpy(pChar,"hello");//锟斤拷锟斤拷时锟斤拷锟斤拷锟絯hy?
 
 	//std::cout << "test this void CFourthComplexDataType::GetMemory(char** pChar, int iNum)" << std::endl;
 	//char* pStr = nullptr;
@@ -24,7 +24,7 @@ void CFourthComplexDataType::TestFourthComplexDataType()
 	//iSize = sizeof(pStr);
 	//std::cout << "after strcpy pStr size is :" << iSize << std::endl;
 	//std::cout << "after strcpy Value of pStr is :" << pStr << std::endl;
-	//free(pStr);//成对出现malloc/free
+	//free(pStr);//锟缴对筹拷锟斤拷malloc/free
 
 	//std::cout << "test this char* CFourthComplexDataType::GetMemory(int inum)" << std::endl;
 	//char* pChar3 = nullptr;
@@ -77,6 +77,6 @@ char* CFourthComplexDataType::GetString(void)
 
 //char* CFourthComplexDataType::GetStringSecond(void)
 //{
-//	//char* pChar = "hello world";//这里有错误
+//	//char* pChar = "hello world";//锟斤拷锟斤拷锟叫达拷锟斤拷
 //	//return pChar;
 //}

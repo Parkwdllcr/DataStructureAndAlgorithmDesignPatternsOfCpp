@@ -5,8 +5,8 @@
 
 
 
-const int FRISTSIZE = 100;
-const int SECONDSIZE = 200;
+const int FRISTSIZE = 5;
+const int SECONDSIZE = 10;
 typedef void (*MyCallBack)(int a,int b);
 
 class CProcessingData

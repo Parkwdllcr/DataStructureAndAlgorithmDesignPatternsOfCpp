@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\study of c++\Parkwdllcr\DataStructureAndAlgorithmDesignPatternsOfCpp\DataStructureAndAlgorithmDesignPatternsOfCpp\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\study_of_c++\Data\DataStructureAndAlgorithmDesignPatternsOfCpp\DataStructureAndAlgorithmDesignPatternsOfCpp\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructureAndAlgorithmDesignPatternsOfCpp.cpp" />
+    <ClCompile Include="src\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.cpp" />
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp" />
     <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
@@ -180,12 +181,16 @@
     <ClCompile Include="src\DesMode\Singleton\CSingletion.cpp" />
     <ClCompile Include="src\DesMode\State\CConcreteState.cpp" />
     <ClCompile Include="src\DesMode\State\CContext.cpp" />
+    <ClCompile Include="src\MulThread\CStudyMulThread.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\CCallBackReceiver.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h" />
     <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
+    <ClInclude Include="include\DataType\LinkList\CArrayList.h" />
+    <ClInclude Include="include\DataType\LinkList\ILinkList.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />
@@ -211,6 +216,7 @@
     <ClInclude Include="include\DesMode\Singleton\CSingletion.h" />
     <ClInclude Include="include\DesMode\State\CConcreteState.h" />
     <ClInclude Include="include\DesMode\State\CContext.h" />
+    <ClInclude Include="include\MulThread\CStudyMulThread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

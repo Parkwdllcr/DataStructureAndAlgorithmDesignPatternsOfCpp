@@ -36,16 +36,16 @@ template<class T>
 class ILinearList
 {
 public:
-    virtual ~ILinearList(){};
-    virtual bool empty() const =0;
-    virtual int  size() const = 0;
-    virtual T    get(int itheIndex) const = 0;
-    virtual int indexof(const T &theElement) const = 0;
-    virtual void erase(int itheIndex) = 0;
-    virtual void insert(int itheIndex,const T &theElement) = 0;
-    virtual void output(ostream &out)const = 0;
+	virtual ~ILinearList() {};
+	virtual bool empty() const = 0;
+	virtual int  size() const = 0;
+	virtual T    get(int itheIndex) const = 0;
+	virtual int indexof(const T& theElement) const = 0;
+	virtual void erase(int itheIndex) = 0;
+	virtual void insert(int itheIndex, const T& theElement) = 0;
+	virtual void output(ostream& out)const = 0;
 
-}
+};
 
 
 

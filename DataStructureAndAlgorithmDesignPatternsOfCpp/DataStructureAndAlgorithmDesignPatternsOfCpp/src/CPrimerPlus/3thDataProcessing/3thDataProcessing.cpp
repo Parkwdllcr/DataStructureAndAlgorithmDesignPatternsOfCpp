@@ -9,7 +9,7 @@ const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
 //                                             m_iTestArray({}),m_iTestCall(0),m_iTestCallSecond(0),m_func(nullptr)
 //{
 //    //注意这种初始化与赋值是不一样的，
-//    //这种初始化不用再创建临时变量，从而更加高效
+//    //初始化列表不用再创建临时变量，从而更加高效
 //}
 
 CProcessingData::CProcessingData():m_iSize(10)
@@ -55,18 +55,31 @@ void CProcessingData::ComputSizeOfVar()
 
 }
 
+//can add const here,because it is does not change!
+//not ADT/UDT ,so not &
 void CProcessingData::PrintSomeClass(float fTest)
 {
 	float fTestSecond = 2.0;
-	if (0.0 != fTestSecond)
+	try
 	{
-		float   fTub = fTest / fTestSecond;
-		std::cout << "PrintFloat value: " << fTub << std::endl;
+		if (0.0 != fTestSecond)
+		{
+			std::cout << "PrintFloat value: " << fTest / fTestSecond << std::endl;
+		}
+		else
+		{
+			throw "this is a wrong value" ;
+		}
 	}
-	else
+	catch (std::string &str)
 	{
-		std::cout << "this is a wrong value" << std::endl;
+		std::cout << str << std::endl;
 	}
+	catch (...)
+	{
+		std::cout << "Unknow Wrong" << std::endl;
+	}
+
 }
 
 
