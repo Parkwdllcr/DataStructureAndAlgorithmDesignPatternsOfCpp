@@ -55,6 +55,7 @@ public:
 	void  TestAsyncFifth();
 	void  TestAsyncSixth();
 	void  TestAsyncThrid();
+	void  TestThisClass();
 
 private:
 	int                        m_iNum;

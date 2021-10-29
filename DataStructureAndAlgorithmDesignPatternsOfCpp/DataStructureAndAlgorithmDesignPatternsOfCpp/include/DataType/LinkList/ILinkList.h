@@ -43,7 +43,7 @@ public:
 	virtual int indexof(const T& theElement) const = 0;
 	virtual void erase(int itheIndex) = 0;
 	virtual void insert(int itheIndex, const T& theElement) = 0;
-	virtual void output(ostream& out)const = 0;
+	virtual void output()const = 0;
 
 };
 

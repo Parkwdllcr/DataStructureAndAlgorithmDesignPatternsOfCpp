@@ -21,47 +21,47 @@ void CStudyMulThread::ThreadProc()
 	}*/
 }
 
-void CStudyMulThread::TestThreadSecond()
-{
-	std::thread th[10];
-	for (int i = 0; i < 10; i++)
-	{
-		th[i] = std::thread(&CStudyMulThread::CountNumber, i, 10);
-	}
-	for (int i = 0; i < 10; i++)
-	{
-		th[i].join();
-	}
-}
+//void CStudyMulThread::TestThreadSecond()
+//{
+//	std::thread th[10];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		//th[i] = std::thread(&CStudyMulThread::CountNumber, i, 10);
+//	}
+//	for (int i = 0; i < 10; i++)
+//	{
+//		th[i].join();
+//	}
+//}
 
 
-void CStudyMulThread::TestThreadFrist()
-{
-	std::thread a([] {
-		std::cout << "Hello, " << std::endl;
-	}), b(&CStudyMulThread::ThreadProc);
+//void CStudyMulThread::TestThreadFrist()
+//{
+//	/*std::thread a([] {
+//		std::cout << "Hello, " << std::endl;
+//	}), b(&CStudyMulThread::ThreadProc);*/
+//
+//	/*a.join();
+//	b.join();*/
+//}
 
-	a.join();
-	b.join();
-}
-
-void CStudyMulThread::TestThreadThrid()
-{
-	std::thread th[100];
-	int iNums[100];
-	for (int i = 0; i < 10; i++)
-	{
-		//here std::ref is very important 
-		th[i] = std::thread(&CStudyMulThread::ChangeValue<int>, std::ref(iNums[i]), i + 1);
-		th[i].join();
-
-	}
-	//for (int i = 0; i < 10; i++)
-	//{
-	//	th[i].join();
-	//	std::cout << "the iNumes value is: "<<iNums[i] << std::endl;
-	//}
-}
+//void CStudyMulThread::TestThreadThrid()
+//{
+//	std::thread th[100];
+//	int iNums[100];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		//here std::ref is very important 
+//		th[i] = std::thread(&CStudyMulThread::ChangeValue<int>, std::ref(iNums[i]), i + 1);
+//		th[i].join();
+//
+//	}
+//	//for (int i = 0; i < 10; i++)
+//	//{
+//	//	th[i].join();
+//	//	std::cout << "the iNumes value is: "<<iNums[i] << std::endl;
+//	//}
+//}
 
 void CStudyMulThread::CountNumber(int id, unsigned int n)
 {
@@ -80,20 +80,20 @@ void CStudyMulThread::CountNumberSecond()
 	//std::cout << iNum << std::endl;
 }
 
-void CStudyMulThread::TestThreadFourth()
-{
-	std::thread  th[1000];
-	for (std::thread& x : th)
-	{
-		//overload not diff
-		x = std::thread(&CStudyMulThread::CountNumberSecond);
-	}
-	for (std::thread& x : th)
-	{
-		x.join();
-	}
-	std::cout << m_iNum << std::endl;
-}
+//void CStudyMulThread::TestThreadFourth()
+//{
+//	std::thread  th[1000];
+//	for (std::thread& x : th)
+//	{
+//		//overload not diff
+//		x = std::thread(&CStudyMulThread::CountNumberSecond);
+//	}
+//	for (std::thread& x : th)
+//	{
+//		x.join();
+//	}
+//	std::cout << m_iNum << std::endl;
+//}
 
 void CStudyMulThread::CountNumberMutex()
 {
@@ -105,19 +105,19 @@ void CStudyMulThread::CountNumberMutex()
 	}
 }
 
-void CStudyMulThread::TestThreadFifth()
-{
-	std::thread  th[1000];
-	for (std::thread& x : th)
-	{
-		x = std::thread(&CStudyMulThread::CountNumberMutex);
-	}
-	for (std::thread& x : th)
-	{
-		x.join();
-	}
-	std::cout << m_iNum << std::endl;
-}
+//void CStudyMulThread::TestThreadFifth()
+//{
+//	std::thread  th[1000];
+//	for (std::thread& x : th)
+//	{
+//		x = std::thread(&CStudyMulThread::CountNumberMutex);
+//	}
+//	for (std::thread& x : th)
+//	{
+//		x.join();
+//	}
+//	std::cout << m_iNum << std::endl;
+//}
 
 void CStudyMulThread::CountNumberAtomic()
 {
@@ -127,19 +127,19 @@ void CStudyMulThread::CountNumberAtomic()
 	}
 }
 
-void CStudyMulThread::TestThreadSixth()
-{
-	std::thread  th[1000];
-	for (std::thread& x : th)
-	{
-		x = std::thread(&CStudyMulThread::CountNumberAtomic);
-	}
-	for (std::thread& x : th)
-	{
-		x.join();
-	}
-	std::cout << m_iAtoNum << std::endl;
-}
+//void CStudyMulThread::TestThreadSixth()
+//{
+//	std::thread  th[1000];
+//	for (std::thread& x : th)
+//	{
+//		x = std::thread(&CStudyMulThread::CountNumberAtomic);
+//	}
+//	for (std::thread& x : th)
+//	{
+//		x.join();
+//	}
+//	std::cout << m_iAtoNum << std::endl;
+//}
 
 void CStudyMulThread::AddToList(int iNewValue)
 {
@@ -184,22 +184,22 @@ void CStudyMulThread::FuncProducer()
 	g_conSume.notify_one();//notify one thread
 }
 
-void CStudyMulThread::TestConditionVariable()
-{
-	std::thread thProducers[10], thConsumer[10];
-
-	for (int i = 0; i != 10; ++i)
-	{
-		thProducers[i] = std::thread(&CStudyMulThread::FuncConsum);
-		thConsumer[i] = std::thread(&CStudyMulThread::FuncProducer);
-	}
-	for (int i = 0; i != 10; i++)
-	{
-		//阻塞主线程等待线程结束
-		thProducers[i].join();
-		thConsumer[i].join();
-	}
-}
+//void CStudyMulThread::TestConditionVariable()
+//{
+//	std::thread thProducers[10], thConsumer[10];
+//
+//	for (int i = 0; i != 10; ++i)
+//	{
+//		thProducers[i] = std::thread(&CStudyMulThread::FuncConsum);
+//		thConsumer[i] = std::thread(&CStudyMulThread::FuncProducer);
+//	}
+//	for (int i = 0; i != 10; i++)
+//	{
+//		//阻塞主线程等待线程结束
+//		thProducers[i].join();
+//		thConsumer[i].join();
+//	}
+//}
 
 //std::async function is more than thread
 
@@ -426,4 +426,19 @@ void CStudyMulThread::TestAsyncThrid()
 	std::string data = dbData + " :: " + fileData;
 	//Printing the combined Data
 	std::cout << "Data = " << data << std::endl;
+}
+
+void CStudyMulThread::TestThisClass()
+{
+	//TestThreadFrist();
+//TestThreadSecond();
+//TestThreadThrid();
+//TestThreadFourth();
+//TestThreadFifth();
+//TestThreadSixth();
+//TestAsyncFrist();
+//TestAsyncSecond();
+//TestAsyncFifth();
+//TestAsyncSixth();
+	TestAsyncThrid();
 }
