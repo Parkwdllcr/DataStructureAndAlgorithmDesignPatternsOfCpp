@@ -41,16 +41,49 @@ public:
     void erase(int itheIndex) ;
     void insert(int itheIndex,const T &theElement) ;
     void output()const ;
+	void clear();
+	void push_back(const T& theElement);
     //others function
     int    Capacity() const {return m_iArrayLength;}
+	void ChangeLength_1D(T*& a, int iOldLength, int iNewLength);
 
 protected:
-    void CheckIndex(int iTheIndex)const;
     T* m_element;
     int m_iArrayLength;
-    int m_iListSize;
+   // int m_iListSize;
 
 };
+
+template<typename T>
+void CArrayList<T>::clear()
+{
+	delete[]m_element;
+	m_iListSize = 0;
+	m_iArrayLength = 0;
+}
+
+template<typename T>
+void CArrayList<T>::ChangeLength_1D(T*& a, int iOldLength, int iNewLength)
+{
+	try
+	{
+		CheckIndex(iNewLength);
+		T* Temp = new T[iNewLength];
+		int iNumber = std::min(iOldLength, iNewLength);
+		std::copy(a, a + iNumber, Temp);
+		delete[]a;
+		a = Temp;
+
+	}
+	catch (const std::string str)
+	{
+		std::cout << str << std::endl;
+	}
+	catch (const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+}
 
 template<typename T>
 void CArrayList<T>::output() const
@@ -121,25 +154,3 @@ T CArrayList<T>::get(int itheIndex) const
 
 }
 
-template<typename T>
-void CArrayList<T>::CheckIndex(int iTheIndex) const
-{
-	try
-	{
-		if (iTheIndex < 0 || iTheIndex =>m_iListSize)
-		{
-			throw "iTheIndex is out Range";
-		}
-	}
-	catch (std::string& strCheckError)
-	{
-		std::cout << strCheckError << std::endl;
-	}
-	catch (...)
-	{
-		std::cout << "Unknow Error!" << std::endl;
-	}
-
-
-
-}
