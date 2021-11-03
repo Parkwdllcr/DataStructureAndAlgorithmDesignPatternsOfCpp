@@ -9,6 +9,15 @@ const int FRISTSIZE = 5;
 const int SECONDSIZE = 10;
 typedef void (*MyCallBack)(int a,int b);
 
+enum enSimplearithmetic
+{
+	ADDITION,
+	SUBTRACTION,
+	MULTIPLICATION,
+	DIVIDE,
+	MODULO
+};
+
 class CProcessingData
 {
 public:
@@ -24,8 +33,9 @@ public:
 public:
     void ComputSizeOfVar();
 	//重载一下各个基本类型
-	void PrintSomeClass(float fTest);
     void StudyConstChar(const char* const pConstChar,std::string strNmae);
+	void SimpleFourArithmetic(double dbTestOne,double dbTestTwo,int iCalculationType);
+	void ClassToOtherClass();
  
 
 //const in class

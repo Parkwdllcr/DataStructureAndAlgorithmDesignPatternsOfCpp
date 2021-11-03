@@ -30,9 +30,9 @@ CProcessingData::~CProcessingData()
 void CProcessingData::TestThisClass()
 {
     ComputSizeOfVar();
-	PrintSomeClass(3);
     //这里不能Startwork，没有注册函数地址
    // StartWork();
+
 
 }
 
@@ -57,32 +57,96 @@ void CProcessingData::ComputSizeOfVar()
 
 //can add const here,because it is does not change!
 //not ADT/UDT ,so not &
-void CProcessingData::PrintSomeClass(float fTest)
+void CProcessingData::SimpleFourArithmetic(double dbTestOne, double dbTestTwo, int iCalculationType)
 {
-	float fTestSecond = 2.0;
 	try
 	{
-		if (0.0 != fTestSecond)
+		switch (iCalculationType)
 		{
-			std::cout << "PrintFloat value: " << fTest / fTestSecond << std::endl;
+		case ADDITION:
+			throw(dbTestOne + dbTestTwo);
+			break;
+		case SUBTRACTION:
+			throw(dbTestOne - dbTestTwo);
+			break;
+		case MULTIPLICATION:
+			throw(dbTestOne * dbTestTwo);
+			break;
+		case DIVIDE:
+		{
+			if (dbTestTwo != 0)
+			{
+				throw(dbTestOne / dbTestTwo);
+			}
+			else
+			{
+				throw("dbTestTwo is 0");
+			}
+			break;
 		}
-		else
+		case MODULO:
 		{
-			throw "this is a wrong value" ;
+			int iTestOne = 3;
+			int iTestTwo = 5;
+			throw(iTestOne % iTestTwo);
+			break;
+		}
+		default:
+			throw"Do not input right iCalculationType! ";
+			break;
 		}
 	}
-	catch (std::string &str)
+	catch (double& dbResult)
 	{
-		std::cout << str << std::endl;
+		std::cout << "this Result: "<<dbResult << std::endl;
+	}
+	catch (std::string & strErr)
+	{
+		std::cout << "The Wrong is: " << strErr << std::endl;
 	}
 	catch (...)
 	{
-		std::cout << "Unknow Wrong" << std::endl;
+		std::cout << "Unknow Err !" << std::endl;		
 	}
 
 }
 
+//Implicit conversion and explicit conversion
+void CProcessingData::ClassToOtherClass()
+{
+	
+	//1. Implicit Conversion
+	//char is-a int ,int is-a long,long is-a float,float is-a double,Derived class is-a base class
+	//A is-a B
+	//1.1 int to long
+	//1.2 long to float
+	//1.3 float to double
+	//Derived to base class
+	//Implicit Conversion is safe.
+	//Promote the 100 of int to a temporary variable of double, 
+	//and then assign this temporary variable to dbB
+	char chA = 'C';
+	std::cout << "double size is: " << sizeof(chA) << std::endl;
+	int iB = chA;
+	std::cout << "double size is: " << sizeof(iB) << std::endl;
+	long lC = iB;
+	std::cout << "double size is: " << sizeof(lC) << std::endl;
+	float fA = 10.2;
+	std::cout << "double size is: " << sizeof(fA) << std::endl;
+	double dbC = fA;
+	std::cout << "double size is: " << sizeof(dbC) << std::endl;
 
+	//2.Forced conversion
+	double dbG = 10.2;
+	int iH = (int)dbG;
+	std::cout << "double size is: " << sizeof(dbG) << std::endl;
+	std::cout << "double size is: " << sizeof(iH) << std::endl;
+	//class between there are four 
+
+
+
+
+}
 
 void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string strNmae)
 {

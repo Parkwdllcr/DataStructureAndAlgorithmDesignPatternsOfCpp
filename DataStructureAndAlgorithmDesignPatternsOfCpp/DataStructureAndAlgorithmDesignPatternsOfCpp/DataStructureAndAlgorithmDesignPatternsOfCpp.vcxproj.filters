@@ -314,5 +314,8 @@
     <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h">
       <Filter>include\Algorithm\AlgorithmsOfCommon</Filter>
     </ClInclude>
+    <ClInclude Include="include\DataType\LinkList\CLinkList.h">
+      <Filter>include\DataType\LinkList</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
