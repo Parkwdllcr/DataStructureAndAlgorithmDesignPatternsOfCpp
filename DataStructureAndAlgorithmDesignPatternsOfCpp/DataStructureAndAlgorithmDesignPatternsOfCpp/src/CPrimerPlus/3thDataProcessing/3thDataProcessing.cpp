@@ -144,13 +144,29 @@ void CProcessingData::ClassToOtherClass()
 	//class between there are four 
 
 
-
-
 }
 
-void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string strNmae)
+void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string strName)
 {
-    
+	//const char* can not inital char*
+	//char* pCh = "I am SB!";
+	const char* pConstChar = "I am SB !";
+	strName = pConstChar;
+	std::string strToConstChar = "strToConstChar";
+	const char* pFromString = strToConstChar.c_str();
+
+	//string cann't  direct conversion to char 
+	//string to char*
+	char* pChar;
+	const int iLength = strToConstChar.length();
+	pChar = new char[iLength + 1];//there is a '\0' int the last
+	std::strcpy(pChar, strToConstChar.c_str());
+
+	//char* to string
+
+
+
+
 }
 //call back
 void CProcessingData::NowCall()

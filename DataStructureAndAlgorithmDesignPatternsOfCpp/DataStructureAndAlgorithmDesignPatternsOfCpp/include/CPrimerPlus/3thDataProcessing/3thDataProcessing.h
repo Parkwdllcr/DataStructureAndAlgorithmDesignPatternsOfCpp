@@ -33,7 +33,7 @@ public:
 public:
     void ComputSizeOfVar();
 	//重载一下各个基本类型
-    void StudyConstChar(const char* const pConstChar,std::string strNmae);
+    void StudyConstChar(const char* const pConstChar,std::string strName);
 	void SimpleFourArithmetic(double dbTestOne,double dbTestTwo,int iCalculationType);
 	void ClassToOtherClass();
  
