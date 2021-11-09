@@ -1,20 +1,9 @@
 
 
 //list or vector
+#include "Node.h"
 #include<string>
 #include<iostream>
-
-template<typename T>
-struct chainNode
-{
-    T m_element;
-    chainNode<T> *m_next;
-    chainNode(){};
-    chainNode(const T& element){this->m_element = element;}
-    chainNode(const T& element ,chainNode<T>* nest){this->m_element = element;this->m_next = nest;}
-
-};
-
 
 template<class T>
 class ILinearList

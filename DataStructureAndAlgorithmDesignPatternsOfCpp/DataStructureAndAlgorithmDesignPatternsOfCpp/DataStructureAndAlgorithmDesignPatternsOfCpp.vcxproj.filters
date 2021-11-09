@@ -326,5 +326,8 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinkList.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
