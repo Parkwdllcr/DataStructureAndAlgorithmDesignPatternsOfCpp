@@ -28,20 +28,11 @@
     <Filter Include="src">
       <UniqueIdentifier>{636662e7-8ad5-489e-9e79-76a091bcd6b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Algorithm">
-      <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\CPrimerPlus">
       <UniqueIdentifier>{12fe1908-c929-4993-b57d-373c6f3b34c5}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\DesMode">
       <UniqueIdentifier>{b370a391-9917-42a8-a08f-4e9fcc7d923f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\Algorithm\AlgorithmOfCommon">
-      <UniqueIdentifier>{0cb31442-7372-40a4-a6f6-306710557d0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\Algorithm\Leetcode">
-      <UniqueIdentifier>{7c8a88e4-0a60-40e1-9901-08751c47a6f9}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\CPrimerPlus\3thDataProcessing">
       <UniqueIdentifier>{b15cd649-d59b-408d-a6d9-ac80e6f6bb8d}</UniqueIdentifier>
@@ -121,11 +112,23 @@
     <Filter Include="src\MulThread">
       <UniqueIdentifier>{9f47382f-14a6-4bd2-ac0f-3dcad508376f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL">
+      <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
+      <UniqueIdentifier>{0cb31442-7372-40a4-a6f6-306710557d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL">
+      <UniqueIdentifier>{7c8a88e4-0a60-40e1-9901-08751c47a6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms">
+      <UniqueIdentifier>{1680b692-6649-4b2b-bb04-6da3d896cdea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString">
+      <UniqueIdentifier>{4704a0d5-389b-47a9-ac22-df0b35d0c57f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DataStructureAndAlgorithmDesignPatternsOfCpp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp">
       <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
     </ClCompile>
@@ -210,8 +213,11 @@
     <ClCompile Include="src\MulThread\CStudyMulThread.cpp">
       <Filter>src\MulThread</Filter>
     </ClCompile>
-    <ClCompile Include="src\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.cpp">
-      <Filter>src\Algorithm\AlgorithmOfCommon</Filter>
+    <ClCompile Include="src\main\StudyDesMode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
