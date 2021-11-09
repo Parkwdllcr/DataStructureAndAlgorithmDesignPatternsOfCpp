@@ -1,3 +1,4 @@
+#include"CPrimerPlus/PublicClass/CPublicClass.h"
 #include<iostream>
 #include<climits>
 #include<string>
@@ -9,14 +10,7 @@ const int FRISTSIZE = 5;
 const int SECONDSIZE = 10;
 typedef void (*MyCallBack)(int a,int b);
 
-enum enSimplearithmetic
-{
-	ADDITION,
-	SUBTRACTION,
-	MULTIPLICATION,
-	DIVIDE,
-	MODULO
-};
+
 
 class CProcessingData
 {
@@ -26,16 +20,28 @@ public:
     CProcessingData();
    // CProcessingData(int iSize);
     ~CProcessingData();
-
+public:
+	enum enSimplearithmetic
+	{
+		ADDITION,
+		SUBTRACTION,
+		MULTIPLICATION,
+		DIVIDE,
+		MODULO
+	};
 public:
     void TestThisClass();
 
 public:
+	template<typename T>
+	void PrintAndComputer(const T& showAndSize);
     void ComputSizeOfVar();
 	//重载一下各个基本类型
-    void StudyConstChar(const char* const pConstCharConst,std::string strName);
+    void StudyConstChar(const char* pConstCharConst,std::string strName);
 	void SimpleFourArithmetic(double dbTestOne,double dbTestTwo,int iCalculationType);
 	void ClassToOtherClass();
+private:
+	CPublicClass* m_pPublicClass;
  
 
 //const in class
@@ -80,5 +86,12 @@ private:
 
 };
 
+template<typename T>
+void CProcessingData::PrintAndComputer(const T& showAndSize)
+{
+	std::cout << "The Test Value is: " << showAndSize<< std::endl;
+	std::cout << "The Test Size  is: " << sizeof(showAndSize) << std::endl;
+
+}
 
 

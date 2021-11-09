@@ -1,5 +1,7 @@
 #include"CPrimerPlus/3thDataProcessing/3thDataProcessing.h"
 
+
+
 int CProcessingData::m_iStaticTest = 30;
 const int CProcessingData::m_iConstStatic = 500;
 const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
@@ -12,7 +14,7 @@ const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
 //    //初始化列表不用再创建临时变量，从而更加高效
 //}
 
-CProcessingData::CProcessingData():m_iSize(10)
+CProcessingData::CProcessingData():m_iSize(10),m_pPublicClass(nullptr)
 {
 	m_iArray[FRISTSIZE] = { 0 };
 	m_iTestArray[SECONDSIZE] = { 0 };
@@ -26,32 +28,29 @@ CProcessingData::~CProcessingData()
 
 }
 
-
 void CProcessingData::TestThisClass()
 {
     ComputSizeOfVar();
     //这里不能Startwork，没有注册函数地址
    // StartWork();
+	SimpleFourArithmetic(0.3, 5.7, ADDITION);
+
 
 
 }
 
 void CProcessingData::ComputSizeOfVar()
 {
+	std::cout << "<--------------->" << std::endl;
+	std::cout << "ComputSizeOfVar" << std::endl;
     int iTest = INT_MAX ;
+	m_pPublicClass->ShowAndSize<int>(iTest);
     short sTest = SHRT_MAX;
+	m_pPublicClass->ShowAndSize<short>(sTest);
     long  lTest = LONG_MAX;
+	m_pPublicClass->ShowAndSize<long>(lTest);
     long long llTest = LLONG_MAX;
-
-    std::cout<<"int is"<<sizeof(int)<<" bytes"<<std::endl;
-    std::cout<<"short is "<<sizeof(short)<<" bytes"<<std::endl;
-    std::cout<<"long is "<<sizeof(long)<<" bytes"<<std::endl;
-    std::cout<<"longlong is "<<sizeof(long long)<<" bytes"<<std::endl;
-
-    std::cout<<"INT_MAX values:"<<" int :"<<INT_MAX<<std::endl;
-    std::cout<<"SHRT_MAX values:"<<" int :"<<SHRT_MAX<<std::endl;
-    std::cout<<"LONG_MAX values:"<<" int :"<<LONG_MAX<<std::endl;
-    std::cout<<"LLONG_MAX values:"<<" int :"<<LLONG_MAX<<std::endl;
+	m_pPublicClass->ShowAndSize<long long>(llTest);
 
 }
 
@@ -59,6 +58,8 @@ void CProcessingData::ComputSizeOfVar()
 //not ADT/UDT ,so not &
 void CProcessingData::SimpleFourArithmetic(double dbTestOne, double dbTestTwo, int iCalculationType)
 {
+	std::cout << "<--------------->" << std::endl;
+	std::cout << "SimpleFourArithmetic" << std::endl;
 	try
 	{
 		switch (iCalculationType)
@@ -114,7 +115,8 @@ void CProcessingData::SimpleFourArithmetic(double dbTestOne, double dbTestTwo, i
 //Implicit conversion and explicit conversion
 void CProcessingData::ClassToOtherClass()
 {
-	
+	std::cout << "<--------------->" << std::endl;
+	std::cout << "ClassToOtherClass" << std::endl;
 	//1. Implicit Conversion
 	//char is-a int ,int is-a long,long is-a float,float is-a double,Derived class is-a base class
 	//A is-a B
@@ -126,42 +128,47 @@ void CProcessingData::ClassToOtherClass()
 	//Promote the 100 of int to a temporary variable of double, 
 	//and then assign this temporary variable to dbB
 	char chA = 'C';
-	std::cout << "double size is: " << sizeof(chA) << std::endl;
+	m_pPublicClass->ShowAndSize<char>(chA);
 	int iB = chA;
-	std::cout << "double size is: " << sizeof(iB) << std::endl;
+	m_pPublicClass->ShowAndSize<int>(iB);
 	long lC = iB;
-	std::cout << "double size is: " << sizeof(lC) << std::endl;
+	m_pPublicClass->ShowAndSize<long>(lC);
 	float fA = 10.2;
-	std::cout << "double size is: " << sizeof(fA) << std::endl;
+	m_pPublicClass->ShowAndSize<float>(fA);
 	double dbC = fA;
-	std::cout << "double size is: " << sizeof(dbC) << std::endl;
+	m_pPublicClass->ShowAndSize<double>(dbC);
+
 
 	//2.Forced conversion
 	double dbG = 10.2;
+	m_pPublicClass->ShowAndSize<double>(dbG);
 	int iH = (int)dbG;
-	std::cout << "double size is: " << sizeof(dbG) << std::endl;
-	std::cout << "double size is: " << sizeof(iH) << std::endl;
-	//class between there are four 
-
+	m_pPublicClass->ShowAndSize<int>(iH);
 
 }
 
-void CProcessingData:: StudyConstChar(const char* const pConstCharConst,std::string strName)
+void CProcessingData:: StudyConstChar(const char* pConstCharConst,std::string strName)
 {
+	std::cout << "<--------------->" << std::endl;
+	std::cout << "StudyConstChar" << std::endl;
+
 	//const char* can not inital char*
 	//char* pCh = "I am SB!";
-	const char* pConstChar = "I am SB !";
-	strName = pConstChar;
+	strName = pConstCharConst;
 	std::string strToConstChar = "strToConstChar";
+	m_pPublicClass->ShowAndSize<std::string>(strToConstChar);
+
 	const char* pFromString = strToConstChar.c_str();
+	m_pPublicClass->ShowAndSize<const char*>(pFromString);
+
 	pFromString = "I am very important!!";
+	m_pPublicClass->ShowAndSize<const char*>(pFromString);
 
 	//string cann't  direct conversion to char 
 	//string to char*
 	std::string strToConstPtrChar = "stringToConstPtrChar";
 	char* pCharFromSting = const_cast<char*>(strToConstPtrChar.c_str());
-	std::cout << "char* size is: " << sizeof(pCharFromSting) << std::endl;
-	std::cout << pCharFromSting<< std::endl;
+	m_pPublicClass->ShowAndSize<char*>(pCharFromSting);
 
 }
 //call back

@@ -189,6 +189,7 @@
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\CCallBackReceiver.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h" />
     <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
+    <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinkList.h" />

@@ -130,6 +130,9 @@
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString">
       <UniqueIdentifier>{f94180a0-5bd3-41c2-8903-9bf181585269}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\CPrimerPlus\PublicClass">
+      <UniqueIdentifier>{00de3898-ed8e-4e5c-9b08-9ff748e119a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp">
@@ -328,6 +331,9 @@
     </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h">
+      <Filter>include\CPrimerPlus\PublicClass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
