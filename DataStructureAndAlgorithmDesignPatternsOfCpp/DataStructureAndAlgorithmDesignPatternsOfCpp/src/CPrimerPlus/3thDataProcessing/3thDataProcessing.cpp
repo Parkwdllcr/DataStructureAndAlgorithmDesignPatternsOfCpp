@@ -146,7 +146,7 @@ void CProcessingData::ClassToOtherClass()
 
 }
 
-void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string strName)
+void CProcessingData:: StudyConstChar(const char* const pConstCharConst,std::string strName)
 {
 	//const char* can not inital char*
 	//char* pCh = "I am SB!";
@@ -154,18 +154,14 @@ void CProcessingData:: StudyConstChar(const char* const pConstChar,std::string s
 	strName = pConstChar;
 	std::string strToConstChar = "strToConstChar";
 	const char* pFromString = strToConstChar.c_str();
+	pFromString = "I am very important!!";
 
 	//string cann't  direct conversion to char 
 	//string to char*
-	char* pChar;
-	const int iLength = strToConstChar.length();
-	pChar = new char[iLength + 1];//there is a '\0' int the last
-	std::strcpy(pChar, strToConstChar.c_str());
-
-	//char* to string
-
-
-
+	std::string strToConstPtrChar = "stringToConstPtrChar";
+	char* pCharFromSting = const_cast<char*>(strToConstPtrChar.c_str());
+	std::cout << "char* size is: " << sizeof(pCharFromSting) << std::endl;
+	std::cout << pCharFromSting<< std::endl;
 
 }
 //call back
