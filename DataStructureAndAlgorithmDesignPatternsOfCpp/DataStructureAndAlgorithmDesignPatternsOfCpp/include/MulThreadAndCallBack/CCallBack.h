@@ -15,7 +15,10 @@ typedef void (*MyCallBack)(int a,int b);
 
 class CCallBack
 {
-
+public:
+	CCallBack();
+	~CCallBack();
+	
 public:
 	void StartWork();
 	void RegCallBack(MyCallBack fun, int iFrist, int iSecond);

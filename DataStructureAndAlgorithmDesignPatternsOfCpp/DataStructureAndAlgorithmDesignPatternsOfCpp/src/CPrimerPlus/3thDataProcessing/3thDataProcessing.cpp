@@ -18,9 +18,7 @@ CProcessingData::CProcessingData():m_iSize(10),m_pPublicClass(nullptr)
 {
 	m_iArray[FRISTSIZE] = { 0 };
 	m_iTestArray[SECONDSIZE] = { 0 };
-	m_iTestCall = 0;
-	m_iTestCallSecond = 0;
-	m_func = nullptr;
+
 }
 
 CProcessingData::~CProcessingData()

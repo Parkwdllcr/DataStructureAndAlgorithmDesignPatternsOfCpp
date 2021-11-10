@@ -1,25 +1,39 @@
 #include"MulThreadAndCallBack/CCallBack.h"
 
+
+	
 //call back
-void CProcessingData::NowCall()
+	CCallBack::CCallBack()
+	{
+		m_iTestCall = 0;
+		m_iTestCallSecond = 0;
+		m_func = nullptr;
+	}
+
+
+	CCallBack::~CCallBack()
+	{
+
+	}
+
+void CCallBack::StartWork()
 {
-    m_func(m_iStaticTest,m_iConstStatic);
-    m_func(m_iTestCall,m_iTestCallSecond);
+	for (size_t i = 0; i < 7; i++)
+	{
+		NowCall();
+		///sleep(2);
+	}
 }
 
-void CProcessingData::RegCallBack(MyCallBack fun,int iFrist,int iSecond)
+void CCallBack::RegCallBack(MyCallBack fun, int iFrist, int iSecond)
 {
-    m_func = fun;
-    m_iTestCall = iFrist;
-    m_iTestCallSecond = iSecond;
+	m_func = fun;
+	m_iTestCall = iFrist;
+	m_iTestCallSecond = iSecond;
 }
 
-void CProcessingData::StartWork()
+void CCallBack::NowCall()
 {
-    for (size_t i = 0; i < 7; i++)
-    {
-        NowCall();
-        ///sleep(2);
-    }
-    
+	m_func(m_iStaticTest, m_iConstStatic);
+	m_func(m_iTestCall, m_iTestCallSecond);
 }
