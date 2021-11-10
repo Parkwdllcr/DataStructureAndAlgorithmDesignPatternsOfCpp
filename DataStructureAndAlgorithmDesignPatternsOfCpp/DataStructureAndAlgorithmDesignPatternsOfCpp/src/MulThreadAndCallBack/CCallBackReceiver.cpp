@@ -6,7 +6,7 @@
 
 CCallBackReceiver::CCallBackReceiver(void)
 {
-    m_pCaller = new CProcessingData;
+    m_pCaller = new CCallBack;
 }
 
 CCallBackReceiver::~CCallBackReceiver(void)
