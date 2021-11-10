@@ -171,3 +171,5 @@ void CProcessingData:: StudyConstChar(const char* pConstCharConst,std::string st
 	m_pPublicClass->ShowAndSize<char*>(pCharFromSting);
 
 }
+
+

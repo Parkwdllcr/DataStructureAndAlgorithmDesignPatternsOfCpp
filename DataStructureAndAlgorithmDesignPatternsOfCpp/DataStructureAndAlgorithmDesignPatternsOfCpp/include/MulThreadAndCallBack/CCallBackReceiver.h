@@ -1,5 +1,7 @@
 
 
+class CCallBack;
+
 class CCallBackReceiver
 {
 public:
@@ -9,5 +11,5 @@ public:
     void WorkFunction(void);
     static void OnCalBack(int iA,int iB);
 private:
-    CProcessingData *m_pCaller;
+	CCallBack*     m_pCaller;
 };
