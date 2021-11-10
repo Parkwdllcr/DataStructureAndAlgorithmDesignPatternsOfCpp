@@ -153,7 +153,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp" />
     <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
@@ -181,13 +180,13 @@
     <ClCompile Include="src\DesMode\State\CConcreteState.cpp" />
     <ClCompile Include="src\DesMode\State\CContext.cpp" />
     <ClCompile Include="src\main\StudyDesMode.cpp" />
-    <ClCompile Include="src\MulThread\CStudyMulThread.cpp" />
+    <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp" />
+    <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp" />
+    <ClCompile Include="src\MulThread\CCallBack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h" />
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h" />
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\CCallBackReceiver.h" />
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h" />
     <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
     <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.h" />
@@ -219,7 +218,9 @@
     <ClInclude Include="include\DesMode\Singleton\CSingletion.h" />
     <ClInclude Include="include\DesMode\State\CConcreteState.h" />
     <ClInclude Include="include\DesMode\State\CContext.h" />
-    <ClInclude Include="include\MulThread\CStudyMulThread.h" />
+    <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h" />
+    <ClInclude Include="include\MulThreadAndCallBack\CStudyMulThread.h" />
+    <ClInclude Include="include\MulThread\CCallBack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

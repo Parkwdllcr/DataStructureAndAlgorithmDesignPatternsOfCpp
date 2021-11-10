@@ -91,12 +91,6 @@
     <Filter Include="src\CPrimerPlus\4thComplexDataType">
       <UniqueIdentifier>{88be30e0-aab1-48fd-88c7-08f6ea5c2ab3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\MulThread">
-      <UniqueIdentifier>{477ae319-1645-4782-b219-31a30ac6c0f2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\MulThread">
-      <UniqueIdentifier>{9f47382f-14a6-4bd2-ac0f-3dcad508376f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL">
       <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
     </Filter>
@@ -133,11 +127,14 @@
     <Filter Include="include\CPrimerPlus\PublicClass">
       <UniqueIdentifier>{00de3898-ed8e-4e5c-9b08-9ff748e119a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\MulThreadAndCallBack">
+      <UniqueIdentifier>{477ae319-1645-4782-b219-31a30ac6c0f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\MulThreadAndCallBack">
+      <UniqueIdentifier>{9f47382f-14a6-4bd2-ac0f-3dcad508376f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing\CCallBackReceiver.cpp">
-      <Filter>src\CPrimerPlus\3thDataProcessing</Filter>
-    </ClCompile>
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp">
       <Filter>src\DesMode\AbstractFactory</Filter>
     </ClCompile>
@@ -216,21 +213,24 @@
     <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp">
       <Filter>src\CPrimerPlus\4thComplexDataType</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThread\CStudyMulThread.cpp">
-      <Filter>src\MulThread</Filter>
-    </ClCompile>
     <ClCompile Include="src\main\StudyDesMode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms</Filter>
     </ClCompile>
+    <ClCompile Include="src\MulThread\CCallBack.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h">
-      <Filter>include\CPrimerPlus\3thDataProcessing</Filter>
-    </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\CCallBackReceiver.h">
       <Filter>include\CPrimerPlus\3thDataProcessing</Filter>
     </ClInclude>
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h">
@@ -311,12 +311,6 @@
     <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h">
       <Filter>include\CPrimerPlus\4thComplexDataType</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\tcFunction.h">
-      <Filter>include\CPrimerPlus\3thDataProcessing</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThread\CStudyMulThread.h">
-      <Filter>include\MulThread</Filter>
-    </ClInclude>
     <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms</Filter>
     </ClInclude>
@@ -334,6 +328,15 @@
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h">
       <Filter>include\CPrimerPlus\PublicClass</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThread\CCallBack.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\CStudyMulThread.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
