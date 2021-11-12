@@ -76,6 +76,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>D:\study_of_c++\Data\DataStructureAndAlgorithmDesignPatternsOfCpp\DataStructureAndAlgorithmDesignPatternsOfCpp\include;$(IncludePath)</IncludePath>
+    <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -155,6 +156,7 @@
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
     <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
     <ClCompile Include="src\DesMode\Adapter\CAdapter.cpp" />
@@ -180,9 +182,9 @@
     <ClCompile Include="src\DesMode\State\CConcreteState.cpp" />
     <ClCompile Include="src\DesMode\State\CContext.cpp" />
     <ClCompile Include="src\main\StudyDesMode.cpp" />
+    <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp" />
-    <ClCompile Include="src\MulThread\CCallBack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h" />
@@ -193,6 +195,7 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinkList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />

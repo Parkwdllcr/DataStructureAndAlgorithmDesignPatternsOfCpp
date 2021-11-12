@@ -34,6 +34,5 @@ void CCallBack::RegCallBack(MyCallBack fun, int iFrist, int iSecond)
 
 void CCallBack::NowCall()
 {
-	m_func(m_iStaticTest, m_iConstStatic);
 	m_func(m_iTestCall, m_iTestCallSecond);
 }

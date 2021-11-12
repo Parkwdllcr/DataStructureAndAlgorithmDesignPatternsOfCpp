@@ -219,14 +219,17 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThread\CCallBack.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
     </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -337,6 +340,9 @@
     </ClInclude>
     <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h">
       <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
