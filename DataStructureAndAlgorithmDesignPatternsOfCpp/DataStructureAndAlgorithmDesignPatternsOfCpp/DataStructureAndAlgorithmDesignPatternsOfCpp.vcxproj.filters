@@ -133,6 +133,12 @@
     <Filter Include="src\MulThreadAndCallBack">
       <UniqueIdentifier>{9f47382f-14a6-4bd2-ac0f-3dcad508376f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList">
+      <UniqueIdentifier>{d4fa0aeb-184b-4ac2-ab03-367321fb5b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CPrimerPlus\PublicClass">
+      <UniqueIdentifier>{f883a83c-f065-46fb-94df-e5064e060e96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp">
@@ -231,6 +237,18 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
     </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\PublicClass\CPublicClass.cpp">
+      <Filter>src\CPrimerPlus\PublicClass</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h">
@@ -320,12 +338,6 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinkList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
-    </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClInclude>
@@ -343,6 +355,15 @@
     </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinearList.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

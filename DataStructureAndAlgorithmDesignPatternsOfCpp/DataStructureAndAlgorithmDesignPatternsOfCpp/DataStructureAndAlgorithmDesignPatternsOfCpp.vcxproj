@@ -155,6 +155,10 @@
   <ItemGroup>
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
     <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
+    <ClCompile Include="src\CPrimerPlus\PublicClass\CPublicClass.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
@@ -192,8 +196,9 @@
     <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
     <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinkList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />

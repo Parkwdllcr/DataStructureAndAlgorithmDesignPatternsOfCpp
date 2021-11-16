@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
+#include<string>
 
 class CPublicClass
 {
 public:
 	template<typename T>
 	void ShowAndSize(const T& testVar);
+	void PrintfTestFunctionFlag(std::string strFunctionNmae);
 };
 
 template<typename T>
