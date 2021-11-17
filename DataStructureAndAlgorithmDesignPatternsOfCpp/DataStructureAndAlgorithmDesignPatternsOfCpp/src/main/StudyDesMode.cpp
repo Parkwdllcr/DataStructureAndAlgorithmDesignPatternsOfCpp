@@ -218,36 +218,36 @@ int main()
 // 		pLinkList = nullptr;
 // 	}
 
-	//test CStudyList 
-// 	CStudyList* pStudyList = new CStudyList;
-// 	pStudyList->PrintElementList();
-// 	for (int i = 0;i != 10;i++)
-// 	{
-// 		pStudyList->AddElementToList(i);
-// 	}
-// 	pStudyList->PrintElementList();
-// 	pStudyList->DeleteList();
-// 	pStudyList->PrintElementList();
+// 	//test CStudyList 
+//  	CStudyList* pStudyList = new CStudyList;
+//  	pStudyList->PrintElementList();
+//  	for (int i = 0;i != 10;i++)
+//  	{
+//  		pStudyList->AddElementToList(i);
+//  	}
+//  	pStudyList->PrintElementList();
+//  	pStudyList->DeleteList();
+//  	pStudyList->PrintElementList();
+//  
+//  	if (nullptr != pStudyList)
+//  	{
+//  		delete pStudyList;
+//  		pStudyList = nullptr;
+//  	}
 // 
-// 	if (nullptr != pStudyList)
+//     //test CStudyMap
+//     CStudyMap* pStudyMap = new CStudyMap;
+// 	pStudyMap->PrintTestMap();
+// 	pStudyMap->AddTestElement();
+// 	pStudyMap->PrintTestMap();
+// 	pStudyMap->DeleteAllElement();
+// 	pStudyMap->PrintTestMap();
+// 
+// 	if (nullptr != pStudyMap)
 // 	{
-// 		delete pStudyList;
-// 		pStudyList = nullptr;
+// 		delete pStudyMap;
+// 		pStudyMap = nullptr;
 // 	}
-
-    //test CStudyMap
-    CStudyMap* pStudyMap = new CStudyMap;
-	pStudyMap->PrintTestMap();
-	pStudyMap->AddTestElement();
-	pStudyMap->PrintTestMap();
-	pStudyMap->DeleteAllElement();
-	pStudyMap->PrintTestMap();
-
-	if (nullptr != pStudyMap)
-	{
-		delete pStudyMap;
-		pStudyMap = nullptr;
-	}
 
 
 
