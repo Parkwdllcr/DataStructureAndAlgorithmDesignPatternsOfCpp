@@ -145,6 +145,18 @@
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map">
       <UniqueIdentifier>{cb204a0c-7a30-405d-8e89-fb307426a857}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList">
+      <UniqueIdentifier>{2569a2e1-dfa6-410e-93d3-a1046d4e2e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap">
+      <UniqueIdentifier>{f878c17d-cccf-4cfe-98ad-132db8a58687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList">
+      <UniqueIdentifier>{e83f04a4-bc23-4325-b3d2-3b012d87c4ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap">
+      <UniqueIdentifier>{9d43a1e2-154f-4cb0-bec4-4534de97b186}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp">
@@ -257,6 +269,12 @@
     </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -376,6 +394,12 @@
     </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

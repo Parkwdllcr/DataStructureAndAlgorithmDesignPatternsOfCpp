@@ -1,3 +1,4 @@
+#pragma once
 #include"CLinearList.h"
 #include "CPrimerPlus/PublicClass/CPublicClass.h"
 

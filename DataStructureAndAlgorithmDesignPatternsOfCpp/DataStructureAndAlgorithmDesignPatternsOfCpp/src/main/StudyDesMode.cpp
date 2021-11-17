@@ -18,7 +18,8 @@
 #include "MulThreadAndCallBack/CCallBackReceiver.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CLinkList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CArrayList.h"
-
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList/CStudyList.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap/CStudyMap.h"
 
 int main()
 {
@@ -197,25 +198,57 @@ int main()
 
 	//test list 
 
-   CLinkList* pLinkList = new CLinkList(5, CLinkList::TAIL_INSERTION);
-	for (int i = 5;i !=10; i++)
-	{
-		pLinkList->push_back(i);
-	}
-	pLinkList->insert(0, 20);
-	pLinkList->output();
-	int index = pLinkList->indexof(4);
-	std::cout << "the restlt is :" <<index<< std::endl;
-	pLinkList->erase(5);
-	pLinkList->output();
-	int iResult = pLinkList->get(0);
-	std::cout << "the restlt is :" << iResult << std::endl;
+//    CLinkList* pLinkList = new CLinkList(5, CLinkList::TAIL_INSERTION);
+// 	for (int i = 5;i !=10; i++)
+// 	{
+// 		pLinkList->push_back(i);
+// 	}
+// 	pLinkList->insert(0, 20);
+// 	pLinkList->output();
+// 	int index = pLinkList->indexof(4);
+// 	std::cout << "the restlt is :" <<index<< std::endl;
+// 	pLinkList->erase(5);
+// 	pLinkList->output();
+// 	int iResult = pLinkList->get(0);
+// 	std::cout << "the restlt is :" << iResult << std::endl;
+// 
+// 	if (nullptr != pLinkList)
+// 	{
+// 		delete pLinkList;
+// 		pLinkList = nullptr;
+// 	}
 
-	if (nullptr != pLinkList)
+	//test CStudyList 
+// 	CStudyList* pStudyList = new CStudyList;
+// 	pStudyList->PrintElementList();
+// 	for (int i = 0;i != 10;i++)
+// 	{
+// 		pStudyList->AddElementToList(i);
+// 	}
+// 	pStudyList->PrintElementList();
+// 	pStudyList->DeleteList();
+// 	pStudyList->PrintElementList();
+// 
+// 	if (nullptr != pStudyList)
+// 	{
+// 		delete pStudyList;
+// 		pStudyList = nullptr;
+// 	}
+
+    //test CStudyMap
+    CStudyMap* pStudyMap = new CStudyMap;
+	pStudyMap->PrintTestMap();
+	pStudyMap->AddTestElement();
+	pStudyMap->PrintTestMap();
+	pStudyMap->DeleteAllElement();
+	pStudyMap->PrintTestMap();
+
+	if (nullptr != pStudyMap)
 	{
-		delete pLinkList;
-		pLinkList = nullptr;
+		delete pStudyMap;
+		pStudyMap = nullptr;
 	}
+
 
 
     std::cout << "Hello World!\n";
