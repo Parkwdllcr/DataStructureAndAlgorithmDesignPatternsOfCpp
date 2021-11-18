@@ -40,14 +40,14 @@ CLinkList::CLinkList(int iInitialSize /*= 10*/,enCREAT_WAY enCreatWay /*= TAIL_I
 		//creat a list by a way
 		switch (enCreatWay)
 		{
-			LinkListNode pTestNode;
+			LinkListNode NewNode;
 		case HEAD_INSERTION:
 		{
 			for (int i = iInitialSize - 1; i != 0; i--)
 			{
-				pTestNode = new chainNode(i, nullptr);
-				pTestNode->m_next = m_firstNode->m_next;
-				m_firstNode->m_next = pTestNode;
+				NewNode = new chainNode(i, nullptr);
+				NewNode->m_next = m_firstNode->m_next;
+				m_firstNode->m_next = NewNode;
 			}
 			break;
 		}
@@ -56,9 +56,9 @@ CLinkList::CLinkList(int iInitialSize /*= 10*/,enCREAT_WAY enCreatWay /*= TAIL_I
 			LinkListNode qTestNode = m_firstNode;
 			for (int i = 1; i != iInitialSize; i++)
 			{
-				pTestNode = new chainNode(i, nullptr);
-				qTestNode->m_next = pTestNode;
-				qTestNode = pTestNode;
+				NewNode = new chainNode(i, nullptr);
+				qTestNode->m_next = NewNode;
+				qTestNode = NewNode;
 			}
 			break;
 		}
