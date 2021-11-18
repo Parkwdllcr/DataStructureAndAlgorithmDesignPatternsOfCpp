@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.0)
+message("this is Data struct and Algorithm ")
+add_subdirectory(LinkList)
+add_subdirectory(Map)
+add_subdirectory(SortingAlgorithms)
 
-project(Algorithm)
-message("this is Algorithm")
 
-aux_source_directory(. SRCS)
 
-add_library(${PROJECT_NAME} SHARED ${SRCS})
+

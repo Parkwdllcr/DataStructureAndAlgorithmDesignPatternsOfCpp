@@ -195,7 +195,7 @@ void CStudyMulThread::FuncProducer()
 //	}
 //	for (int i = 0; i != 10; i++)
 //	{
-//		//×èÈûÖ÷Ïß³ÌµÈ´ýÏß³Ì½áÊø
+//		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ÌµÈ´ï¿½ï¿½ß³Ì½ï¿½ï¿½ï¿½
 //		thProducers[i].join();
 //		thConsumer[i].join();
 //	}
@@ -203,22 +203,22 @@ void CStudyMulThread::FuncProducer()
 
 //std::async function is more than thread
 
-//ÖØÔØ°æ±¾	                                             ×÷ÓÃ
-//template <class Fn, class¡­ Args>                     Òì²½»òÍ¬²½£¨¸ù¾Ý²Ù×÷ÏµÍ³¶ø¶¨£©ÒÔargsÎª²ÎÊýÖ´ÐÐfn
-//future<typename result_of<Fn(Args¡­)>::type>          Í¬ÑùµØ£¬´«µÝÒýÓÃ²ÎÊýÐèÒªstd::ref»òstd::cref
-//async(Fn&& fn, Args&& ¡­ args)	   
+//ï¿½ï¿½ï¿½Ø°æ±¾	                                             ï¿½ï¿½ï¿½ï¿½
+//template <class Fn, classï¿½ï¿½ Args>                     ï¿½ì²½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½argsÎªï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½fn
+//future<typename result_of<Fn(Argsï¿½ï¿½)>::type>          Í¬ï¿½ï¿½ï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½Òªstd::refï¿½ï¿½std::cref
+//async(Fn&& fn, Args&& ï¿½ï¿½ args)	   
 
-//template <class Fn, class¡­ Args>                      Òì²½»òÍ¬²½£¨¸ù¾Ýpolicy²ÎÊý¶ø¶¨£¨¼ûÏÂÎÄ£©£©
-//future<typename result_of<Fn(Args¡­)>::type>           ÒÔargsÎª²ÎÊýÖ´ÐÐfn£¬ÒýÓÃ²ÎÊýÍ¬ÉÏ
-//async(launch policy, Fn&& fn, Args&& ¡­ args);	
+//template <class Fn, classï¿½ï¿½ Args>                      ï¿½ì²½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½policyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
+//future<typename result_of<Fn(Argsï¿½ï¿½)>::type>           ï¿½ï¿½argsÎªï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½fnï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+//async(launch policy, Fn&& fn, Args&& ï¿½ï¿½ args);	
 
 
-//std::launchÇ¿Ã¶¾ÙÀà(enum class)
-//±êÊ¶·û	                                  Êµ¼ÊÖµ£¨ÒÔVisual Studio 2019Îª±ê×¼£©	              ×÷ÓÃ
-//Ã¶¾ÙÖµ£ºlaunch::async	                            0x1£¨1£©	                                Òì²½Æô¶¯
-//Ã¶¾ÙÖµ£ºlaunch::deferred	                        0x2£¨2£©	                            ÔÚµ÷ÓÃfuture::get¡¢future::waitÊ±
-//                                                                                         Í¬²½Æô¶¯£¨std::future¼ûºóÎÄ£©
-//ÌØÊâÖµ£ºlaunch::async | launch::defereed	        0x3£¨3£©	                          Í¬²½»òÒì²½£¬¸ù¾Ý²Ù×÷ÏµÍ³¶ø¶¨
+//std::launchÇ¿Ã¶ï¿½ï¿½ï¿½ï¿½(enum class)
+//ï¿½ï¿½Ê¶ï¿½ï¿½	                                  Êµï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Visual Studio 2019Îªï¿½ï¿½×¼ï¿½ï¿½	              ï¿½ï¿½ï¿½ï¿½
+//Ã¶ï¿½ï¿½Öµï¿½ï¿½launch::async	                            0x1ï¿½ï¿½1ï¿½ï¿½	                                ï¿½ì²½ï¿½ï¿½ï¿½ï¿½
+//Ã¶ï¿½ï¿½Öµï¿½ï¿½launch::deferred	                        0x2ï¿½ï¿½2ï¿½ï¿½	                            ï¿½Úµï¿½ï¿½ï¿½future::getï¿½ï¿½future::waitÊ±
+//                                                                                         Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½std::futureï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
+//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½launch::async | launch::defereed	        0x3ï¿½ï¿½3ï¿½ï¿½	                          Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ì²½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½
 
 
 // reference: http://www.cplusplus.com/reference/future/async/
@@ -253,7 +253,7 @@ int CStudyMulThread::TestAsyncFrist()
 }
 
 // reference: http://www.cplusplus.com/reference/future/launch/
-//Õâ¸öÓÐµãÒâË¼£¬ºÃºÃÔÙ¿´ÏÂ
+//ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½Ãºï¿½ï¿½Ù¿ï¿½ï¿½ï¿½
 
 //std::future of c++ 11
 //get return value by std::future 
@@ -270,8 +270,8 @@ int CStudyMulThread::TestAsyncSecond()
 	std::cout << "with launch::async:\n";
 	std::future<void> foo = std::async(std::launch::async, PrintTen, '*', 100);
 	std::future<void> bar = std::async(std::launch::async, PrintTen, '@', 10);
-	// async "get" (wait for foo and bar to be ready):ÎÒµÄÀí½âÊÇËûÒÑ¾­½áÊøÁËÔËÐÐ£¬µ«ÊÇgetµÄÊ±ºò£¬·µ»ØÖµ²ÅÓÐ
-	foo.get(); // ×¢£º×¢ÊÍµô´Ë¾ä£¬Ò²»áÊä³ö'*'
+	// async "get" (wait for foo and bar to be ready):ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½getï¿½ï¿½Ê±ï¿½ò£¬·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+	foo.get(); // ×¢ï¿½ï¿½×¢ï¿½Íµï¿½ï¿½Ë¾ä£¬Ò²ï¿½ï¿½ï¿½ï¿½ï¿½'*'
 	bar.get();
 	std::cout << "\n\n";
 
@@ -279,9 +279,9 @@ int CStudyMulThread::TestAsyncSecond()
 	foo = std::async(std::launch::deferred, PrintTen, '*', 10);
 	bar = std::async(std::launch::deferred, PrintTen, '@', 100);
 	// deferred "get" (perform the actual calls):
-	// ×¢£º×¢ÊÍµô´Ë¾ä£¬Ôò²»»áÊä³ö'**********',±ØÐëÒª·µ»ØÖµ£¬Í¬²½£¬£¬ÀàËÆ»Øµ÷µÄ¸Ð¾õ
-	//Ã»ÓÐµ÷ÓÃprint_tenÕâº¯Êý£¬Èç¹û×¢ÊÍµôÁË£¬getµÄÊ±ºò²ÅÊÇÈ¥µ÷ÓÃprinten_ten
-	//¾ÍÊÇgetÍ¬Ê±²Åµ÷ÓÃprint_ten£¬µ÷ÓÃÍêÁË£¬Ö´ÐÐÁË·µ»ØÖµ
+	// ×¢ï¿½ï¿½×¢ï¿½Íµï¿½ï¿½Ë¾ä£¬ï¿½ò²»»ï¿½ï¿½ï¿½ï¿½'**********',ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ»Øµï¿½ï¿½Ä¸Ð¾ï¿½
+	//Ã»ï¿½Ðµï¿½ï¿½ï¿½print_tenï¿½âº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½Íµï¿½ï¿½Ë£ï¿½getï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½printen_ten
+	//ï¿½ï¿½ï¿½ï¿½getÍ¬Ê±ï¿½Åµï¿½ï¿½ï¿½print_tenï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½Ö´ï¿½ï¿½ï¿½Ë·ï¿½ï¿½ï¿½Öµ
 	foo.get();
 	bar.get();
 	std::cout << '\n';
@@ -289,21 +289,21 @@ int CStudyMulThread::TestAsyncSecond()
 	return 0;
 }
 
-//¿´×ÊÁÏÓÐÒ»¸öbug£¬async·¢Éú×èÈûÏÖÏó£¬¿ÉÒÔ¸ÄÓÃthread£¬
-// future¶ÔÏóÎö¹¹µÄÊ±ºò£¬¿ÉÄÜ·¢Éú×èÈû£º
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½bugï¿½ï¿½asyncï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¿ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½threadï¿½ï¿½
+// futureï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò£¬¿ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 // 
-// 1. ¹²Ïí×´Ì¬ÊÇÍ¨¹ýstd::async´´½¨
-// 2. ¹²Ïí×´Ì¬»¹²»ÊÇready×´Ì¬
-// 3. ±»Îö¹¹µÄfuture¶ÔÏóÊÇ¹²Ïí×´Ì¬µÄ×îºóÒ»¸öÒýÓÃ
+// 1. ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½Í¨ï¿½ï¿½std::asyncï¿½ï¿½ï¿½ï¿½
+// 2. ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ready×´Ì¬
+// 3. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½futureï¿½ï¿½ï¿½ï¿½ï¿½Ç¹ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-// Èç¹ûÖ±½ÓÊ¹ÓÃstd::asyncÔò£¬ºÜÓÐ¿ÉÄÜ·¢Éú×èÈû£¬ÒòÎªÆä²úÉúÁËÁÙÊ±±äÁ¿future£¬
-// Îö¹¹Ê±·¢ÏÖ·Çready£¬Ôò²úÉú×èÈû
-// µ±¹²Ïí×´Ì¬ÊÇreadyÊ±ºò£¬½â³ý×èÈû£¬Íê³ÉÎö¹¹
+// ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½ï¿½std::asyncï¿½ò£¬ºï¿½ï¿½Ð¿ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½futureï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ö·ï¿½readyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½readyÊ±ï¿½ò£¬½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-// ÎªÁË±ÜÃâÉÏÊöÎÊÌâ£¬¿ÉÒÔÑÓ³¤asyncµÄ·µ»ØÖµµÄÉúÃüÖÜÆÚ£¬±ÈÈç£º½«futureÀàÐÍ¶ÔÏó±äÎª·µ»ØÖµµÈ
+// Îªï¿½Ë±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½asyncï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ç£ºï¿½ï¿½futureï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½
 // future< int> fun()
 // {
-// 	auto fut1 = std::async¡­;
+// 	auto fut1 = std::asyncï¿½ï¿½;
 // 	return fun1;
 // }
 
@@ -333,8 +333,9 @@ std::future<int> CStudyMulThread::Funasync()
 void CStudyMulThread::CountBigNumber()
 {
 	//c++14 add ' in number is ok
-//just for delay
-	for (int i = 0; i < 10'0000'0000; i++);
+    //just for delay
+	//for (int i = 0; i < 10'0000'0000; i++);
+	std::this_thread::sleep_for(milliseconds_type(5000));
 }
 
 

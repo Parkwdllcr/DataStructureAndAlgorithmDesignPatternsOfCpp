@@ -1,3 +1,4 @@
-message("this is Algorithm Cmake")
-#add_subdirectory(AlgorithmsOfCommon)
-#add_subdirectory(Leetcode)
+message("this is Data struct and Algorithm STL")
+add_subdirectory(DataTypeAlgorithms)
+add_subdirectory(STL)
+

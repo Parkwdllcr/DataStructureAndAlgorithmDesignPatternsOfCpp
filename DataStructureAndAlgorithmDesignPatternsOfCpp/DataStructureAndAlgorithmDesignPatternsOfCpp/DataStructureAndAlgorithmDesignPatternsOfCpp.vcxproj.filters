@@ -103,9 +103,6 @@
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SorthingAlgorithms">
       <UniqueIdentifier>{1680b692-6649-4b2b-bb04-6da3d896cdea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString">
-      <UniqueIdentifier>{4704a0d5-389b-47a9-ac22-df0b35d0c57f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL">
       <UniqueIdentifier>{d9fd3a04-f4b8-4bea-aa3c-fde1a5608ef0}</UniqueIdentifier>
     </Filter>
@@ -150,12 +147,6 @@
     </Filter>
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap">
       <UniqueIdentifier>{f878c17d-cccf-4cfe-98ad-132db8a58687}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList">
-      <UniqueIdentifier>{e83f04a4-bc23-4325-b3d2-3b012d87c4ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap">
-      <UniqueIdentifier>{9d43a1e2-154f-4cb0-bec4-4534de97b186}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -252,9 +243,6 @@
     <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
     </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
-    </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClCompile>
@@ -270,11 +258,14 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map</Filter>
     </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

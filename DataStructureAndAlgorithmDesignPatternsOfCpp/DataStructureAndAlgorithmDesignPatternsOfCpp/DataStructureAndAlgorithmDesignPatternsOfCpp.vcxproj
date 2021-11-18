@@ -161,9 +161,9 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
     <ClCompile Include="src\DesMode\Adapter\CAdapter.cpp" />
