@@ -13,8 +13,8 @@ CArrayList::CArrayList(int iInitialCapacity):m_iArrayLength(iInitialCapacity)
 		CArrayList::m_iListSize = 0;
 
 	}
-	catch (std::string str) {
-		std::cout << str << std::endl;
+	catch (const char* pStrErr) {
+		std::cout << pStrErr << std::endl;
 	}
 
 }
