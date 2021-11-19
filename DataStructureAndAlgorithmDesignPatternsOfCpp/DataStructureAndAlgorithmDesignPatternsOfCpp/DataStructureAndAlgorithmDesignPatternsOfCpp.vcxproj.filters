@@ -118,9 +118,6 @@
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL">
       <UniqueIdentifier>{8564cafd-6274-4e20-9dce-164cf2257208}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString">
-      <UniqueIdentifier>{f94180a0-5bd3-41c2-8903-9bf181585269}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\CPrimerPlus\PublicClass">
       <UniqueIdentifier>{00de3898-ed8e-4e5c-9b08-9ff748e119a3}</UniqueIdentifier>
     </Filter>
@@ -141,12 +138,6 @@
     </Filter>
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map">
       <UniqueIdentifier>{cb204a0c-7a30-405d-8e89-fb307426a857}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList">
-      <UniqueIdentifier>{2569a2e1-dfa6-410e-93d3-a1046d4e2e4d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap">
-      <UniqueIdentifier>{f878c17d-cccf-4cfe-98ad-132db8a58687}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -267,6 +258,9 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClCompile>
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp">
+      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h">
@@ -371,9 +365,6 @@
     <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h">
       <Filter>include\MulThreadAndCallBack</Filter>
     </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString</Filter>
-    </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinearList.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList</Filter>
     </ClInclude>
@@ -386,11 +377,26 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map</Filter>
     </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStlContain.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStudyStlManager.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\os_type.h">
+      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

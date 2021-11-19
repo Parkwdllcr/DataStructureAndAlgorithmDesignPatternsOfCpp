@@ -163,6 +163,7 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
@@ -204,9 +205,13 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList\CStudyList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap\CStudyMap.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\StudyString\CStudyString.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStlContain.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStudyStlManager.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\os_type.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />
