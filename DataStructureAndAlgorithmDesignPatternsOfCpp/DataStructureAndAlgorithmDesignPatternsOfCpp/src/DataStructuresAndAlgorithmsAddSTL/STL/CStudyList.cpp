@@ -1,5 +1,4 @@
-#include "ListAndMap/CStudyList.h"
-#include "UtilsBox/utilsbox_utils.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
 #include <iostream>
 
 void CStudyList::AddElementToList(int iElement)

@@ -18,8 +18,8 @@
 #include "MulThreadAndCallBack/CCallBackReceiver.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CLinkList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CArrayList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList/CStudyList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap/CStudyMap.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap.h"
 
 int main()
 {

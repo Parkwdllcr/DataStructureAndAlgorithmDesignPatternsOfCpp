@@ -1,5 +1,4 @@
-#include "ListAndMap/CStudyMap.h"
-#include "UtilsBox/utilsbox_utils.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap.h"
 #include<iostream>
 
 void CStudyMap::PrintTestMap()

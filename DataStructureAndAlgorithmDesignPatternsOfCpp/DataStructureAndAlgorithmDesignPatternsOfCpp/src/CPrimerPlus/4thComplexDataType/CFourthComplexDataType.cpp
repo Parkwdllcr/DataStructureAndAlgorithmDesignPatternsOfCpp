@@ -72,6 +72,7 @@ char* CFourthComplexDataType::GetMemory(int inum)
 char* CFourthComplexDataType::GetString(void)
 {
 	char pCharArray[] = "hello world";
+	//返回的是临时变量的地址是有问题的！
 	return pCharArray;
 }
 

@@ -1,4 +1,4 @@
-#include"ListAndMap/CStudyStlManager.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyStlManager.h"
 #include<iostream>
 
 CStudyStlManager::CStudyStlManager()

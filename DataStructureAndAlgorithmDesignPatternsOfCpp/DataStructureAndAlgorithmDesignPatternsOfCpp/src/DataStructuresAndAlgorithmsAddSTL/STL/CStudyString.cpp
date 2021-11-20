@@ -1,4 +1,4 @@
-#include "DataStructuresAndAlgorithmsAddSTL/STL/StudyString/CStudyString.h"
+#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyString.h"
 #include "CPrimerPlus/PublicClass/CPublicClass.h"
 
 
