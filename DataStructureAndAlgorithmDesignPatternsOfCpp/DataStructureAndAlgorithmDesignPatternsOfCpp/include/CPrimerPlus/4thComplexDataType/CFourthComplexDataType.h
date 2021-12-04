@@ -11,7 +11,6 @@ public:
 public:
 	void  TestFourthComplexDataType();
 public:
-	//《高质量程序设计--c++/c语言》
 	//<HighQualityProgramming--C++ /C Language> at page 289-page291
 	//will get a paper
 	void  GetMemory(char* pChar, int iNum);
@@ -21,7 +20,7 @@ public:
 	char* GetString(void);
 	//char* GetStringSecond(void);
 
-	//I have a problem,,add const,& and * is diffent ?，this is very import 
+	//I have a problem,,add const,& and * is diffent ?锟斤拷this is very import 
 
 
 };
