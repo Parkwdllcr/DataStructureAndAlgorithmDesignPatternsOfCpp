@@ -53,16 +53,19 @@ void CFourthComplexDataType::TestFourthComplexDataType()
 
 }
 
+//this is wrong ,pChar will create a copier ,so get a wrong ptr!
 void CFourthComplexDataType::GetMemory(char* pChar, int iNum)
 {
 	pChar = (char*)std::malloc(sizeof(char) * iNum);
 }
-
+//this is right
 void CFourthComplexDataType::GetMemory(char** pChar, int iNum)
 {
 	*pChar = (char*)std::malloc(sizeof(char)*iNum);
 }
 
+//this is wrong!! get a wild ptr
+//delete a temporary variables，ptr donot delete
 char* CFourthComplexDataType::GetMemory(int inum)
 {
 	char* pChar = (char*)std::malloc(sizeof(char) * inum);
