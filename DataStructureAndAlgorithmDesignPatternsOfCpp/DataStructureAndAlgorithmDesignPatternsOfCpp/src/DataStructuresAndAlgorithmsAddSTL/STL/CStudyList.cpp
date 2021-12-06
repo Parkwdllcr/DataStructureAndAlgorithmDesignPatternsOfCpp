@@ -1,6 +1,21 @@
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
 #include <iostream>
 
+CStudyList::CStudyList():
+	m_iTestList(),m_strMyname("")
+{
+
+}
+CStudyList::CStudyList(std::string strMyName)
+	:m_iTestList(), m_strMyname(strMyName)
+{
+
+}
+CStudyList::~CStudyList()
+{
+
+}
+
 void CStudyList::AddElementToList(int iElement)
 {
 	m_iTestList.push_back(iElement);

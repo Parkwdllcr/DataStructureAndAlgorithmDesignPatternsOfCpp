@@ -6,7 +6,7 @@ class CStudyStlManager:public IStudyStlManager
 public:
     CStudyStlManager();
     CStudyStlManager(std::string strStlContainName);
-    CStudyStlManager(const CStudyStlManager&);
+    CStudyStlManager(const CStudyStlManager& copyObject);
     CStudyStlManager& operator = (const CStudyStlManager & studySTLmanger);
     virtual ~CStudyStlManager();
 

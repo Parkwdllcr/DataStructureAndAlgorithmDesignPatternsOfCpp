@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -153,14 +153,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing\3thDataProcessing.cpp" />
-    <ClCompile Include="src\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.cpp" />
-    <ClCompile Include="src\CPrimerPlus\PublicClass\CPublicClass.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\SortingAlgorithms\CSortingAlgorithm.cpp" />
+    <ClCompile Include="src\CPrimerPlus\3thDataProcessing.cpp" />
+    <ClCompile Include="src\CPrimerPlus\CFourthComplexDataType.cpp" />
+    <ClCompile Include="src\CPrimerPlus\CPublicClass.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp" />
@@ -195,16 +195,17 @@
     <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Algorithm\AlgorithmsOfCommon\CSortingAlgorithm.h" />
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing\3thDataProcessing.h" />
-    <ClInclude Include="include\CPrimerPlus\4thComplexDataType\CFourthComplexDataType.h" />
-    <ClInclude Include="include\CPrimerPlus\PublicClass\CPublicClass.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CArrayList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinearList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\CLinkList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\ILinearList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\LinkList\Node.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Map\CRedBlackTree.h" />
+    <ClInclude Include="include\CPrimerPlus\3thDataProcessing.h" />
+    <ClInclude Include="include\CPrimerPlus\CFourthComplexDataType.h" />
+    <ClInclude Include="include\CPrimerPlus\CPublicClass.h" />
+    <ClInclude Include="include\CPrimerPlus\CSmartPtr.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\ILinearList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Node.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.h" />

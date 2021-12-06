@@ -1,2 +1,2 @@
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/SortingAlgorithm/CSortingAlgorithm.h"
+#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CSortingAlgorithm.h"
 

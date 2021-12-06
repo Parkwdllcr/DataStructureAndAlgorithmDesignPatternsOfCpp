@@ -15,4 +15,5 @@ public:
 	void DeleteList();
 private:
 	std::list<int> m_iTestList;
+	std::string    m_strMyname;
 };

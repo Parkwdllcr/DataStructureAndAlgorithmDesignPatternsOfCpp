@@ -1,4 +1,4 @@
-#include"CPrimerPlus/PublicClass/CPublicClass.h"
+#include"CPrimerPlus/CPublicClass.h"
 #include<iostream>
 #include<climits>
 #include<string>

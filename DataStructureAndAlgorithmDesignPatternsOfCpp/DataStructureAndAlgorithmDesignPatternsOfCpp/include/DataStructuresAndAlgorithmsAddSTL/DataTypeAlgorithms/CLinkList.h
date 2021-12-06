@@ -1,6 +1,6 @@
 #pragma once
 #include"CLinearList.h"
-#include "CPrimerPlus/PublicClass/CPublicClass.h"
+#include "CPrimerPlus/CPublicClass.h"
 
 class CLinkList :public CLinearList
 {

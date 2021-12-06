@@ -14,10 +14,10 @@
 #include "DesMode/FactoryMode/CFactoryofFactoryMode.h"
 #include "DesMode/FactoryMode/CFactory_AddofFactoryMode.h"
 #include "DesMode/FactoryMode/CFactory_MulofFactoryMode.h"
-#include "CPrimerPlus/3thDataProcessing/3thDataProcessing.h"
+#include "CPrimerPlus/3thDataProcessing.h"
 #include "MulThreadAndCallBack/CCallBackReceiver.h"
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CLinkList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/LinkList/CArrayList.h"
+#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinkList.h"
+#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap.h"
 

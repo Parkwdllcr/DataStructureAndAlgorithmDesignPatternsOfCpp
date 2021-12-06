@@ -1,5 +1,5 @@
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyString.h"
-#include "CPrimerPlus/PublicClass/CPublicClass.h"
+#include "CPrimerPlus/CPublicClass.h"
 
 
 

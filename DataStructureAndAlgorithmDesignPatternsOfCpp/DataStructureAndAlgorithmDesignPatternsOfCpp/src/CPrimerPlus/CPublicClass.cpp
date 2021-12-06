@@ -1,4 +1,4 @@
-#include "CPrimerPlus/PublicClass/CPublicClass.h"
+#include "CPrimerPlus/CPublicClass.h"
 
 void CPublicClass::PrintfTestFunctionFlag(std::string strFunctionNmae)
 {

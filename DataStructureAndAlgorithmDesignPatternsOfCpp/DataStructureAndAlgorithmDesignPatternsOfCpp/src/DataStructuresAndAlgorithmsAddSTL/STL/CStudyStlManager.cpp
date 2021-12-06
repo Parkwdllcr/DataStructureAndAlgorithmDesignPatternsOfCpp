@@ -13,6 +13,16 @@ CStudyStlManager::CStudyStlManager(std::string strStlContainName)
 
 }
 
+CStudyStlManager::CStudyStlManager(const CStudyStlManager& copyObject)
+{
+}
+
+CStudyStlManager& CStudyStlManager::operator=(const CStudyStlManager& studySTLmanger)
+{
+    // TODO: 在此处插入 return 语句
+    return *this;
+}
+
 CStudyStlManager::~CStudyStlManager()
 {
     try
@@ -29,5 +39,5 @@ CStudyStlManager::~CStudyStlManager()
 int CStudyStlManager::Inital()
 {
     
-
+    return 1;
 }
