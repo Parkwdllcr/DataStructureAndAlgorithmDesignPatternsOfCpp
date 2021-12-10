@@ -16,8 +16,6 @@ const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
 
 CProcessingData::CProcessingData():m_iSize(10),m_pPublicClass(nullptr)
 {
-	m_iArray[FRISTSIZE] = { 0 };
-	m_iTestArray[SECONDSIZE] = { 0 };
 
 }
 
@@ -26,16 +24,6 @@ CProcessingData::~CProcessingData()
 
 }
 
-void CProcessingData::TestThisClass()
-{
-    ComputSizeOfVar();
-    //这里不能Startwork，没有注册函数地址
-   // StartWork();
-	SimpleFourArithmetic(0.3, 5.7, ADDITION);
-
-
-
-}
 
 void CProcessingData::ComputSizeOfVar()
 {
