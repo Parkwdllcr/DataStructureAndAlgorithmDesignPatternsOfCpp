@@ -201,9 +201,6 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing.cpp">
-      <Filter>src\CPrimerPlus</Filter>
-    </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
     </ClCompile>
@@ -218,6 +215,9 @@
     </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp">
+      <Filter>src\CPrimerPlus</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -326,9 +326,6 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\os_type.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing.h">
-      <Filter>include\CPrimerPlus</Filter>
-    </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h">
       <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
@@ -352,6 +349,9 @@
     </ClInclude>
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Node.h">
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
+      <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

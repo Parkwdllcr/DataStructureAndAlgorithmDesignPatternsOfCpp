@@ -153,7 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\CPrimerPlus\3thDataProcessing.cpp" />
+    <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp" />
@@ -193,7 +193,7 @@
     <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\CPrimerPlus\3thDataProcessing.h" />
+    <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.h" />
