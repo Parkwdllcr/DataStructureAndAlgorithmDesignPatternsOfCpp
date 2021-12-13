@@ -204,12 +204,6 @@
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing.cpp">
       <Filter>src\CPrimerPlus</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\CFourthComplexDataType.cpp">
-      <Filter>src\CPrimerPlus</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\CPublicClass.cpp">
-      <Filter>src\CPrimerPlus</Filter>
-    </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
     </ClCompile>
@@ -333,12 +327,6 @@
       <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing.h">
-      <Filter>include\CPrimerPlus</Filter>
-    </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\CFourthComplexDataType.h">
-      <Filter>include\CPrimerPlus</Filter>
-    </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\CPublicClass.h">
       <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h">

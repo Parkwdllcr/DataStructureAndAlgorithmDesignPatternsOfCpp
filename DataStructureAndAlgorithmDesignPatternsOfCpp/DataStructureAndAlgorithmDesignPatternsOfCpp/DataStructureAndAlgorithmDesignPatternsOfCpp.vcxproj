@@ -154,8 +154,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\CPrimerPlus\3thDataProcessing.cpp" />
-    <ClCompile Include="src\CPrimerPlus\CFourthComplexDataType.cpp" />
-    <ClCompile Include="src\CPrimerPlus\CPublicClass.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp" />
@@ -196,8 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\3thDataProcessing.h" />
-    <ClInclude Include="include\CPrimerPlus\CFourthComplexDataType.h" />
-    <ClInclude Include="include\CPrimerPlus\CPublicClass.h" />
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.h" />
