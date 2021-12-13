@@ -1,10 +1,10 @@
-#include"CPrimerPlus/3thDataProcessing.h"
+#include"CPrimerPlus/CPrimerPlus.h"
 
 
 
-int CProcessingData::m_iStaticTest = 30;
-const int CProcessingData::m_iConstStatic = 500;
-const std::string CProcessingData::m_strTestName = "Chongrui.Lu";
+int CStudyCPrimerPlus::m_iStaticTest = 30;
+const int CStudyCPrimerPlus::m_iConstStatic = 500;
+const std::string CStudyCPrimerPlus::m_strTestName = "Chongrui.Lu";
 
 
 //CProcessingData::CProcessingData(int& iSize) :m_iSize(iSize), m_iArray({}),
@@ -99,7 +99,7 @@ void CProcessingData::SimpleFourArithmetic(double dbTestOne, double dbTestTwo, i
 }
 
 //Implicit conversion and explicit conversion
-void CProcessingData::ClassToOtherClass()
+void CStudyCPrimerPlus::ClassToOtherClass()
 {
 	std::cout << "<--------------->" << std::endl;
 	std::cout << "ClassToOtherClass" << std::endl;

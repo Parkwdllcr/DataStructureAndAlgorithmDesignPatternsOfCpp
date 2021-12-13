@@ -14,7 +14,7 @@
 #include "DesMode/FactoryMode/CFactoryofFactoryMode.h"
 #include "DesMode/FactoryMode/CFactory_AddofFactoryMode.h"
 #include "DesMode/FactoryMode/CFactory_MulofFactoryMode.h"
-#include "CPrimerPlus/3thDataProcessing.h"
+#include "CPrimerPlus/CPrimerPlus.h"
 #include "MulThreadAndCallBack/CCallBackReceiver.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinkList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"

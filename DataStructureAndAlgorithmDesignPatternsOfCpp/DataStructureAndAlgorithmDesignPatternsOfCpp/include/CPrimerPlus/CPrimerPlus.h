@@ -12,10 +12,6 @@ public:
 	CStudyCPrimerPlus();
     ~CStudyCPrimerPlus();
 
-
-
-
-
 private:
 
 public:
@@ -24,40 +20,11 @@ public:
 	void PrintAndComputer(const T& showAndSize);
     void ComputSizeOfVar();
 	//重载一下各个基本类型
+	void SimpleFourArithmetic(double dbTestOne, double dbTestTwo, int iCalculationType);
     void StudyConstChar(const char* pConstCharConst,std::string strName);
-	void SimpleFourArithmetic(double dbTestOne,double dbTestTwo,int iCalculationType);
-	double power(double dbBase, int iExponent)
-	{
-		try
-		{
-			double dbResult = dbBase;
-			if (iExponent < 0)
-			{
-				throw "input error iExponent !";
-			}
-
-			if (iExponent == 0)
-			{
-				dbResult = 1.0;
-			}
-			else
-			{
-				while (iExponent != 1)
-				{
-					dbResult = dbResult * dbBase;
-					--iExponent;
-				}
-			}
-			return dbResult;
-
-		}
-		catch (const char* strError)
-		{
-			std::cout << strError << std::endl;
-			return 0.0;//当作错误码
-		}
-
-	}
+	template<typename T>
+	T Power(T tBase, int iExponent);
+	
 	void ClassToOtherClass();
 
 public:
@@ -89,10 +56,42 @@ void CStudyCPrimerPlus::PrintAndComputer(const T& showAndSize)
 }
 
 template<typename T>
+T CStudyCPrimerPlus::Power(T tBase, int iExponent)
+{
+	try
+	{
+		T dbResult = tBase;
+		if (iExponent < 0)
+		{
+			throw "input error iExponent !";
+		}
+
+		if (iExponent == 0)
+		{
+			dbResult = 1.0;
+		}
+		else
+		{
+			while (iExponent != 1)
+			{
+				dbResult = dbResult * tBase;
+				--iExponent;
+			}
+		}
+		return tResult;
+
+	}
+	catch (const char* strError)
+	{
+		std::cout << strError << std::endl;
+		return 0.0;//当作错误码
+	}
+}
+
+template<typename T>
 void CStudyCPrimerPlus::ShowAndSize(const T& testVar)
 {
 	std::cout << "The Test Value is: " << testVar << std::endl;
 	std::cout << "The Test Size is: " << sizeof(testVar) << std::endl;
 }
-
 
