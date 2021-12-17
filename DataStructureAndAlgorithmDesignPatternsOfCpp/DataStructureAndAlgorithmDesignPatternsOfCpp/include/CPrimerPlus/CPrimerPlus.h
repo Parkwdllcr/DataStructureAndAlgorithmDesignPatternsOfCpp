@@ -33,6 +33,7 @@ public:
 
 	template<typename T>
 	int Power(T &tResult, int iExponent);
+	//隐式转换或者强制转换，ADT/UD和默认类型的扩张与截断
 	void ClassToOtherClass();
 public:
 	//第四章
