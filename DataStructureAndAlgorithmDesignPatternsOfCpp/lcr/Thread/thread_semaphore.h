@@ -5,11 +5,11 @@
 
 namespace thread {
 	class SemaphoreImpl;
-	class THREAD_EXPORT Semaphore
+	class THREAD_EXPORT CSemaphore
 	{
 	public:
-		Semaphore(int64_t iCount = 1, int64_t iMaxCout = 0x7FFFFFFF);
-		virtual ~Semaphore(void);
+		CSemaphore(int64_t iCount = 1, int64_t iMaxCout = 0x7FFFFFFF);
+		virtual ~CSemaphore(void);
 		bool Acquire(int64_t iTimeout = -1);
 		bool Release(void);
 
