@@ -20,6 +20,10 @@
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap.h"
+#include  "MulThreadAndCallBack/Actor.h"
+#include  "MulThreadAndCallBack/thread_mutex.h"
+#include  "MulThreadAndCallBack/thread_semaphore.h"
+
 
 int main()
 {

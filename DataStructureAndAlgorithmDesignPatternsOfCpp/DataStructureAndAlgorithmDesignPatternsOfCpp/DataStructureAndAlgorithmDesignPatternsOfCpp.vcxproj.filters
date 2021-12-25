@@ -103,6 +103,12 @@
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
       <UniqueIdentifier>{e00843b2-bb08-4316-ba22-8717ea98b541}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\TcpIp">
+      <UniqueIdentifier>{5637364e-6d78-492c-9380-3843a7f5b84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\TcpIp">
+      <UniqueIdentifier>{285fae5b-81cd-4685-ad9a-0b187a44e6fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp">
@@ -219,6 +225,36 @@
     <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp">
       <Filter>src\CPrimerPlus</Filter>
     </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\Actor.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\ActorImpl.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\cutil_box.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\thread_condition_sync.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex_impl.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore_impl.cpp">
+      <Filter>src\MulThreadAndCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TcpIp\dss_tcp_client.cpp">
+      <Filter>src\TcpIp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TcpIp\dss_tcp_client_actor.cpp">
+      <Filter>src\TcpIp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h">
@@ -296,9 +332,6 @@
     <ClInclude Include="include\DesMode\Observer\CStudentB.h">
       <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThread\CCallBack.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
     <ClInclude Include="include\MulThreadAndCallBack\CStudyMulThread.h">
       <Filter>include\MulThreadAndCallBack</Filter>
     </ClInclude>
@@ -352,6 +385,48 @@
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
       <Filter>include\CPrimerPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\Actor.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\ActorImpl.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\CCallBack.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\cutil_box.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_command_actor.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_command_queue.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_condition_sync.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex_impl.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_os_define.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore_impl.h">
+      <Filter>include\MulThreadAndCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpIp\dss_tcp_client.h">
+      <Filter>include\TcpIp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpIp\dss_tcp_client_actor.h">
+      <Filter>include\TcpIp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

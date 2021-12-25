@@ -1,53 +1,36 @@
-//////////////////////////////////////////////////////////////////////////
-/// \defgroup ThreadUtils
-///  Copyright, (c) Shanghai United Imaging healthcare Inc., 2011
-///  All rights reserved.
-///
-///  \author  Shi Yao Ming  yaoming.shi@united-imaging.com
-///
-///  \file    umr_actor.h
-///  \brief   Define the Actor template class
-///
-///  \version 1.0
-///  \date    Sep. 13, 2011
-//////////////////////////////////////////////////////////////////////////
 
-#ifndef UMR_ACTOR_H_
-#define UMR_ACTOR_H_
+#pragma once
 
-#include <stdio.h>
-#include <stdint.h>
-
-#include "ThreadUtils/threadutils_os_type.h"
+#include "thread_os_define.h"
+#include "thread_semaphore.h"
+#include "thread_mutex.h"
 
 // namespace
-namespace threadutils {
-
-class ActorImpl;
+namespace thread {
 
 /// \class Actor umr_actor.h
-/// \brief Template for the Actor
+/// \brief the implementation of the Condition
 ///
 ///
 /// \par  Usage of this class:
 /// \code
-///  Actor oActor
-///  oActor.Start();
-///  oActor.SendCmd();
+///  ConditionSync oCondition;
+///  oCondition.Wait(100);
+///  oCondition.Broadcast();
 /// \code
 ////
-class THREADUTILS_EXPORT Actor
+class THREAD_EXPORT ConditionSync
 {
 public:
     /////////////////////////////////////////////////////////////////
     ///  \brief constructor
     ///
-    ///  \param[in]    ptName: the name of the Actor
+    ///  \param[in]    None
     ///  \param[out]   None
     ///  \return       None
     ///  \pre \e
     /////////////////////////////////////////////////////////////////
-    Actor(const char * ptName = NULL);
+    ConditionSync(void);
 
     /////////////////////////////////////////////////////////////////
     ///  \brief deconstructor
@@ -57,42 +40,46 @@ public:
     ///  \return       None
     ///  \pre \e
     /////////////////////////////////////////////////////////////////
-    virtual ~Actor();
+    virtual ~ConditionSync(void);
 
     /////////////////////////////////////////////////////////////////
     ///  \brief Start a thread
     ///
-    ///  \param[in]    None
+    ///  \param[in]    iTimeout: -1 - wait forever, other wait for the time
     ///  \param[out]   None
     ///  \return       bool: the resulte of starting the thread
     ///  \pre \e
     /////////////////////////////////////////////////////////////////
-    bool Start();
+    bool Wait(int64_t iTimeout = -1);
 
     /////////////////////////////////////////////////////////////////
-    ///  \brief get name of actor
+    ///  \brief Signal a waitting client
     ///
-    ///  \param[in]    None
+    ///  \param[in]    bCondition:
     ///  \param[out]   None
-    ///  \return       const char* name
+    ///  \return       None
     ///  \pre \e
     /////////////////////////////////////////////////////////////////
-    const char* GetName();
+    void Signal(bool bCondition = true);
 
     /////////////////////////////////////////////////////////////////
-    ///  \brief The main loop of the Actor. The method should be overload
+    ///  \brief Signal all the waitting clients
     ///
-    ///  \param[in]    None
+    ///  \param[in]    bCondition:
     ///  \param[out]   None
-    ///  \return       void
+    ///  \return       int32_t: the number of the clients released
     ///  \pre \e
     /////////////////////////////////////////////////////////////////
-    virtual void svc() = 0;
+    int64_t Broadcast(bool bCondition = true);
 
 private:
-    ActorImpl* m_pImpl;
+
+    bool m_bCondition;
+    int64_t m_iNumOfPendings;
+    CSemaphore m_oSemaphore;
+    CMutex m_oMutex;
 };
 
 } // namespace
 
-#endif // UMR_ACTOR_H_
+
