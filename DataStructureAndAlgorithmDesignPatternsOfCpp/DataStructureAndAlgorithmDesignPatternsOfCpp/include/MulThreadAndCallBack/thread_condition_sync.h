@@ -8,68 +8,14 @@
 // namespace
 namespace thread {
 
-/// \class Actor umr_actor.h
-/// \brief the implementation of the Condition
-///
-///
-/// \par  Usage of this class:
-/// \code
-///  ConditionSync oCondition;
-///  oCondition.Wait(100);
-///  oCondition.Broadcast();
-/// \code
-////
 class THREAD_EXPORT ConditionSync
 {
 public:
-    /////////////////////////////////////////////////////////////////
-    ///  \brief constructor
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
+
     ConditionSync(void);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief deconstructor
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     virtual ~ConditionSync(void);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Start a thread
-    ///
-    ///  \param[in]    iTimeout: -1 - wait forever, other wait for the time
-    ///  \param[out]   None
-    ///  \return       bool: the resulte of starting the thread
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     bool Wait(int64_t iTimeout = -1);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Signal a waitting client
-    ///
-    ///  \param[in]    bCondition:
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     void Signal(bool bCondition = true);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Signal all the waitting clients
-    ///
-    ///  \param[in]    bCondition:
-    ///  \param[out]   None
-    ///  \return       int32_t: the number of the clients released
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     int64_t Broadcast(bool bCondition = true);
 
 private:
@@ -80,6 +26,6 @@ private:
     CMutex m_oMutex;
 };
 
-} // namespace
+} 
 
 

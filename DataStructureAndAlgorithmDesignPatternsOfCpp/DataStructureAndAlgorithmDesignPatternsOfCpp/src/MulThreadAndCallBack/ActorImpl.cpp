@@ -1,5 +1,5 @@
-#include "ActorImpl.h"
-#include "Actor.h"
+#include "MulThreadAndCallBack/ActorImpl.h"
+#include "MulThreadAndCallBack/Actor.h"
 
 namespace thread {
 
@@ -45,7 +45,7 @@ namespace thread {
 	bool ActorImpl::Start(void)
 	{
 #ifdef _THREAD_OS_LINUX_
-		if (0 != pthread_create(&m_Thread, NULL, ThreadFunc, this))
+		if (0 !=    (&m_Thread, NULL, ThreadFunc, this))
 		{
 			return false;
 		}

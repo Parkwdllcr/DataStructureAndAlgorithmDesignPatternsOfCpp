@@ -1,21 +1,5 @@
-//////////////////////////////////////////////////////////////////////////
-///
-///  Copyright, (c) Shanghai United Imaging Health_care Inc., 2011
-///  All rights reserved.
-///
-///  \author   Shi Yaoming  yaoming.shi@united-imaging.com
-///
-///  \file    umr_condition_sync.cpp
-///  \brief
-///
-///  \version 1.0
-///  \date    Sep.15, 2011
-///
-///  \ChangedBy       NO
-///  \ChangedDate     NO
-///  \ChangedContent  NO
-//////////////////////////////////////////////////////////////////////////
-#include "thread_condition_sync.h"
+
+#include "MulThreadAndCallBack/thread_condition_sync.h"
 
 // namespace
 namespace thread {
