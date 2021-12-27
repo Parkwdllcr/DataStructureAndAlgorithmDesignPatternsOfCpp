@@ -1,41 +1,12 @@
-//////////////////////////////////////////////////////////////////////////
-///
-///  Copyright, (c) Shanghai United Imaging Health_care Inc., 2011
-///  All rights reserved.
-///
-///  \author   Shi Yaoming  yaoming.shi@united-imaging.com
-///
-///  \file    umr_command_queue.h
-///  \brief
-///
-///  \version 1.0
-///  \date    Sep.15, 2011
-///
-///  \ChangedBy       NO
-///  \ChangedDate     NO
-///  \ChangedContent  NO
-//////////////////////////////////////////////////////////////////////////
 #pragma once
 
 #include <stdio.h>
-
 #include "thread_mutex.h"
 #include "thread_semaphore.h"
 
 // namespace
-namespace thread {
+namespace BaseCPrimerPlus {
 
-/// \class CommandQueue umr_command_queue.h
-/// \brief Implementation of the CommandQueue
-///
-///
-/// \par  Usage of this class:
-/// \code
-///  CommandQueue oQueue;
-///  oQueue.SendCmd();
-///  oQueue.GetCmd();
-/// \code
-////
 
 template<class COMMAND, class RETURN, int64_t QUEUESIZE>
 class CommandElement
@@ -71,84 +42,13 @@ template <class COMMAND, class RETURN, int64_t QUEUESIZE = 8>
 class CommandQueue
 {
 public:
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Constructor, initalize the queue
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     CommandQueue(void);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Deconstructor
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     virtual ~CommandQueue(void);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Send a command object into the queue asynchronously
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       bool: the resulte of sending a command
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     bool SendCmd(const COMMAND& oCmd);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Get a command from the queue, the method will be blocked if no command
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       bool: the resulte of getting a command
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     bool GetCmd(COMMAND& rCmd,  int64_t iTimeout);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Send a command object into the queue synchronously
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       bool: the resulte of sending a command
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     RETURN SendSyncCmd(const COMMAND& oCmd, int64_t iTimeout);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Set the return data for a sync command
-    ///
-    ///  \param[in]    RETURN: return data
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     void SetRetun(const RETURN& oReturn);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Release the pending sync command
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     void FinishActiveSyncCmd(void);
-
-    /////////////////////////////////////////////////////////////////
-    ///  \brief Empty the Command in the queue
-    ///
-    ///  \param[in]    None
-    ///  \param[out]   None
-    ///  \return       None
-    ///  \pre \e
-    /////////////////////////////////////////////////////////////////
     void Empty();
 
 private:

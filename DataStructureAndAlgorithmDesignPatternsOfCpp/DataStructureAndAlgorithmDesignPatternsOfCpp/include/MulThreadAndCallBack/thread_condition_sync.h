@@ -6,7 +6,7 @@
 #include "thread_mutex.h"
 
 // namespace
-namespace thread {
+namespace BaseCPrimerPlus {
 
 class THREAD_EXPORT ConditionSync
 {

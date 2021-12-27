@@ -12,45 +12,39 @@
 ///  \date    Nov. 04, 2011
 //////////////////////////////////////////////////////////////////////////
 
-#ifndef __DSS_TCP_CLIENT_ACTOR_H__
-#define __DSS_TCP_CLIENT_ACTOR_H__
+#pragma once
 
-#include "Common/ThreadUtils/umr_actor.h"
+#include "MulThreadAndCallBack/Actor.h"
 
-#include "Device/Framework/dss_define.h"
-#ifndef _MRDSS_UT_BUILD_
-#include "Device/Framework/common/include/dss_semaphore.h"
-#else
-#include "Device/Framework/common_UTAssist/dss_semaphore_ut_assist.h"
-#endif
+#include "MulThreadAndCallBack/thread_os_define.h"
 
-// namespace
-DSS_NAME_SPACE_BEGIN(MRDss)
+#include "MulThreadAndCallBack/thread_semaphore.h"
 
-// declare other class
-class CTCPClient;
 
-/// \class CTCPClientActor dss_tcp_client_actor.h
-/// \brief define the TCP client actor
-class CTCPClientActor : public Umr::Actor
-{
-public:
-    CTCPClientActor(const char * ptName, CTCPClient* pTcpClient);
-    virtual ~CTCPClientActor();
+namespace BaseCPrimerPlus {
+	// declare other class
+	class CTCPClient;
 
-    virtual void svc();
-    virtual void TerminateThread( void );
+	/// \class CTCPClientActor dss_tcp_client_actor.h
+	/// \brief define the TCP client actor
+	class CTCPClientActor : public thread::Actor
+	{
+	public:
+		CTCPClientActor(const char* ptName, CTCPClient* pTcpClient);
+		virtual ~CTCPClientActor();
 
-protected:
-    CTCPClientActor() : Umr::Actor("") { m_pTcpClient = NULL; }
+		virtual void svc();
+		virtual void TerminateThread(void);
 
-private:
-    std::string m_strActorName;
-    bool m_bShutdown;
-    CTCPClient* m_pTcpClient;
-    MRDss::CSemaphore m_Semaphore;
-};
+	protected:
+		CTCPClientActor() : thread::Actor("") { m_pTcpClient = NULL; }
 
-DSS_NAME_SPACE_END // namespace
+	private:
+		std::string m_strActorName;
+		bool m_bShutdown;
+		CTCPClient* m_pTcpClient;
+		thread::CSemaphore m_Semaphore;
+	};
 
-#endif
+}
+

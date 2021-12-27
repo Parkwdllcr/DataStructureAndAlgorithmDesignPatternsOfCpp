@@ -9,7 +9,7 @@
 #include <pthread.h>
 #endif
 
-namespace thread {
+namespace BaseCPrimerPlus {
 	class Actor;
 
 	class THREAD_EXPORT ActorImpl
@@ -36,6 +36,7 @@ namespace thread {
 		int64_t m_iStackSize;
 		CSemaphore m_oStartSemaphore;
 		CSemaphore m_oTerminateSemaphore;
+		//std::thread  m_pThread;
 		boost::thread* m_pThread;
 #else
 		pthread_t m_Thread;

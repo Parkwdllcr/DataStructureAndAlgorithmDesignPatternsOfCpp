@@ -1,6 +1,6 @@
 #include "MulThreadAndCallBack/thread_mutex_impl.h"
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 	MutexImpl::MutexImpl(void):m_bLocked(false)
 	{

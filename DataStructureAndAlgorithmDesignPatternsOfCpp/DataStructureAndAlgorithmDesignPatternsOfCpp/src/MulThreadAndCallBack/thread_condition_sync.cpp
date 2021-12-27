@@ -2,7 +2,7 @@
 #include "MulThreadAndCallBack/thread_condition_sync.h"
 
 // namespace
-namespace thread {
+namespace BaseCPrimerPlus {
 
 ConditionSync::ConditionSync( void )
 : m_bCondition(false), m_iNumOfPendings(0), m_oSemaphore(0)
@@ -25,7 +25,7 @@ ConditionSync::~ConditionSync( void )
 /////////////////////////////////////////////////////////////////
 bool ConditionSync::Wait(int64_t iTimeout)
 {
-    m_oMutex.Acquire();
+    m_oMutex.Lock();
 
     bool bWait = !m_bCondition;
 
@@ -34,19 +34,19 @@ bool ConditionSync::Wait(int64_t iTimeout)
         ++ m_iNumOfPendings;
     }
 
-    m_oMutex.Release();
+    m_oMutex.UnLock();
 
     bool bRet = true;
 
     if (bWait)
     {
-        bRet = m_oSemaphore.Acquire(iTimeout);
+        bRet = m_oSemaphore.Wait(iTimeout);
 
         if (! bRet)
         {
-            m_oMutex.Acquire();
+            m_oMutex.Lock();
             -- m_iNumOfPendings;
-            m_oMutex.Release();
+            m_oMutex.UnLock();
         }
     }
 
@@ -63,7 +63,7 @@ bool ConditionSync::Wait(int64_t iTimeout)
 /////////////////////////////////////////////////////////////////
 void ConditionSync::Signal(bool bCondition)
 {
-    m_oMutex.Acquire();
+    m_oMutex.Lock();
 
     m_bCondition = bCondition;
     if (m_bCondition)
@@ -72,12 +72,12 @@ void ConditionSync::Signal(bool bCondition)
         {
             //if there is thread pending, release it
             //NOTE: if there are more than one thread, the sequence of release rely on OS schedule scheme
-            m_oSemaphore.Release();
+            m_oSemaphore.Trigger();
             -- m_iNumOfPendings;
         }
     }
 
-    m_oMutex.Release();
+    m_oMutex.UnLock();
 }
 
 /////////////////////////////////////////////////////////////////
@@ -92,18 +92,18 @@ int64_t ConditionSync::Broadcast(bool bCondition)
 {
     int64_t iNumOfPendings = m_iNumOfPendings;
 
-    m_oMutex.Acquire();
+    m_oMutex.Lock();
 
     m_bCondition = bCondition;
     if (m_bCondition)
     {
         for (; m_iNumOfPendings > 0; -- m_iNumOfPendings)
         {
-            m_oSemaphore.Release();
+            m_oSemaphore.Trigger();
         }
     }
 
-    m_oMutex.Release();
+    m_oMutex.UnLock();
 
     return iNumOfPendings;
 }

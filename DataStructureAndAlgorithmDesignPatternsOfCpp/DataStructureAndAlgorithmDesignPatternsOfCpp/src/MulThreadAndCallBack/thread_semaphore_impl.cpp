@@ -4,7 +4,7 @@
 #include <time.h>
 #endif
 
-namespace thread {
+namespace BaseCPrimerPlus {
 	SemaphoreImpl::SemaphoreImpl(int64_t iCount, int64_t iMaxCount)
 #ifdef _THREAD_OS_LINUX_
 		:m_iCount(iCount),m_iMaxCount(iMaxCount)

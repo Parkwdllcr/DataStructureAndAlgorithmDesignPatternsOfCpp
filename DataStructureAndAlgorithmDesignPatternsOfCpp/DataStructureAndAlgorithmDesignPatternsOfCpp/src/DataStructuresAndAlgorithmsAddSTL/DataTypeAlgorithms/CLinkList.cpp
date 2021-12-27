@@ -29,12 +29,16 @@ CLinkList::CLinkList(int iInitialSize /*= 10*/,enCREAT_WAY enCreatWay /*= TAIL_I
 {
 	try
 	{
+		m_pPublicClass = new CStudyCPrimerPlus;
+		if (nullptr == m_pPublicClass)
+		{
+			throw "m_pPublicClass new fail!";
+		}
 		if (iInitialSize < 1)
 		{
 			throw "iInitialCapacity less than 1";
 		}
 		//initlist
-		m_pPublicClass = new CPublicClass;
 		m_firstNode = new chainNode(0, nullptr);
 		CLinearList::m_iListSize = iInitialSize;
 		//creat a list by a way

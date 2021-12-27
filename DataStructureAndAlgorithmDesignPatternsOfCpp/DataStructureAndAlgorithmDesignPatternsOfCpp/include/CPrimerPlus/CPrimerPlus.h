@@ -45,7 +45,7 @@ public:
 	//得到一个野指针
 	char* GetString(void);
 
-private:
+public:
 	template<typename T>
 	void ShowAndSize(const T& testVar);
 	void PrintfTestFunctionFlag(std::string strFunctionNmae);

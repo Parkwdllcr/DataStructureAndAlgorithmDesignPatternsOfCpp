@@ -82,17 +82,11 @@
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL">
       <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\STL">
-      <UniqueIdentifier>{7c8a88e4-0a60-40e1-9901-08751c47a6f9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL">
       <UniqueIdentifier>{d9fd3a04-f4b8-4bea-aa3c-fde1a5608ef0}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
       <UniqueIdentifier>{8d982ec5-964f-408b-b3af-d7cf83e4f668}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\STL">
-      <UniqueIdentifier>{8564cafd-6274-4e20-9dce-164cf2257208}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\MulThreadAndCallBack">
       <UniqueIdentifier>{477ae319-1645-4782-b219-31a30ac6c0f2}</UniqueIdentifier>
@@ -102,12 +96,6 @@
     </Filter>
     <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
       <UniqueIdentifier>{e00843b2-bb08-4316-ba22-8717ea98b541}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\TcpIp">
-      <UniqueIdentifier>{5637364e-6d78-492c-9380-3843a7f5b84b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\TcpIp">
-      <UniqueIdentifier>{285fae5b-81cd-4685-ad9a-0b187a44e6fc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -186,26 +174,11 @@
     <ClCompile Include="src\main\StudyDesMode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
     </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClCompile>
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp">
       <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
@@ -231,9 +204,6 @@
     <ClCompile Include="src\MulThreadAndCallBack\ActorImpl.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\cutil_box.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\thread_condition_sync.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
     </ClCompile>
@@ -248,12 +218,6 @@
     </ClCompile>
     <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore_impl.cpp">
       <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TcpIp\dss_tcp_client.cpp">
-      <Filter>src\TcpIp</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TcpIp\dss_tcp_client_actor.cpp">
-      <Filter>src\TcpIp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -332,32 +296,8 @@
     <ClInclude Include="include\DesMode\Observer\CStudentB.h">
       <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\CStudyMulThread.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
     <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h">
       <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStlContain.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStudyStlManager.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\os_type.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\STL</Filter>
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h">
       <Filter>include\CPrimerPlus</Filter>
@@ -395,9 +335,6 @@
     <ClInclude Include="include\MulThreadAndCallBack\CCallBack.h">
       <Filter>include\MulThreadAndCallBack</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\cutil_box.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
     <ClInclude Include="include\MulThreadAndCallBack\thread_command_actor.h">
       <Filter>include\MulThreadAndCallBack</Filter>
     </ClInclude>
@@ -421,12 +358,6 @@
     </ClInclude>
     <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore_impl.h">
       <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\TcpIp\dss_tcp_client.h">
-      <Filter>include\TcpIp</Filter>
-    </ClInclude>
-    <ClInclude Include="include\TcpIp\dss_tcp_client_actor.h">
-      <Filter>include\TcpIp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

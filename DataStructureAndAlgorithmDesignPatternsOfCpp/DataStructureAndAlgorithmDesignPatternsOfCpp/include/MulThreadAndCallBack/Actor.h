@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 	class ActorImpl;
 	

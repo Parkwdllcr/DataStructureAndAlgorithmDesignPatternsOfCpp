@@ -18,8 +18,6 @@
 #include "MulThreadAndCallBack/CCallBackReceiver.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinkList.h"
 #include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/STL/CStudyMap.h"
 #include  "MulThreadAndCallBack/Actor.h"
 #include  "MulThreadAndCallBack/thread_mutex.h"
 #include  "MulThreadAndCallBack/thread_semaphore.h"
@@ -221,40 +219,6 @@ int main()
 // 		delete pLinkList;
 // 		pLinkList = nullptr;
 // 	}
-
- 	//test CStudyList 
-  	CStudyList* pStudyList = new CStudyList;
-  	pStudyList->PrintElementList();
-  	for (int i = 0;i != 10;i++)
-  	{
-  		pStudyList->AddElementToList(i);
-  	}
-  	pStudyList->PrintElementList();
-  	pStudyList->DeleteList();
-  	pStudyList->PrintElementList();
-  
-  	if (nullptr != pStudyList)
-  	{
-  		delete pStudyList;
-  		pStudyList = nullptr;
-  	}
- 
-     //test CStudyMap
-     CStudyMap* pStudyMap = new CStudyMap;
- 	pStudyMap->PrintTestMap();
- 	pStudyMap->AddTestElement();
- 	pStudyMap->PrintTestMap();
- 	pStudyMap->DeleteAllElement();
- 	pStudyMap->PrintTestMap();
- 
- 	if (nullptr != pStudyMap)
- 	{
- 		delete pStudyMap;
- 		pStudyMap = nullptr;
- 	}
-
-
-
     std::cout << "Hello World!\n";
 }
 

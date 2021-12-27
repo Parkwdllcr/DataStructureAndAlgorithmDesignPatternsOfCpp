@@ -9,7 +9,7 @@
 #include <semaphore.h>
 #endif
 
-namespace thread{
+namespace BaseCPrimerPlus {
 
 	class SemaphoreImpl
 	{

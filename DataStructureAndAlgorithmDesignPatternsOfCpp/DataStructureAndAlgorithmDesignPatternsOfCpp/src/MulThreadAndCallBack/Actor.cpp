@@ -1,7 +1,7 @@
 #include "MulThreadAndCallBack/Actor.h"
 #include "MulThreadAndCallBack/ActorImpl.h"
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 
 	Actor::Actor(const char* ptName /*= NULL*/)

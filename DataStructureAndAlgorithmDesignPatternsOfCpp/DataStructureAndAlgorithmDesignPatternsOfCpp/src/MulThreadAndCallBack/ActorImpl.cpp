@@ -1,7 +1,7 @@
 #include "MulThreadAndCallBack/ActorImpl.h"
 #include "MulThreadAndCallBack/Actor.h"
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 #if defined( WIN32 ) || defined( WIN64 ) || defined( X64 )
 	static unsigned long __cdecl ThreadFunc(void* ptr)
@@ -45,7 +45,7 @@ namespace thread {
 	bool ActorImpl::Start(void)
 	{
 #ifdef _THREAD_OS_LINUX_
-		if (0 !=    (&m_Thread, NULL, ThreadFunc, this))
+		if (0 != m_Thread(&m_Thread, NULL, ThreadFunc, this))
 		{
 			return false;
 		}
@@ -53,7 +53,6 @@ namespace thread {
 		return true;
 #else
 		m_pThread = new boost::thread(boost::bind(&ThreadFunc, this));
-
 		if (nullptr != m_pThread)
 		{
 			m_bSpawned = true;
@@ -64,7 +63,7 @@ namespace thread {
 
 		if (m_bStarted)
 		{
-			m_oStartSemaphore.Release();
+			m_oStartSemaphore.Trigger();
 		}
 
 		return m_bStarted;
@@ -74,10 +73,10 @@ namespace thread {
 	void ActorImpl::svc(void)
 	{
 		// No wait
-		m_oTerminateSemaphore.Acquire(-1);
+		m_oTerminateSemaphore.Wait(-1);
 
 		// Wait for start semaphore, make sure the thread is started
-		m_oStartSemaphore.Acquire(-1);
+		m_oStartSemaphore.Wait(-1);
 
 		if (m_pActor != NULL)
 		{
@@ -88,8 +87,8 @@ namespace thread {
 		m_bStarted = false;
 
 		// Release the start semaphore
-		m_oStartSemaphore.Release();
-		m_oTerminateSemaphore.Release();
+		m_oStartSemaphore.Trigger();
+		m_oTerminateSemaphore.Trigger();
 	}
 
 	bool ActorImpl::Kill(void)
@@ -110,8 +109,8 @@ namespace thread {
 		{
 			m_bSpawned = false;
 			m_bStarted = false;
-			m_oStartSemaphore.Release();
-			m_oTerminateSemaphore.Release();
+			m_oStartSemaphore.Trigger();
+			m_oTerminateSemaphore.Trigger();
 		}
 
 		return bRet;
@@ -134,9 +133,9 @@ namespace thread {
 			return;
 		}
 
-		if (m_oTerminateSemaphore.Acquire(iTimeout))
+		if (m_oTerminateSemaphore.Wait(iTimeout))
 		{
-			m_oTerminateSemaphore.Release();
+			m_oTerminateSemaphore.Trigger();
 		}
 		else
 		{

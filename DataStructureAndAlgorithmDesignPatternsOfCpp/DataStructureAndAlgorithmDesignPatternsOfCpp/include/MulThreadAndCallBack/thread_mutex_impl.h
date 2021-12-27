@@ -7,7 +7,7 @@
 #include <pthread.h>
 #endif
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 	class MutexImpl
 	{

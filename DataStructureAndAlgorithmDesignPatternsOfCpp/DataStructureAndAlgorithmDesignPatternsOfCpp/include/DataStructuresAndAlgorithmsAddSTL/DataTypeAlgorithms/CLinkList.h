@@ -1,6 +1,6 @@
 #pragma once
 #include"CLinearList.h"
-#include "CPrimerPlus/CPublicClass.h"
+#include "CPrimerPlus/CPrimerPlus.h"
 
 class CLinkList :public CLinearList
 {
@@ -24,7 +24,7 @@ public:
 
 private:
 	LinkListNode m_firstNode;
-	CPublicClass*   m_pPublicClass;
+	CStudyCPrimerPlus*   m_pPublicClass;
 };
 
 

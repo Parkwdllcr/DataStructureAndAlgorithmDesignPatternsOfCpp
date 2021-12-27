@@ -1,10 +1,10 @@
 #include "MulThreadAndCallBack/thread_semaphore.h"
-#include "thread_semaphore_impl.h"
+#include "MulThreadAndCallBack/thread_semaphore_impl.h"
 
-namespace thread
+namespace BaseCPrimerPlus
 {
 
-	CSemaphore::CSemaphore(int64_t iCount /*= 1*/, int64_t iMaxCout /*= 0x7FFFFFFF*/):m_pImpl(nullptr)
+	CSemaphore::CSemaphore(int64_t iCount /*= 1*/, int64_t iMaxCout /*= 0x7FFFFFFF*/) :m_pImpl(nullptr)
 	{
 		m_pImpl = new SemaphoreImpl(iCount, iMaxCout);
 	}
@@ -20,7 +20,7 @@ namespace thread
 		}
 	}
 
-	bool CSemaphore::Acquire(int64_t iTimeout /*= -1*/)
+	bool CSemaphore::Wait(int64_t iTimeout /*= -1*/)
 	{
 		if (nullptr == m_pImpl)
 		{
@@ -29,7 +29,7 @@ namespace thread
 		return m_pImpl->Acquire(iTimeout);
 	}
 
-	bool CSemaphore::Release(void)
+	bool CSemaphore::Trigger()
 	{
 		if (nullptr == m_pImpl)
 		{
@@ -38,5 +38,4 @@ namespace thread
 		return m_pImpl->Release();
 	}
 }
-
 

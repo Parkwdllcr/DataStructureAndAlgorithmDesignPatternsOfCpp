@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -159,10 +159,6 @@
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
     <ClCompile Include="src\DesMode\Adapter\CAdapter.cpp" />
@@ -192,15 +188,11 @@
     <ClCompile Include="src\MulThreadAndCallBack\ActorImpl.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\CStudyMulThread.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\cutil_box.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\thread_condition_sync.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\thread_mutex.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\thread_mutex_impl.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore.cpp" />
     <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore_impl.cpp" />
-    <ClCompile Include="src\TcpIp\dss_tcp_client.cpp" />
-    <ClCompile Include="src\TcpIp\dss_tcp_client_actor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
@@ -212,13 +204,6 @@
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\ILinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Node.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyMap.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyStlManager.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\CStudyString.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStlContain.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\IStudyStlManager.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\STL\os_type.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />
@@ -248,8 +233,6 @@
     <ClInclude Include="include\MulThreadAndCallBack\ActorImpl.h" />
     <ClInclude Include="include\MulThreadAndCallBack\CCallBack.h" />
     <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\CStudyMulThread.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\cutil_box.h" />
     <ClInclude Include="include\MulThreadAndCallBack\thread_command_actor.h" />
     <ClInclude Include="include\MulThreadAndCallBack\thread_command_queue.h" />
     <ClInclude Include="include\MulThreadAndCallBack\thread_condition_sync.h" />
@@ -258,8 +241,6 @@
     <ClInclude Include="include\MulThreadAndCallBack\thread_os_define.h" />
     <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore.h" />
     <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore_impl.h" />
-    <ClInclude Include="include\TcpIp\dss_tcp_client.h" />
-    <ClInclude Include="include\TcpIp\dss_tcp_client_actor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

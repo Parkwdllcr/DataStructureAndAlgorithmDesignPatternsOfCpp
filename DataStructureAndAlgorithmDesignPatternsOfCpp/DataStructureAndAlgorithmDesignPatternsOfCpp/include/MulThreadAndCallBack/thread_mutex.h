@@ -1,7 +1,7 @@
 #pragma once
 #include "thread_os_define.h"
 
-namespace thread {
+namespace BaseCPrimerPlus {
 	class MutexImpl;
 
 	class THREAD_EXPORT CMutex

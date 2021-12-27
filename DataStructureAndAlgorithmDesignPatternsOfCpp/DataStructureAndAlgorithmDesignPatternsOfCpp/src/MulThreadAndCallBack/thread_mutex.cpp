@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-namespace thread {
+namespace BaseCPrimerPlus {
 
 	CMutex::CMutex(void):m_pImpl(nullptr)
 	{
