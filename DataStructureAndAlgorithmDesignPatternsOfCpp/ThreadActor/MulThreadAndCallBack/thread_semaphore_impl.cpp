@@ -1,4 +1,4 @@
-#include "MulThreadAndCallBack/thread_semaphore_impl.h"
+#include "thread_semaphore_impl.h"
 
 #ifdef _THREAD_OS_LINUX_
 #include <time.h>

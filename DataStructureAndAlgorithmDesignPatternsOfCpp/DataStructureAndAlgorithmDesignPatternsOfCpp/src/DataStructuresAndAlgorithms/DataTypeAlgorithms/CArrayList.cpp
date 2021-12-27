@@ -1,4 +1,4 @@
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"
+#include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CArrayList.h"
 #include <algorithm>
 
 

@@ -1,4 +1,4 @@
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinearList.h"
+#include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CLinearList.h"
 
 
 

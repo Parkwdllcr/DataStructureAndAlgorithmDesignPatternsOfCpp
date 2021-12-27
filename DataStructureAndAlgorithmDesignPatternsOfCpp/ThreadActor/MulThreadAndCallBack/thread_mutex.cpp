@@ -1,5 +1,5 @@
-#include "MulThreadAndCallBack/thread_mutex.h"
-#include "MulThreadAndCallBack/thread_mutex_impl.h"
+#include "thread_mutex.h"
+#include "thread_mutex_impl.h"
 
 #include <stdio.h>
 

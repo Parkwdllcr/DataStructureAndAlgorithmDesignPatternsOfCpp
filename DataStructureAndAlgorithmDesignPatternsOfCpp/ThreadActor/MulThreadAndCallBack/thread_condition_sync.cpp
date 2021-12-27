@@ -1,5 +1,5 @@
 
-#include "MulThreadAndCallBack/thread_condition_sync.h"
+#include "thread_condition_sync.h"
 
 // namespace
 namespace BaseCPrimerPlus {

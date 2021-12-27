@@ -1,4 +1,4 @@
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinkList.h"
+#include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CLinkList.h"
 
 //CLinkList::CLinkList(const CLinkList& theList)
 //{

@@ -154,11 +154,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.cpp" />
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.cpp" />
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CRedBlackTree.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractFactory.cpp" />
     <ClCompile Include="src\DesMode\AbstractFactory\AbstractProduct.cpp" />
     <ClCompile Include="src\DesMode\Adapter\CAdapter.cpp" />
@@ -184,26 +183,17 @@
     <ClCompile Include="src\DesMode\State\CConcreteState.cpp" />
     <ClCompile Include="src\DesMode\State\CContext.cpp" />
     <ClCompile Include="src\main\StudyDesMode.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\Actor.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\ActorImpl.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\thread_condition_sync.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex_impl.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore.cpp" />
-    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore_impl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\ILinearList.h" />
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Node.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CRedBlackTree.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CSortingAlgorithm.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\ILinearList.h" />
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\Node.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractFactory.h" />
     <ClInclude Include="include\DesMode\AbstractFactory\AbstractProduct.h" />
     <ClInclude Include="include\DesMode\Adapter\CAdapter.h" />
@@ -229,18 +219,6 @@
     <ClInclude Include="include\DesMode\Singleton\CSingletion.h" />
     <ClInclude Include="include\DesMode\State\CConcreteState.h" />
     <ClInclude Include="include\DesMode\State\CContext.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\Actor.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\ActorImpl.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\CCallBack.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_command_actor.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_command_queue.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_condition_sync.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex_impl.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_os_define.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore.h" />
-    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore_impl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

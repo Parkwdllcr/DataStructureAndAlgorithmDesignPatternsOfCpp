@@ -1,5 +1,5 @@
-#include "MulThreadAndCallBack/Actor.h"
-#include "MulThreadAndCallBack/ActorImpl.h"
+#include "Actor.h"
+#include "ActorImpl.h"
 
 namespace BaseCPrimerPlus {
 

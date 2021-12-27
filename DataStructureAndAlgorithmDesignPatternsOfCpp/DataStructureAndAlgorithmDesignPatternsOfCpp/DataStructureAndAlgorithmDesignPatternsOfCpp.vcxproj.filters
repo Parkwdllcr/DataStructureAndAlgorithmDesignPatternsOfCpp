@@ -79,22 +79,16 @@
     <Filter Include="src\DesMode\Observer">
       <UniqueIdentifier>{0cd1f00c-99a5-4271-b584-90329a9f2af6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL">
-      <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL">
+    <Filter Include="include\DataStructuresAndAlgorithms">
       <UniqueIdentifier>{d9fd3a04-f4b8-4bea-aa3c-fde1a5608ef0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
+    <Filter Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms">
       <UniqueIdentifier>{8d982ec5-964f-408b-b3af-d7cf83e4f668}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\MulThreadAndCallBack">
-      <UniqueIdentifier>{477ae319-1645-4782-b219-31a30ac6c0f2}</UniqueIdentifier>
+    <Filter Include="src\DataStructuresAndAlgorithms">
+      <UniqueIdentifier>{b71ed537-aeb0-45bc-b402-063493ec8ee0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\MulThreadAndCallBack">
-      <UniqueIdentifier>{9f47382f-14a6-4bd2-ac0f-3dcad508376f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms">
+    <Filter Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms">
       <UniqueIdentifier>{e00843b2-bb08-4316-ba22-8717ea98b541}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -174,50 +168,20 @@
     <ClCompile Include="src\main\StudyDesMode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\CCallBackReceiver.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\CCallBack.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.cpp">
-      <Filter>src\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClCompile>
     <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp">
       <Filter>src\CPrimerPlus</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\Actor.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.cpp">
+      <Filter>src\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\ActorImpl.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.cpp">
+      <Filter>src\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\thread_condition_sync.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.cpp">
+      <Filter>src\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\thread_mutex_impl.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MulThreadAndCallBack\thread_semaphore_impl.cpp">
-      <Filter>src\MulThreadAndCallBack</Filter>
+    <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CRedBlackTree.cpp">
+      <Filter>src\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -296,68 +260,32 @@
     <ClInclude Include="include\DesMode\Observer\CStudentB.h">
       <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\CCallBackReceiver.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CSmartPtr.h">
       <Filter>include\CPrimerPlus</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CArrayList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinearList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CLinkList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CRedBlackTree.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\CSortingAlgorithm.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\ILinearList.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms\Node.h">
-      <Filter>include\DataStructuresAndAlgorithmsAddSTL\DataTypeAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
       <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\Actor.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\ActorImpl.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\CCallBack.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_command_actor.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CRedBlackTree.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_command_queue.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CSortingAlgorithm.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_condition_sync.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\ILinearList.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_mutex_impl.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_os_define.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThreadAndCallBack\thread_semaphore_impl.h">
-      <Filter>include\MulThreadAndCallBack</Filter>
+    <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\Node.h">
+      <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

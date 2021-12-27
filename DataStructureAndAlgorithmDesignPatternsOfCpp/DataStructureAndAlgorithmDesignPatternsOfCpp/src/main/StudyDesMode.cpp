@@ -15,12 +15,9 @@
 #include "DesMode/FactoryMode/CFactory_AddofFactoryMode.h"
 #include "DesMode/FactoryMode/CFactory_MulofFactoryMode.h"
 #include "CPrimerPlus/CPrimerPlus.h"
-#include "MulThreadAndCallBack/CCallBackReceiver.h"
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CLinkList.h"
-#include "DataStructuresAndAlgorithmsAddSTL/DataTypeAlgorithms/CArrayList.h"
-#include  "MulThreadAndCallBack/Actor.h"
-#include  "MulThreadAndCallBack/thread_mutex.h"
-#include  "MulThreadAndCallBack/thread_semaphore.h"
+#include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CLinkList.h"
+#include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CArrayList.h"
+
 
 
 int main()
