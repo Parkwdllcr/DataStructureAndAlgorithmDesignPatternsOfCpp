@@ -54,6 +54,12 @@
     <ClInclude Include="MulThreadAndCallBack\thread_semaphore_impl.h">
       <Filter>ThreadActor</Filter>
     </ClInclude>
+    <ClInclude Include="MulThreadAndCallBack\CMutex.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="MulThreadAndCallBack\CSemaphore.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -81,6 +87,12 @@
       <Filter>ThreadActor</Filter>
     </ClCompile>
     <ClCompile Include="MulThreadAndCallBack\thread_semaphore_impl.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="MulThreadAndCallBack\CMutex.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="MulThreadAndCallBack\CSemaphore.cpp">
       <Filter>ThreadActor</Filter>
     </ClCompile>
   </ItemGroup>

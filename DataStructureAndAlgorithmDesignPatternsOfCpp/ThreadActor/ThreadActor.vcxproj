@@ -159,6 +159,8 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="MulThreadAndCallBack\Actor.h" />
     <ClInclude Include="MulThreadAndCallBack\ActorImpl.h" />
+    <ClInclude Include="MulThreadAndCallBack\CMutex.h" />
+    <ClInclude Include="MulThreadAndCallBack\CSemaphore.h" />
     <ClInclude Include="MulThreadAndCallBack\thread_command_actor.h" />
     <ClInclude Include="MulThreadAndCallBack\thread_command_queue.h" />
     <ClInclude Include="MulThreadAndCallBack\thread_condition_sync.h" />
@@ -173,6 +175,8 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="MulThreadAndCallBack\Actor.cpp" />
     <ClCompile Include="MulThreadAndCallBack\ActorImpl.cpp" />
+    <ClCompile Include="MulThreadAndCallBack\CMutex.cpp" />
+    <ClCompile Include="MulThreadAndCallBack\CSemaphore.cpp" />
     <ClCompile Include="MulThreadAndCallBack\thread_condition_sync.cpp" />
     <ClCompile Include="MulThreadAndCallBack\thread_mutex.cpp" />
     <ClCompile Include="MulThreadAndCallBack\thread_mutex_impl.cpp" />
