@@ -14,7 +14,6 @@ typedef  struct chainNode
 	chainNode* m_next;
 	chainNode() {};
 	chainNode(const int element) :m_element(element) {};
-	/*chainNode(const int element) { this->m_element = element; }*/
 	chainNode(const int element, chainNode* nest) { this->m_element = element; this->m_next = nest; }
 
 } * LinkListNode;
