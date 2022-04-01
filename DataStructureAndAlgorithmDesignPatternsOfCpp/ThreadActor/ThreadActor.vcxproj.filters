@@ -60,6 +60,33 @@
     <ClInclude Include="MulThreadAndCallBack\CSemaphore.h">
       <Filter>ThreadActor</Filter>
     </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CAddActor.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CDeleteActor.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CShowActor.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CStudyList.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CStudyMap.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\CStudyStlManager.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\IStudyStl.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\IStudyStlManager.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
+    <ClInclude Include="ListAndMap\ListAndMap\ITestActor.h">
+      <Filter>ThreadActor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -93,6 +120,24 @@
       <Filter>ThreadActor</Filter>
     </ClCompile>
     <ClCompile Include="MulThreadAndCallBack\CSemaphore.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CAddActor.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CDeleteActor.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CShowActor.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CStudyList.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CStudyMap.cpp">
+      <Filter>ThreadActor</Filter>
+    </ClCompile>
+    <ClCompile Include="ListAndMap\ListAndMap\CStudyStlManager.cpp">
       <Filter>ThreadActor</Filter>
     </ClCompile>
   </ItemGroup>
