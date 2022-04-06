@@ -24,10 +24,12 @@ public:
 public:
 	bool Wait(int64_t iTimeOut);
 	void Trigger();
+
     void TriggerAll();
 
 public:
     std::string GetMyName();
+
 private:
     std::string    m_strName;
     unsigned long m_ulCount;                             //等待线程数量
