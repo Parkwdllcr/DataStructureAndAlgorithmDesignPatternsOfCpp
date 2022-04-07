@@ -161,11 +161,10 @@
     <ClCompile Include="src\main\StudyDesMode.cpp" />
     <ClCompile Include="src\MulThread\CSemaphore.cpp" />
     <ClCompile Include="src\MulThread\CThread.cpp" />
-    <ClCompile Include="src\Public\public_utils.cpp" />
+    <ClCompile Include="src\Public\STUDY_LOG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
-    <ClInclude Include="include\CPrimerPlus\CSmartPtr.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.h" />
@@ -173,10 +172,10 @@
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CSortingAlgorithm.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\ILinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\Node.h" />
-    <ClInclude Include="include\MulThread\CSemaphore.h" />
-    <ClInclude Include="include\MulThread\CThread.h" />
+    <ClInclude Include="include\MulThread\Semaphore.h" />
+    <ClInclude Include="include\MulThread\Thread.h" />
     <ClInclude Include="include\MulThread\ThreadPool.h" />
-    <ClInclude Include="include\Public\public_utils.h" />
+    <ClInclude Include="include\Public\STUDY_LOG.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

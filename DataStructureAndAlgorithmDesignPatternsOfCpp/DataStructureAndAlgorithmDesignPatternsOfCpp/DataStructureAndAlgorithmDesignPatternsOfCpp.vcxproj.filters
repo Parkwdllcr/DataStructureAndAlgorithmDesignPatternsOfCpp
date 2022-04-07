@@ -75,14 +75,11 @@
     <ClCompile Include="src\MulThread\CThread.cpp">
       <Filter>src\MulThread</Filter>
     </ClCompile>
-    <ClCompile Include="src\Public\public_utils.cpp">
+    <ClCompile Include="src\Public\STUDY_LOG.cpp">
       <Filter>src\Public</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\CPrimerPlus\CSmartPtr.h">
-      <Filter>include\CPrimerPlus</Filter>
-    </ClInclude>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
       <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
@@ -107,16 +104,16 @@
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\Node.h">
       <Filter>include\DataStructuresAndAlgorithms\DataTypeAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="include\Public\public_utils.h">
+    <ClInclude Include="include\MulThread\ThreadPool.h">
+      <Filter>include\MulThread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Public\STUDY_LOG.h">
       <Filter>include\Public</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThread\CSemaphore.h">
+    <ClInclude Include="include\MulThread\Semaphore.h">
       <Filter>include\MulThread</Filter>
     </ClInclude>
-    <ClInclude Include="include\MulThread\CThread.h">
-      <Filter>include\MulThread</Filter>
-    </ClInclude>
-    <ClInclude Include="include\MulThread\ThreadPool.h">
+    <ClInclude Include="include\MulThread\Thread.h">
       <Filter>include\MulThread</Filter>
     </ClInclude>
   </ItemGroup>

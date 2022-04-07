@@ -1,4 +1,4 @@
-#include "MulThread\CSemaphore.h"
+#include "MulThread\Semaphore.h"
 
 CSemaphore::CSemaphore(std::string strName, unsigned long ulCount /*= 0*/)
     :m_ulCount(ulCount),m_strName(strName)
