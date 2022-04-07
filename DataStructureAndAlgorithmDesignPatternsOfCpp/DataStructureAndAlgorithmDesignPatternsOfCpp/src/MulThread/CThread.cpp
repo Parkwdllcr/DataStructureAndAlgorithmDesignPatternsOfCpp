@@ -1,4 +1,4 @@
-#include "CThread.h"
+#include "MulThread\CThread.h"
 #include <iostream>
 
 using namespace std;

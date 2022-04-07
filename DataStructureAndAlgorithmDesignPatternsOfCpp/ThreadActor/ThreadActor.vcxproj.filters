@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ThreadActor">
-      <UniqueIdentifier>{e96322da-99c9-4404-a174-398d7819df35}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -24,69 +21,6 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\Actor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\ActorImpl.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_command_actor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_command_queue.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_condition_sync.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_mutex.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_mutex_impl.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_os_define.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_semaphore.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\thread_semaphore_impl.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\CMutex.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="MulThreadAndCallBack\CSemaphore.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CAddActor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CDeleteActor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CShowActor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyList.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyMap.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyStlManager.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\IStudyStl.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\IStudyStlManager.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
-    <ClInclude Include="ListAndMap\ListAndMap\ITestActor.h">
-      <Filter>ThreadActor</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -94,51 +28,6 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\Actor.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\ActorImpl.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\thread_condition_sync.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\thread_mutex.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\thread_mutex_impl.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\thread_semaphore.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\thread_semaphore_impl.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\CMutex.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="MulThreadAndCallBack\CSemaphore.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CAddActor.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CDeleteActor.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CShowActor.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyList.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyMap.cpp">
-      <Filter>ThreadActor</Filter>
-    </ClCompile>
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyStlManager.cpp">
-      <Filter>ThreadActor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

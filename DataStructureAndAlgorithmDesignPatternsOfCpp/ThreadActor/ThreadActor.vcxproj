@@ -157,46 +157,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CAddActor.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CDeleteActor.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CShowActor.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyList.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyMap.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\CStudyStlManager.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\IStudyStl.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\IStudyStlManager.h" />
-    <ClInclude Include="ListAndMap\ListAndMap\ITestActor.h" />
-    <ClInclude Include="MulThreadAndCallBack\Actor.h" />
-    <ClInclude Include="MulThreadAndCallBack\ActorImpl.h" />
-    <ClInclude Include="MulThreadAndCallBack\CMutex.h" />
-    <ClInclude Include="MulThreadAndCallBack\CSemaphore.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_command_actor.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_command_queue.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_condition_sync.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_mutex.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_mutex_impl.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_os_define.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_semaphore.h" />
-    <ClInclude Include="MulThreadAndCallBack\thread_semaphore_impl.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CAddActor.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CDeleteActor.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CShowActor.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyList.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyMap.cpp" />
-    <ClCompile Include="ListAndMap\ListAndMap\CStudyStlManager.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\Actor.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\ActorImpl.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\CMutex.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\CSemaphore.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\thread_condition_sync.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\thread_mutex.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\thread_mutex_impl.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\thread_semaphore.cpp" />
-    <ClCompile Include="MulThreadAndCallBack\thread_semaphore_impl.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
