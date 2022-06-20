@@ -3,6 +3,12 @@
 #include<climits>
 #include<list>
 #include<string>
+#include "COperation.h"
+#include "COperationAdd.h"
+#include "COperationSub.h"
+#include "COperationMul.h"
+#include "COperationDiv.h"
+
 
 #define STUDY_OK    1
 #define STUDY_FAIL    0
@@ -29,6 +35,8 @@ public:
 	//第三章
 	//重载一下各个基本类型
 	void SimpleFourArithmetic(double dbTestOne, double dbTestTwo, int iCalculationType);
+
+	COperation* CreateOperation(enComputeChar enOperation);
     void StudyConstChar(const char* pConstCharConst,std::string strName);
 
 	template<typename T>
@@ -59,6 +67,8 @@ private:
 	static int               m_iStaticTest;
 	const static int         m_iConstStatic;
 	const static std::string m_strTestName;
+
+	COperation*              m_pCOperation;
 private:
 	enum enComputeChar
 	{

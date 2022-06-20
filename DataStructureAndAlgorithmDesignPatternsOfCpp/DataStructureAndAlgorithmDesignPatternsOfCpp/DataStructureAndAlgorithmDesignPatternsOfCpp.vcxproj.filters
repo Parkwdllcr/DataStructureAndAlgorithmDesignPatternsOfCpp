@@ -78,6 +78,21 @@
     <ClCompile Include="src\Public\STUDY_LOG.cpp">
       <Filter>src\Public</Filter>
     </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\COperationAdd.cpp">
+      <Filter>src\CPrimerPlus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\COperationSub.cpp">
+      <Filter>src\CPrimerPlus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\COperationMul.cpp">
+      <Filter>src\CPrimerPlus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\COperationDiv.cpp">
+      <Filter>src\CPrimerPlus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPrimerPlus\COperation.cpp">
+      <Filter>src\CPrimerPlus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
@@ -115,6 +130,21 @@
     </ClInclude>
     <ClInclude Include="include\MulThread\Thread.h">
       <Filter>include\MulThread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\COperation.h">
+      <Filter>include\CPrimerPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\COperationAdd.h">
+      <Filter>include\CPrimerPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\COperationSub.h">
+      <Filter>include\CPrimerPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\COperationMul.h">
+      <Filter>include\CPrimerPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CPrimerPlus\COperationDiv.h">
+      <Filter>include\CPrimerPlus</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

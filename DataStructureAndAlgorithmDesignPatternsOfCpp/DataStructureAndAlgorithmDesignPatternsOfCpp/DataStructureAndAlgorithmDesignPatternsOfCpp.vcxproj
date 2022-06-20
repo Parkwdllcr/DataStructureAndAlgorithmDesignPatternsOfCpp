@@ -153,6 +153,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CPrimerPlus\COperation.cpp" />
+    <ClCompile Include="src\CPrimerPlus\COperationAdd.cpp" />
+    <ClCompile Include="src\CPrimerPlus\COperationDiv.cpp" />
+    <ClCompile Include="src\CPrimerPlus\COperationMul.cpp" />
+    <ClCompile Include="src\CPrimerPlus\COperationSub.cpp" />
     <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.cpp" />
@@ -164,6 +169,11 @@
     <ClCompile Include="src\Public\STUDY_LOG.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\CPrimerPlus\COperation.h" />
+    <ClInclude Include="include\CPrimerPlus\COperationAdd.h" />
+    <ClInclude Include="include\CPrimerPlus\COperationDiv.h" />
+    <ClInclude Include="include\CPrimerPlus\COperationMul.h" />
+    <ClInclude Include="include\CPrimerPlus\COperationSub.h" />
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.h" />

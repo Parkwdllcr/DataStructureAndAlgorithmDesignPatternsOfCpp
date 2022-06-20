@@ -2,24 +2,25 @@
 
 
 
+
 int CStudyCPrimerPlus::m_iStaticTest = 30;
 const int CStudyCPrimerPlus::m_iConstStatic = 500;
 const std::string CStudyCPrimerPlus::m_strTestName = "Chongrui.Lu";
 
 
-CStudyCPrimerPlus::CStudyCPrimerPlus():m_iSize(0),m_iCout(0),m_listTest()
+CStudyCPrimerPlus::CStudyCPrimerPlus():m_iSize(0),m_iCout(0),m_listTest(),m_pCOperation(nullptr)
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::CStudyCPrimerPlus");
 
 }
 
-CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize):m_iSize(iSize), m_iCout(0), m_listTest()
+CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize):m_iSize(iSize), m_iCout(0), m_listTest(), m_pCOperation(nullptr)
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize)");
 
 }
 
-CStudyCPrimerPlus::CStudyCPrimerPlus(const CStudyCPrimerPlus& otherCPrimer):m_iSize(0)
+CStudyCPrimerPlus::CStudyCPrimerPlus(const CStudyCPrimerPlus& otherCPrimer):m_iSize(0), m_pCOperation(nullptr)
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::CStudyCPrimerPlus(const CStudyCPrimerPlus& otherCPrimer)");
 
@@ -136,6 +137,18 @@ void CStudyCPrimerPlus::ClassToOtherClass()
 	int iH = (int)dbG;
 	ShowAndSize<int>(iH);
 
+}
+
+COperation* CStudyCPrimerPlus::CreateOperation(std::string strOperation)
+{
+	switch (strOperation)
+	{
+	case "+":
+
+	default:
+		break;
+	}
+	return nullptr;
 }
 
 void CStudyCPrimerPlus:: StudyConstChar(const char* pConstCharConst,std::string strName)
