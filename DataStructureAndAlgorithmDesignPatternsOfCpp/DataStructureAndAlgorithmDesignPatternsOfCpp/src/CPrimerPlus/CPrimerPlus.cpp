@@ -1,5 +1,8 @@
 #include"CPrimerPlus/CPrimerPlus.h"
-
+#include "CPrimerPlus/COperationAdd.h"
+#include "CPrimerPlus/COperationSub.h"
+#include "CPrimerPlus/COperationMul.h"
+#include "CPrimerPlus/COperationDiv.h"
 
 
 
@@ -139,16 +142,29 @@ void CStudyCPrimerPlus::ClassToOtherClass()
 
 }
 
-COperation* CStudyCPrimerPlus::CreateOperation(std::string strOperation)
-{
-	switch (strOperation)
-	{
-	case "+":
 
+COperation* CStudyCPrimerPlus::CreateOperation(uint32_t iCount)
+{
+	switch (iCount)
+	{
+	case ADDITION:
+		m_pCOperation = new COperationAdd();
+		break;
+	case SUBTRACTION:
+		m_pCOperation = new COperationSub();
+		break;
+	case MULTIPLICATION:
+		m_pCOperation = new COperationMul();
+		break;
+	case DIVIDE:
+		m_pCOperation = new COperationDiv();
+		break;
 	default:
+		std::cout << "input error !" << std::endl;
+		m_pCOperation = nullptr;
 		break;
 	}
-	return nullptr;
+	return m_pCOperation;
 }
 
 void CStudyCPrimerPlus:: StudyConstChar(const char* pConstCharConst,std::string strName)

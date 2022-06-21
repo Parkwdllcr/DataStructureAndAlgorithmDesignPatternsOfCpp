@@ -8,8 +8,16 @@
 
 int main()
 {
+	double dbResult;
+	std::shared_ptr<CStudyCPrimerPlus> pStudyPrimerPlus (new CStudyCPrimerPlus);
+	COperation* pOperation = pStudyPrimerPlus->CreateOperation(ADDITION);
+	if (true != pOperation->GetResult(dbResult))
+	{
+		std::cout << "COperation Get Result Failed!" << std::endl;
+		return 0;
+	}
+	std::cout << "Get Result Value  = " << dbResult << std::endl;
 
-    std::cout << "Hello World!\n";
 }
 
 
