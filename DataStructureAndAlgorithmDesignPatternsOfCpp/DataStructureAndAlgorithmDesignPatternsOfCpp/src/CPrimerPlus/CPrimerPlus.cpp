@@ -215,8 +215,10 @@ void CStudyCPrimerPlus:: StudyConstChar(const char* pConstCharConst,std::string 
 //类似一个传值参数，不会变化的
 void CStudyCPrimerPlus::GetMemory(char* pChar, int iNum)
 {
+	//在函数里面用这种new不好，new完记得delete,最好是外面传进来的
 	PrintfTestFunctionFlag(" CStudyCPrimerPlus::GetMemory");
 	pChar = new char[iNum];
+	delete[]pChar;
 }
 
 //this is right
@@ -228,6 +230,13 @@ void CStudyCPrimerPlus::GetMemory(char** pChar, int iNum)
 {
 	PrintfTestFunctionFlag(" CStudyCPrimerPlus::GetMemory");
 	*pChar = new char[iNum];
+}
+
+void CStudyCPrimerPlus::GetMemory(char* pChar)
+{
+	PrintfTestFunctionFlag(" CStudyCPrimerPlus::GetMemory");
+	std::string strTest = "Hello World!";
+	memcpy(pChar,strTest.c_str(),sizeof(strTest));
 }
 
 //this is right

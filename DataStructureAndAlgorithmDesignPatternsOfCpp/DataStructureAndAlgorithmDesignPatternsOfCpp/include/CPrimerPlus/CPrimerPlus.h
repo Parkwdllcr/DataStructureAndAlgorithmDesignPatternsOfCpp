@@ -67,6 +67,7 @@ public:
 	//注意这几种区别
 	void  GetMemory(char* pChar, int iNum);
 	void  GetMemory(char** pChar, int iNum);
+	void  GetMemory(char* pChar);
 	char* GetMemory(int inum);
 	//得到一个野指针
 	char* GetString(void);
