@@ -1,8 +1,6 @@
 #include"CPrimerPlus/CPrimerPlus.h"
-#include "CPrimerPlus/COperationAdd.h"
-#include "CPrimerPlus/COperationSub.h"
-#include "CPrimerPlus/COperationMul.h"
-#include "CPrimerPlus/COperationDiv.h"
+
+#include <exception>
 
 
 
@@ -20,6 +18,11 @@ CStudyCPrimerPlus::CStudyCPrimerPlus():m_iSize(0),m_iCout(0),m_listTest(),m_pCOp
 CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize):m_iSize(iSize), m_iCout(0), m_listTest(), m_pCOperation(nullptr)
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize)");
+
+}
+
+CStudyCPrimerPlus::CStudyCPrimerPlus(COperation* pOperation):m_iSize(0),m_iCout(0),m_listTest(), m_pCOperation(pOperation)
+{
 
 }
 
@@ -106,6 +109,22 @@ void CStudyCPrimerPlus::SimpleFourArithmetic(double dbTestOne, double dbTestTwo,
 		std::cout << "Unknow Err !" << std::endl;		
 	}
 
+}
+
+bool CStudyCPrimerPlus::GetFourArithmeticResult(double& dbResult)
+{
+	try
+	{
+		m_pCOperation->GetResult(dbResult);
+		return true;
+	}
+	catch (std::exception& e)
+	{
+		std::cout << e.what() << std::endl;
+		return false;
+	}
+	
+	
 }
 
 //Implicit conversion and explicit conversion
