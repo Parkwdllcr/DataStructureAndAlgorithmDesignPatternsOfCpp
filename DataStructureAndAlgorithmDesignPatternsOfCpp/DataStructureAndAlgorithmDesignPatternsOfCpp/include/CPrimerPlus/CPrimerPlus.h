@@ -4,10 +4,6 @@
 #include<list>
 #include<string>
 #include "COperation.h"
-#include "CPrimerPlus/COperationAdd.h"
-#include "CPrimerPlus/COperationSub.h"
-#include "CPrimerPlus/COperationMul.h"
-#include "CPrimerPlus/COperationDiv.h"
 
 
 
@@ -35,8 +31,6 @@ public:
 	//构造函数，重载构造函数，拷贝构造函数，赋值函数，析构函数
 	CStudyCPrimerPlus();
 	CStudyCPrimerPlus(int iSize);
-	CStudyCPrimerPlus(COperation* pOperation);
-
     ~CStudyCPrimerPlus();
 
 private:
@@ -47,15 +41,14 @@ private:
 	CStudyCPrimerPlus(const CStudyCPrimerPlus& otherCPrimer);
 	CStudyCPrimerPlus& operator=(const CStudyCPrimerPlus& CStudyCPPObject);
 
-
 public:
 	//第三章
 	//重载一下各个基本类型
 	void SimpleFourArithmetic(double dbTestOne, double dbTestTwo, int iCalculationType);
-	bool GetFourArithmeticResult(double& dbResult);
 
 	COperation* CreateOperation(uint32_t iCount);
     void StudyConstChar(const char* pConstCharConst,std::string strName);
+	bool  GetResult(double& dbResult)const;
 
 	template<typename T>
 	int Power(T &tResult, int iExponent);

@@ -8,7 +8,7 @@
 
 int main()
 {
-	//工厂模式
+	//简单工厂模式的客户端
 	double dbResult;
 	std::shared_ptr<CStudyCPrimerPlus> pStudyPrimerPlus (new CStudyCPrimerPlus);
 	COperation* pOperation = pStudyPrimerPlus->CreateOperation(ADDITION);
@@ -19,16 +19,15 @@ int main()
 	}
 	std::cout << "Get Result Value  = " << dbResult << std::endl;
 
-	//策略模式
-	std::shared_ptr<COperation>pOperation2(new COperationMul);
-	std::shared_ptr<CStudyCPrimerPlus> pPrimerPlus(new CStudyCPrimerPlus(pOperation2.get()));
-	if (true != pPrimerPlus->GetFourArithmeticResult(dbResult))
+	//策略模式的客户端
+	std::shared_ptr<CStudyCPrimerPlus> pStudy(new CStudyCPrimerPlus(MULTIPLICATION));
+	if (true != pStudy->GetResult(dbResult))
 	{
-		std::cout << "CPrimer Plus GetFourArithmeticResult Failed!" << std::endl;
+		std::cout << "CStudyCPrimerPlus Get Result Failed!" << std::endl;
 		return 0;
 	}
-	std::cout << "CPrimer Plus Get Four Arithmetic Result Value  = " << dbResult << std::endl;
-	
+	std::cout << "Get Result Value  = " << dbResult << std::endl;
+
 
 }
 

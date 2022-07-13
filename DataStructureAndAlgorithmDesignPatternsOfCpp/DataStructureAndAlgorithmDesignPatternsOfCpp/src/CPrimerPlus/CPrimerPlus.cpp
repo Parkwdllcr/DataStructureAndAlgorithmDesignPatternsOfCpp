@@ -1,5 +1,8 @@
 #include"CPrimerPlus/CPrimerPlus.h"
-
+#include "CPrimerPlus/COperationAdd.h"
+#include "CPrimerPlus/COperationSub.h"
+#include "CPrimerPlus/COperationMul.h"
+#include "CPrimerPlus/COperationDiv.h"
 #include <exception>
 
 
@@ -18,11 +21,33 @@ CStudyCPrimerPlus::CStudyCPrimerPlus():m_iSize(0),m_iCout(0),m_listTest(),m_pCOp
 CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize):m_iSize(iSize), m_iCout(0), m_listTest(), m_pCOperation(nullptr)
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::CStudyCPrimerPlus(int iSize)");
+	try
+	{
+		switch (iSize)
+		{
+		case ADDITION:
+			m_pCOperation = new COperationAdd();
+			break;
+		case SUBTRACTION:
+			m_pCOperation = new COperationSub();
+			break;
+		case MULTIPLICATION:
+			m_pCOperation = new COperationMul();
+			break;
+		case DIVIDE:
+			m_pCOperation = new COperationDiv();
+			break;
+		default:
+			std::cout << "Input error iSize!" << std::endl;
+			break;
+		}
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 
-}
 
-CStudyCPrimerPlus::CStudyCPrimerPlus(COperation* pOperation):m_iSize(0),m_iCout(0),m_listTest(), m_pCOperation(pOperation)
-{
 
 }
 
@@ -50,6 +75,11 @@ CStudyCPrimerPlus& CStudyCPrimerPlus::operator=(const CStudyCPrimerPlus& CStudyC
 CStudyCPrimerPlus::~CStudyCPrimerPlus()
 {
 	PrintfTestFunctionFlag("CStudyCPrimerPlus::~CStudyCPrimerPlus()");
+	if (nullptr != m_pCOperation)
+	{
+		delete m_pCOperation;
+		m_pCOperation = nullptr;
+	}
 
 }
 
@@ -111,22 +141,6 @@ void CStudyCPrimerPlus::SimpleFourArithmetic(double dbTestOne, double dbTestTwo,
 
 }
 
-bool CStudyCPrimerPlus::GetFourArithmeticResult(double& dbResult)
-{
-	try
-	{
-		m_pCOperation->GetResult(dbResult);
-		return true;
-	}
-	catch (std::exception& e)
-	{
-		std::cout << e.what() << std::endl;
-		return false;
-	}
-	
-	
-}
-
 //Implicit conversion and explicit conversion
 void CStudyCPrimerPlus::ClassToOtherClass()
 {
@@ -184,6 +198,30 @@ COperation* CStudyCPrimerPlus::CreateOperation(uint32_t iCount)
 		break;
 	}
 	return m_pCOperation;
+}
+
+bool CStudyCPrimerPlus::GetResult(double& dbResult) const
+{
+	try
+	{
+		if (nullptr != m_pCOperation)
+		{
+			if (true != m_pCOperation->GetResult(dbResult))
+			{
+				std::cout << "CStudyCPrimerPlus::GetResult Failed!" << std::endl;
+				return false;
+			}
+			return true;
+		}
+	}
+	catch (std::exception& e)
+	{
+		std::cout << e.what() << std::endl;
+		return false;
+	}
+
+	
+	
 }
 
 void CStudyCPrimerPlus:: StudyConstChar(const char* pConstCharConst,std::string strName)
