@@ -11,69 +11,116 @@
 #include "DesMode/Observer/CStatisticsDisplay.h"
 #include "DesMode/Observer/CThirdPartyDisplay.h"
 #include <iostream>
+#include <exception>
 
 void SimpleFactoryMode()
 {
-	double dbResult;
-	std::shared_ptr<CStudyCPrimerPlus> pStudyPrimerPlus(new CStudyCPrimerPlus);
-	COperation* pOperation = pStudyPrimerPlus->CreateOperation(ADDITION);
-	if (true != pOperation->GetResult(dbResult))
+	try
 	{
-		std::cout << "COperation Get Result Failed!" << std::endl;
+		double dbResult;
+		std::shared_ptr<CStudyCPrimerPlus> pStudyPrimerPlus(new CStudyCPrimerPlus);
+		COperation* pOperation = pStudyPrimerPlus->CreateOperation(ADDITION);
+		if (true != pOperation->GetResult(dbResult))
+		{
+			std::cout << "COperation Get Result Failed!" << std::endl;
+		}
+		std::cout << "Get Result Value  = " << dbResult << std::endl;
+		pOperation->SetNumberA(2.1);
+		pOperation->SetNumberB(4.2);
+		pOperation->GetResult(dbResult);
+		std::cout << "after Get Result Value  = " << dbResult << std::endl;
 	}
-	std::cout << "Get Result Value  = " << dbResult << std::endl;
+	catch (std::exception& e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+
+	
 }
 
 void StrategyMode()
 {
-	double dbResult(0.3);
-	std::shared_ptr<CStudyCPrimerPlus> pStudy(new CStudyCPrimerPlus(MULTIPLICATION));
-	if (true != pStudy->GetResult(dbResult))
-	{
-		std::cout << "CStudyCPrimerPlus Get Result Failed!" << std::endl;
+	try {
+		double dbResult(0.3);
+		std::shared_ptr<CStudyCPrimerPlus> pStudy(new CStudyCPrimerPlus(MULTIPLICATION));
+		if (true != pStudy->GetResult(dbResult))
+		{
+			std::cout << "CStudyCPrimerPlus Get Result Failed!" << std::endl;
+		}
+		std::cout << "Get Result Value  = " << dbResult << std::endl;
+
 	}
-	std::cout << "Get Result Value  = " << dbResult << std::endl;
+	catch (std::exception& e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+
 }
 
 void ObserverMode()
 {
-	CWeatherData* pWeatherData = new CWeatherData;
-	ImpSubject* pSubject = static_cast<ImpSubject*>(pWeatherData);
+	//尽量使用智能指针，不然容易出现内存泄漏
+	try
+	{
+		CWeatherData* pWeatherData = new CWeatherData;
+		ImpSubject* pSubject = static_cast<ImpSubject*>(pWeatherData);
 
-	//每new一个Observer，在构造函数里面都被Subject注册了
-	ImpObserver* pObserver = new CCurrentConditionDisplay(pSubject);
-	pObserver->DisPlay();
-	ImpObserver* pTemObserver = new CForecastDisplay(pSubject);
-	pTemObserver->DisPlay();
-	ImpObserver* pHumdity = new CStatisticsDisplay(pSubject);
-	pHumdity->DisPlay();
-	ImpObserver* pPress = new CThirdPartyDisplay(pSubject);
-	pPress->DisPlay();
+		//每new一个Observer，在构造函数里面都被Subject注册了
+		ImpObserver* pObserver = new CCurrentConditionDisplay(pSubject);
+		pObserver->DisPlay();
+		ImpObserver* pTemObserver = new CForecastDisplay(pSubject);
+		pTemObserver->DisPlay();
+		ImpObserver* pHumdity = new CStatisticsDisplay(pSubject);
+		pHumdity->DisPlay();
+		ImpObserver* pPress = new CThirdPartyDisplay(pSubject);
+		pPress->DisPlay();
 
-	//Subject告诉Observer们的变化
-	pWeatherData->SetMeasurements(2, 4, 6);
+		//Subject告诉Observer们的变化
+		pWeatherData->SetMeasurements(2, 4, 6);
 
-	pObserver->DisPlay();
-	pTemObserver->DisPlay();
-	pHumdity->DisPlay();
-	pPress->DisPlay();
+		pObserver->DisPlay();
+		pTemObserver->DisPlay();
+		pHumdity->DisPlay();
+		pPress->DisPlay();
 
 
+		if (nullptr != pObserver)
+		{
+			delete pObserver;
+			pObserver = nullptr;
+		}
 
-	delete pObserver;
-	pObserver = nullptr;
+		if (nullptr != pPress)
+		{
+			delete pPress;
+			pPress = nullptr;
+		}
 
-	delete pPress;
-	pPress = nullptr;
+		if (nullptr != pTemObserver)
+		{
+			delete pTemObserver;
+			pTemObserver = nullptr;
+		}
+	
+		if (nullptr != pHumdity)
+		{
+			delete pHumdity;
+			pHumdity = nullptr;
+		}
+	
+		if (nullptr != pSubject)
+		{
+			delete pSubject;
+			pSubject = nullptr;
+		}
 
-	delete pTemObserver;
-	pTemObserver = nullptr;
+	}
+	catch (const std::exception& e)
+	{
+		std::cout << e.what() << std::endl;
 
-	delete pHumdity;
-	pHumdity = nullptr;
-
-	delete pSubject;
-	pSubject = nullptr;
+	}
+	
 
 }
 
