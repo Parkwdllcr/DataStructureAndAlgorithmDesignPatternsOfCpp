@@ -5,8 +5,8 @@
 //  Original author: Administrator
 ///////////////////////////////////////////////////////////
 
-#include "CCurrentConditionDisplay.h"
-#include "ImpSubject.h"
+#include "DesMode/Observer/CCurrentConditionDisplay.h"
+#include "DesMode/Observer/ImpSubject.h"
 #include <iostream>
 
 CCurrentConditionDisplay::CCurrentConditionDisplay()

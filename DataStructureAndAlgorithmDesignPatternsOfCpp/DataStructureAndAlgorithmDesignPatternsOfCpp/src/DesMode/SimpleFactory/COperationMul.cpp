@@ -1,4 +1,4 @@
-#include "CPrimerPlus/COperationMul.h"
+#include "DesMode/SimpleFactory/COperationMul.h"
 #include <iostream>
 bool COperationMul::GetResult(double& dbResult) const
 {

@@ -49,6 +49,24 @@
     <Filter Include="src\Public">
       <UniqueIdentifier>{1f87ffbc-869b-46af-a7d1-9b335be338f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\DesMode">
+      <UniqueIdentifier>{b039b100-bca7-4de1-9259-072246c55112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DesMode">
+      <UniqueIdentifier>{0fe54ac4-6cc3-46c9-8490-03d35ef6d057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DesMode\Observer">
+      <UniqueIdentifier>{79606892-a570-4fc6-89e4-f847d4bd4a77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DesMode\Observer">
+      <UniqueIdentifier>{fa2af56e-1996-4ae1-8a46-e5aa4db7ed59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DesMode\SimpleFactory">
+      <UniqueIdentifier>{7cf730e1-7ec8-46fb-85f9-c5ab0237e614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DesMode\SimpleFactory">
+      <UniqueIdentifier>{aee1a8df-d398-4827-acb6-0d8f99e20f94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main\StudyDesMode.cpp">
@@ -78,20 +96,35 @@
     <ClCompile Include="src\Public\STUDY_LOG.cpp">
       <Filter>src\Public</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\COperationAdd.cpp">
-      <Filter>src\CPrimerPlus</Filter>
+    <ClCompile Include="src\DesMode\Observer\CCurrentConditionDisplay.cpp">
+      <Filter>src\DesMode\Observer</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\COperationSub.cpp">
-      <Filter>src\CPrimerPlus</Filter>
+    <ClCompile Include="src\DesMode\Observer\CForecastDisplay.cpp">
+      <Filter>src\DesMode\Observer</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\COperationMul.cpp">
-      <Filter>src\CPrimerPlus</Filter>
+    <ClCompile Include="src\DesMode\Observer\CStatisticsDisplay.cpp">
+      <Filter>src\DesMode\Observer</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\COperationDiv.cpp">
-      <Filter>src\CPrimerPlus</Filter>
+    <ClCompile Include="src\DesMode\Observer\CThirdPartyDisplay.cpp">
+      <Filter>src\DesMode\Observer</Filter>
     </ClCompile>
-    <ClCompile Include="src\CPrimerPlus\COperation.cpp">
-      <Filter>src\CPrimerPlus</Filter>
+    <ClCompile Include="src\DesMode\Observer\CWeatherData.cpp">
+      <Filter>src\DesMode\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\SimpleFactory\COperation.cpp">
+      <Filter>src\DesMode\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationAdd.cpp">
+      <Filter>src\DesMode\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationDiv.cpp">
+      <Filter>src\DesMode\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationMul.cpp">
+      <Filter>src\DesMode\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationSub.cpp">
+      <Filter>src\DesMode\SimpleFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,20 +164,41 @@
     <ClInclude Include="include\MulThread\Thread.h">
       <Filter>include\MulThread</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\COperation.h">
-      <Filter>include\CPrimerPlus</Filter>
+    <ClInclude Include="include\DesMode\Observer\CCurrentConditionDisplay.h">
+      <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\COperationAdd.h">
-      <Filter>include\CPrimerPlus</Filter>
+    <ClInclude Include="include\DesMode\Observer\CForecastDisplay.h">
+      <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\COperationSub.h">
-      <Filter>include\CPrimerPlus</Filter>
+    <ClInclude Include="include\DesMode\Observer\CStatisticsDisplay.h">
+      <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\COperationMul.h">
-      <Filter>include\CPrimerPlus</Filter>
+    <ClInclude Include="include\DesMode\Observer\CThirdPartyDisplay.h">
+      <Filter>include\DesMode\Observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\CPrimerPlus\COperationDiv.h">
-      <Filter>include\CPrimerPlus</Filter>
+    <ClInclude Include="include\DesMode\Observer\CWeatherData.h">
+      <Filter>include\DesMode\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Observer\ImpObserver.h">
+      <Filter>include\DesMode\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Observer\ImpSubject.h">
+      <Filter>include\DesMode\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\SimpleFactory\COperation.h">
+      <Filter>include\DesMode\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationAdd.h">
+      <Filter>include\DesMode\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationDiv.h">
+      <Filter>include\DesMode\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationMul.h">
+      <Filter>include\DesMode\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationSub.h">
+      <Filter>include\DesMode\SimpleFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

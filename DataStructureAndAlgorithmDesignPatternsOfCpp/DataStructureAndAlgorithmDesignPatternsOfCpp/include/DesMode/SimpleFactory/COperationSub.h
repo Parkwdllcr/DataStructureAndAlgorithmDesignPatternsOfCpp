@@ -1,5 +1,5 @@
 #pragma once
-#include "COperation.h"
+#include "DesMode/SimpleFactory/COperation.h"
 
 class COperationSub:public COperation
 {

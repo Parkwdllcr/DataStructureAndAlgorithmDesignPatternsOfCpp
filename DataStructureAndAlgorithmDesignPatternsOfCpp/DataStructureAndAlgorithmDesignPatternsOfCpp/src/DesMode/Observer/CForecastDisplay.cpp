@@ -5,8 +5,8 @@
 //  Original author: Administrator
 ///////////////////////////////////////////////////////////
 
-#include "CForecastDisplay.h"
-#include "ImpSubject.h"
+#include "DesMode/Observer/CForecastDisplay.h"
+#include "DesMode/Observer/ImpSubject.h"
 #include <iostream>
 
 CForecastDisplay::CForecastDisplay():m_pForecastDisplay(),m_fTemperature(0){

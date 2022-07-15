@@ -153,27 +153,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\CPrimerPlus\COperation.cpp" />
-    <ClCompile Include="src\CPrimerPlus\COperationAdd.cpp" />
-    <ClCompile Include="src\CPrimerPlus\COperationDiv.cpp" />
-    <ClCompile Include="src\CPrimerPlus\COperationMul.cpp" />
-    <ClCompile Include="src\CPrimerPlus\COperationSub.cpp" />
     <ClCompile Include="src\CPrimerPlus\CPrimerPlus.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinkList.cpp" />
     <ClCompile Include="src\DataStructuresAndAlgorithms\DataTypeAlgorithms\CRedBlackTree.cpp" />
+    <ClCompile Include="src\DesMode\Observer\CCurrentConditionDisplay.cpp" />
+    <ClCompile Include="src\DesMode\Observer\CForecastDisplay.cpp" />
+    <ClCompile Include="src\DesMode\Observer\CStatisticsDisplay.cpp" />
+    <ClCompile Include="src\DesMode\Observer\CThirdPartyDisplay.cpp" />
+    <ClCompile Include="src\DesMode\Observer\CWeatherData.cpp" />
+    <ClCompile Include="src\DesMode\SimpleFactory\COperation.cpp" />
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationAdd.cpp" />
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationDiv.cpp" />
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationMul.cpp" />
+    <ClCompile Include="src\DesMode\SimpleFactory\COperationSub.cpp" />
     <ClCompile Include="src\main\StudyDesMode.cpp" />
     <ClCompile Include="src\MulThread\CSemaphore.cpp" />
     <ClCompile Include="src\MulThread\CThread.cpp" />
     <ClCompile Include="src\Public\STUDY_LOG.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\CPrimerPlus\COperation.h" />
-    <ClInclude Include="include\CPrimerPlus\COperationAdd.h" />
-    <ClInclude Include="include\CPrimerPlus\COperationDiv.h" />
-    <ClInclude Include="include\CPrimerPlus\COperationMul.h" />
-    <ClInclude Include="include\CPrimerPlus\COperationSub.h" />
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CArrayList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CLinearList.h" />
@@ -182,6 +182,18 @@
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\CSortingAlgorithm.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\ILinearList.h" />
     <ClInclude Include="include\DataStructuresAndAlgorithms\DataTypeAlgorithms\Node.h" />
+    <ClInclude Include="include\DesMode\Observer\CCurrentConditionDisplay.h" />
+    <ClInclude Include="include\DesMode\Observer\CForecastDisplay.h" />
+    <ClInclude Include="include\DesMode\Observer\CStatisticsDisplay.h" />
+    <ClInclude Include="include\DesMode\Observer\CThirdPartyDisplay.h" />
+    <ClInclude Include="include\DesMode\Observer\CWeatherData.h" />
+    <ClInclude Include="include\DesMode\Observer\ImpObserver.h" />
+    <ClInclude Include="include\DesMode\Observer\ImpSubject.h" />
+    <ClInclude Include="include\DesMode\SimpleFactory\COperation.h" />
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationAdd.h" />
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationDiv.h" />
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationMul.h" />
+    <ClInclude Include="include\DesMode\SimpleFactory\COperationSub.h" />
     <ClInclude Include="include\MulThread\Semaphore.h" />
     <ClInclude Include="include\MulThread\Thread.h" />
     <ClInclude Include="include\MulThread\ThreadPool.h" />

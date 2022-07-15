@@ -5,8 +5,8 @@
 //  Original author: Administrator
 ///////////////////////////////////////////////////////////
 
-#include "CThirdPartyDisplay.h"
-#include "ImpSubject.h"
+#include "DesMode/Observer/CThirdPartyDisplay.h"
+#include "DesMode/Observer/ImpSubject.h"
 #include <iostream>
 
 CThirdPartyDisplay::CThirdPartyDisplay():m_pSubject(),m_fPress(0)

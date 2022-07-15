@@ -1,4 +1,4 @@
-#include "CPrimerPlus/COperationSub.h"
+#include "DesMode/SimpleFactory/COperationSub.h"
 #include <iostream>
 
 bool COperationSub::GetResult(double& dbResult) const

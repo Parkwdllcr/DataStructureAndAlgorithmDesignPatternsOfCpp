@@ -1,8 +1,8 @@
 #include"CPrimerPlus/CPrimerPlus.h"
-#include "CPrimerPlus/COperationAdd.h"
-#include "CPrimerPlus/COperationSub.h"
-#include "CPrimerPlus/COperationMul.h"
-#include "CPrimerPlus/COperationDiv.h"
+#include "DesMode/SimpleFactory/COperationAdd.h"
+#include "DesMode/SimpleFactory/COperationSub.h"
+#include "DesMode/SimpleFactory/COperationMul.h"
+#include "DesMode/SimpleFactory/COperationDiv.h"
 #include <exception>
 
 
