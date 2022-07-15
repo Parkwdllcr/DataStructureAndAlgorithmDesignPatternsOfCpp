@@ -8,7 +8,7 @@ public:
 	virtual ~AbstractProductA() {}
 };
 
-//������ConcreateProductAl,�̳���AbstractProductA,������ƷA�ĵ�һ��ʵ��
+
 class ConcreateProductA1 :public AbstractProductA
 {
 public:
@@ -16,7 +16,7 @@ public:
 	
 	virtual ~ConcreateProductA1() {}
 };
-//������ConcreateProductA2,�̳���AbstractProductA,������ƷA�ĵڶ���ʵ��
+
 class ConcreateProductA2 :public AbstractProductA
 {
 public:
@@ -24,14 +24,14 @@ public:
 	
 	virtual ~ConcreateProductA2() {}
 };
-//�������AbstractProductB,������ƷB�ĳ���
+
 class AbstractProductB
 {
 public:
 	AbstractProductB() {}
 	virtual ~AbstractProductB() {}
 };
-//������ConcreateProductB1,�̳���AbstractProductB,������ƷB�ĵ�һ��ʵ��
+
 class ConcreateProductB1 :public AbstractProductB
 {
 public:
@@ -39,7 +39,7 @@ public:
 	
 	virtual ~ConcreateProductB1() {}
 };
-//������ConcreateProductB2,�̳���AbstractProductB,������ƷB�ĵڶ���ʵ��
+
 class ConcreateProductB2 :public AbstractProductB
 {
 public:
