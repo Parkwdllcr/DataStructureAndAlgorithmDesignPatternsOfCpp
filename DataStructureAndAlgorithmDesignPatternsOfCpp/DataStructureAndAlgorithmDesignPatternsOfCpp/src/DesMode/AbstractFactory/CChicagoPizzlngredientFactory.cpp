@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CChicagoPizzlngredientFactory.h"
+#include "DesMode/AbstractFactory/CChicagoPizzlngredientFactory.h"
 
 
 CChicagoPizzlngredientFactory::CChicagoPizzlngredientFactory():m_pImpCheese(nullptr), m_pImpClam(nullptr), m_pImpDough(nullptr)

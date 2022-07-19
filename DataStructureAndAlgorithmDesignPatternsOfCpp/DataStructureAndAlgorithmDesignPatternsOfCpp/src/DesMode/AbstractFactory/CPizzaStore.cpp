@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CPizzaStore.h"
+#include "DesMode/AbstractFactory/CPizzaStore.h"
 #include <iostream>
 
 

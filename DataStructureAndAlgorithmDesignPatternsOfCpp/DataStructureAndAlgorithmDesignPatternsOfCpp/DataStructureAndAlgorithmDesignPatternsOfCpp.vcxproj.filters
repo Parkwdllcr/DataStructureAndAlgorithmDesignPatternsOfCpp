@@ -67,6 +67,12 @@
     <Filter Include="include\DesMode\SimpleFactory">
       <UniqueIdentifier>{aee1a8df-d398-4827-acb6-0d8f99e20f94}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\DesMode\AbstractFactory">
+      <UniqueIdentifier>{81bf01be-4287-4357-b1e8-1de95ebcb5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DesMode\AbstractFactory">
+      <UniqueIdentifier>{d4578eed-655c-46b8-9511-ef3a42d0aef8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main\StudyDesMode.cpp">
@@ -125,6 +131,48 @@
     </ClCompile>
     <ClCompile Include="src\DesMode\SimpleFactory\COperationSub.cpp">
       <Filter>src\DesMode\SimpleFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CCheesePizza.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CChicagoPizzaStore.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CChicagoPizzlngredientFactory.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CClamPizza.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CFreshClams.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CFrozenClams.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CMozzarellaCheese.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CNYPizzaStore.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CNYPizzlngredientFactory.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CPizza.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CPizzaStore.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CReggianoCheese.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CThickCrustDough.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\AbstractFactory\CThinCrustDough.cpp">
+      <Filter>src\DesMode\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +247,60 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\SimpleFactory\COperationSub.h">
       <Filter>include\DesMode\SimpleFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CCheesePizza.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CChicagoPizzaStore.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CChicagoPizzlngredientFactory.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CClamPizza.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CFreshClams.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CFrozenClams.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CMozzarellaCheese.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CNYPizzaStore.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CNYPizzlngredientFactory.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CPizza.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CPizzaStore.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CReggianoCheese.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CThickCrustDough.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\CThinCrustDough.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\ImpCheese.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\ImpClam.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\ImpDough.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\AbstractFactory\ImpPizzalngredientFactory.h">
+      <Filter>include\DesMode\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

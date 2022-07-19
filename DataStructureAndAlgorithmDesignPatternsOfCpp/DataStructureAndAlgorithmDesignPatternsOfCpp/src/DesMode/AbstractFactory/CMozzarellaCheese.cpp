@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CMozzarellaCheese.h"
+#include "DesMode/AbstractFactory/CMozzarellaCheese.h"
 
 
 CMozzarellaCheese::CMozzarellaCheese(){

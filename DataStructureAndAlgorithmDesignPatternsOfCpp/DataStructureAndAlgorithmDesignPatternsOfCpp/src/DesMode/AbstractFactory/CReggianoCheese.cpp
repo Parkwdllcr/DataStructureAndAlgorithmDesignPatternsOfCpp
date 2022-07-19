@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CReggianoCheese.h"
+#include "DesMode/AbstractFactory/CReggianoCheese.h"
 
 
 CReggianoCheese::CReggianoCheese(){

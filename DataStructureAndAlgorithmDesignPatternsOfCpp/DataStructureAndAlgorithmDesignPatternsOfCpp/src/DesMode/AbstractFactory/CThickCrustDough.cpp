@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CThickCrustDough.h"
+#include "DesMode/AbstractFactory/CThickCrustDough.h"
 
 CThickCrustDough::CThickCrustDough()
 {

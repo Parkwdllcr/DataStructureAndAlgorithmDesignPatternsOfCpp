@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CFrozenClams.h"
+#include "DesMode/AbstractFactory/CFrozenClams.h"
 
 
 CFrozenClams::CFrozenClams(){

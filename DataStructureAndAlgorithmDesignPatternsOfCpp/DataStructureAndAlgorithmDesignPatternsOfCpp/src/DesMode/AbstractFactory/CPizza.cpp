@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CPizza.h"
+#include "DesMode/AbstractFactory/CPizza.h"
 
 CPizza::CPizza():m_pCheese(nullptr),m_pClam(nullptr),m_pDough(nullptr),m_strName("chongrui")
 {

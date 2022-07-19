@@ -5,21 +5,24 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CChicagoPizzaStore.h"
-#include "CChicagoPizzlngredientFactory.h"
-#include "CCheesePizza.h"
-#include "CClamPizza.h"
+#include "DesMode/AbstractFactory/CChicagoPizzaStore.h"
+#include "DesMode/AbstractFactory/CCheesePizza.h"
+#include "DesMode/AbstractFactory/CClamPizza.h"
 #include <iostream>
 
 
-CChicagoPizzaStore::CChicagoPizzaStore()
+CChicagoPizzaStore::CChicagoPizzaStore() :m_pChicagoPizzaIngredientFacttory(nullptr)
 {
 
 }
 
 CChicagoPizzaStore::~CChicagoPizzaStore()
 {
-
+	if (nullptr != m_pChicagoPizzaIngredientFacttory)
+	{
+		delete m_pChicagoPizzaIngredientFacttory;
+		m_pChicagoPizzaIngredientFacttory = nullptr;
+	}
 }
 
 
@@ -27,17 +30,17 @@ CPizza* CChicagoPizzaStore::CreatePizza(enPizzaStype enStype)
 {
 	std::string strName("");
 	CPizza* pPizza = nullptr;
-	ImpPizzalngredientFactory* pChicagoPizzaIngredientFacttory = new CChicagoPizzlngredientFactory();
+	m_pChicagoPizzaIngredientFacttory = new CChicagoPizzlngredientFactory();
 
 	switch (enStype)
 	{
 	case CheesePizza:
-		pPizza = new CCheesePizza(pChicagoPizzaIngredientFacttory);
+		pPizza = new CCheesePizza(m_pChicagoPizzaIngredientFacttory);
 		strName = "CCheesePizza Style Cheese Pizza";
 		pPizza->SetName(strName);
 		break;
 	case ClamPizza:
-		pPizza = new CClamPizza(pChicagoPizzaIngredientFacttory);
+		pPizza = new CClamPizza(m_pChicagoPizzaIngredientFacttory);
 		strName = "CClamPizza Style Cheese Pizza";
 		pPizza->SetName(strName);
 		break;
@@ -46,7 +49,5 @@ CPizza* CChicagoPizzaStore::CreatePizza(enPizzaStype enStype)
 		break;
 	}
 
-	delete pChicagoPizzaIngredientFacttory;
-	pChicagoPizzaIngredientFacttory = nullptr;
 	return  pPizza;
 }

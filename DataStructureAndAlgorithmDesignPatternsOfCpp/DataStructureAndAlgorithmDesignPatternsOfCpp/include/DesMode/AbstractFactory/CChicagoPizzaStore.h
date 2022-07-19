@@ -9,6 +9,7 @@
 #define _CHICAGO_PIZZA_H_
 
 #include "CPizzaStore.h"
+#include "CChicagoPizzlngredientFactory.h"
 
 class CChicagoPizzaStore : public CPizzaStore
 {
@@ -17,6 +18,7 @@ public:
 	virtual ~CChicagoPizzaStore();
 	CChicagoPizzaStore();
 	CPizza* CreatePizza(enPizzaStype enStype);
-
+private:
+	ImpPizzalngredientFactory* m_pChicagoPizzaIngredientFacttory;
 };
 #endif 

@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CFreshClams.h"
+#include "DesMode/AbstractFactory/CFreshClams.h"
 
 
 CFreshClams::CFreshClams(){

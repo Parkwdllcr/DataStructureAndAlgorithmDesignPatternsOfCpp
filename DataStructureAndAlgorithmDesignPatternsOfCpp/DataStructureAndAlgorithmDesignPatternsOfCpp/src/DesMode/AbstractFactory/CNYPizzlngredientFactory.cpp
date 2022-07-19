@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CNYPizzlngredientFactory.h"
+#include "DesMode/AbstractFactory/CNYPizzlngredientFactory.h"
 
 
 CNYPizzlngredientFactory::CNYPizzlngredientFactory():m_pImpCheese(nullptr),m_pImpClam(nullptr),m_pImpDough(nullptr)

@@ -11,9 +11,9 @@
 #include <string>
 #include "CPizza.h"
 
-typedef enum
+typedef enum  
 {
-	CheesePizza,
+	CheesePizza = 0 ,
 	ClamPizza,
 } enPizzaStype;
 

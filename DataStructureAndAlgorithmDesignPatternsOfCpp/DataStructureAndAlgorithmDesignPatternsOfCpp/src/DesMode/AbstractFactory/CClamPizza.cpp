@@ -5,7 +5,7 @@
 //  Original author: chongrui.lu
 ///////////////////////////////////////////////////////////
 
-#include "CClamPizza.h"
+#include "DesMode/AbstractFactory/CClamPizza.h"
 
 
 CClamPizza::CClamPizza():m_pIngredientFactory(nullptr)

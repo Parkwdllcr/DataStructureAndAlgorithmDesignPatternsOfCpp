@@ -10,8 +10,8 @@
 #include "DesMode/Observer/CForecastDisplay.h"
 #include "DesMode/Observer/CStatisticsDisplay.h"
 #include "DesMode/Observer/CThirdPartyDisplay.h"
-
-#include "CChicagoPizzaStore.h"
+#include "DesMode/AbstractFactory/CNYPizzaStore.h"
+#include "DesMode/AbstractFactory/CChicagoPizzaStore.h"
 #include <iostream>
 #include <exception>
 
@@ -41,8 +41,34 @@ void SimpleFactoryMode()
 }
 void AbstractFactoryMode()
 {
-	std::shared_ptr<CPizzaStore> pPizzaStore = static_cast<std::shared_ptr<CPizzaStore>>(std::make_shared<CChicagoPizzaStore>());
+	CPizzaStore* pPizzaStore = new CChicagoPizzaStore();
 	CPizza* pPizza = pPizzaStore->OrderPizza(ClamPizza);
+
+	CPizzaStore* pNYPizzaStore = new CNYPizzaStore();
+	CPizza* pNYPizza = pNYPizzaStore->OrderPizza(CheesePizza);
+
+
+	if (nullptr == pPizza)
+	{
+		delete pPizza;
+		pPizza = nullptr;
+	}
+	if (nullptr == pPizzaStore)
+	{
+		delete pPizzaStore;
+		pPizzaStore = nullptr;
+	}
+	
+	if (nullptr == pNYPizza)
+	{
+		delete pNYPizza;
+		pNYPizza = nullptr;
+	}
+	if (nullptr == pNYPizzaStore)
+	{
+		delete pNYPizzaStore;
+		pNYPizzaStore = nullptr;
+	}
 }
 void StrategyMode()
 {
