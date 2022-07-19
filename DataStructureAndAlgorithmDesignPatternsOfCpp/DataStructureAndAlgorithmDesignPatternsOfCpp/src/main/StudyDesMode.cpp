@@ -10,6 +10,8 @@
 #include "DesMode/Observer/CForecastDisplay.h"
 #include "DesMode/Observer/CStatisticsDisplay.h"
 #include "DesMode/Observer/CThirdPartyDisplay.h"
+
+#include "CChicagoPizzaStore.h"
 #include <iostream>
 #include <exception>
 
@@ -37,7 +39,11 @@ void SimpleFactoryMode()
 
 	
 }
-
+void AbstractFactoryMode()
+{
+	std::shared_ptr<CPizzaStore> pPizzaStore = static_cast<std::shared_ptr<CPizzaStore>>(std::make_shared<CChicagoPizzaStore>());
+	CPizza* pPizza = pPizzaStore->OrderPizza(ClamPizza);
+}
 void StrategyMode()
 {
 	try {
@@ -136,7 +142,8 @@ int main()
 	//观察者模式的核心思想就是，Observer可以订阅或者不订阅主题（在new观察者的时候就可以在构造函数里面去订阅），主题将状态告诉所有的观察者NotifyObserver。
 	ObserverMode();
 
-
+	//抽象工厂模式客户端
+	AbstractFactoryMode();
 
 	return 1;
 }
