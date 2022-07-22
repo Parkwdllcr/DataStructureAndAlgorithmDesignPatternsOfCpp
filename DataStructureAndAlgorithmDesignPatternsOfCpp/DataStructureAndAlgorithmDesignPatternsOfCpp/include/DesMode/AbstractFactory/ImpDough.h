@@ -11,7 +11,6 @@
 
 class ImpDough
 {
-
 public:
 	virtual ~ImpDough() {}
 	virtual std::string ToString() =0;
