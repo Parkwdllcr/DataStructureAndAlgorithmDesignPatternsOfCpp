@@ -185,7 +185,7 @@
     <ClCompile Include="src\main\StudyDesMode.cpp" />
     <ClCompile Include="src\MulThread\CSemaphore.cpp" />
     <ClCompile Include="src\MulThread\CThread.cpp" />
-    <ClCompile Include="src\Public\STUDY_LOG.cpp" />
+    <ClCompile Include="src\Public\CReadAndWrite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h" />
@@ -229,7 +229,7 @@
     <ClInclude Include="include\MulThread\Semaphore.h" />
     <ClInclude Include="include\MulThread\Thread.h" />
     <ClInclude Include="include\MulThread\ThreadPool.h" />
-    <ClInclude Include="include\Public\STUDY_LOG.h" />
+    <ClInclude Include="include\Public\CReadAndWrite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

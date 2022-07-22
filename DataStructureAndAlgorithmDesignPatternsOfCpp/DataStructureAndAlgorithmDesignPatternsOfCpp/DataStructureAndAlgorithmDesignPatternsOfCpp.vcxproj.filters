@@ -99,9 +99,6 @@
     <ClCompile Include="src\MulThread\CThread.cpp">
       <Filter>src\MulThread</Filter>
     </ClCompile>
-    <ClCompile Include="src\Public\STUDY_LOG.cpp">
-      <Filter>src\Public</Filter>
-    </ClCompile>
     <ClCompile Include="src\DesMode\Observer\CCurrentConditionDisplay.cpp">
       <Filter>src\DesMode\Observer</Filter>
     </ClCompile>
@@ -174,6 +171,9 @@
     <ClCompile Include="src\DesMode\AbstractFactory\CThinCrustDough.cpp">
       <Filter>src\DesMode\AbstractFactory</Filter>
     </ClCompile>
+    <ClCompile Include="src\Public\CReadAndWrite.cpp">
+      <Filter>src\Public</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CPrimerPlus\CPrimerPlus.h">
@@ -202,9 +202,6 @@
     </ClInclude>
     <ClInclude Include="include\MulThread\ThreadPool.h">
       <Filter>include\MulThread</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Public\STUDY_LOG.h">
-      <Filter>include\Public</Filter>
     </ClInclude>
     <ClInclude Include="include\MulThread\Semaphore.h">
       <Filter>include\MulThread</Filter>
@@ -301,6 +298,9 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\AbstractFactory\ImpPizzalngredientFactory.h">
       <Filter>include\DesMode\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Public\CReadAndWrite.h">
+      <Filter>include\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
