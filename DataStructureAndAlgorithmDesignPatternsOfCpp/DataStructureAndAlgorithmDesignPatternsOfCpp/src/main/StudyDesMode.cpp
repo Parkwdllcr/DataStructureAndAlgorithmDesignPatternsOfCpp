@@ -3,6 +3,7 @@
 
 
 #include "CPrimerPlus/CPrimerPlus.h"
+#include "Public/CReadAndWrite.h"
 #include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CLinkList.h"
 #include "DataStructuresAndAlgorithms/DataTypeAlgorithms/CArrayList.h"
 #include "DesMode/Observer/CWeatherData.h"
@@ -158,20 +159,40 @@ void ObserverMode()
 
 int main()
 {
-	//简单工厂模式的客户端
-	SimpleFactoryMode();
+	try
+	{
+		//简单工厂模式的客户端
+		SimpleFactoryMode();
 
-	//策略模式的客户端
-	StrategyMode();
+		//策略模式的客户端
+		StrategyMode();
 
-	//观察者模式客户端
-	//观察者模式的核心思想就是，Observer可以订阅或者不订阅主题（在new观察者的时候就可以在构造函数里面去订阅），主题将状态告诉所有的观察者NotifyObserver。
-	ObserverMode();
+		//观察者模式客户端
+		//观察者模式的核心思想就是，Observer可以订阅或者不订阅主题（在new观察者的时候就可以在构造函数里面去订阅），主题将状态告诉所有的观察者NotifyObserver。
+		ObserverMode();
 
-	//抽象工厂模式客户端
-	AbstractFactoryMode();
+		//抽象工厂模式客户端
+		AbstractFactoryMode();
 
-	return 1;
+		CReadAndWrite* pReadxml = CReadAndWrite::GetInstance();
+		boost::property_tree::ptree pt;
+		pReadxml->ReadXml(pt);
+		return 1;
+	}
+	catch (std::exception& e)
+	{
+		std::cout << "Leave WriteLoadwareFileInfo with exception: " << e.what() << std::endl;
+		return 0;
+	}
+	catch (...)
+	{
+		std::cout << "Leave WriteLoadwareFileInfo with exception." << std::endl;
+		return 0;
+	}
+
+
+
+	
 }
 
 
