@@ -15,10 +15,12 @@ class CFrozenClams : public ImpClam
 {
 
 public:
-	CFrozenClams();
+	
 	virtual ~CFrozenClams();
-
+	static CFrozenClams* GetInstance();
 	std::string ToString();
+private:
+	CFrozenClams();
 
 };
 #endif 

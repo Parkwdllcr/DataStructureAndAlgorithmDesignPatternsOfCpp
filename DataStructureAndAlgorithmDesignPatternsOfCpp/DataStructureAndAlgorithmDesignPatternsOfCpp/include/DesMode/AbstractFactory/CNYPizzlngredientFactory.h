@@ -20,17 +20,18 @@ class CNYPizzlngredientFactory :public ImpPizzalngredientFactory
 {
 
 public:
-	CNYPizzlngredientFactory();
+	
 	virtual ~CNYPizzlngredientFactory();
+	static CNYPizzlngredientFactory* GetInstance();
+	CNYPizzlngredientFactory(const CNYPizzlngredientFactory&) = delete;
+	CNYPizzlngredientFactory& operator=(const CNYPizzlngredientFactory&) = delete;
 
 	virtual ImpCheese* CreatCheese();
 	virtual ImpClam* CreateClam();
 	virtual ImpDough* CreateDough();
 
-public:
-	ImpCheese*       m_pImpCheese;
-	ImpClam*         m_pImpClam;
-	ImpDough*        m_pImpDough;
+private:
+	CNYPizzlngredientFactory();
 };
 
 #endif

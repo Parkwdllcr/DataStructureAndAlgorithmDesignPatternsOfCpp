@@ -8,7 +8,11 @@
 #include "DesMode/AbstractFactory/CCheesePizza.h"
 
 
-
+CCheesePizza* CCheesePizza::GetInstance(ImpPizzalngredientFactory* pIngredientFactory)
+{
+	static CCheesePizza g_instance(pIngredientFactory);
+	return &g_instance;
+}
 
 CCheesePizza::CCheesePizza() :m_pIngredientFactory(nullptr)
 {
@@ -42,3 +46,5 @@ std::string CCheesePizza::Prepare()
 
 	return  strName;
 }
+
+

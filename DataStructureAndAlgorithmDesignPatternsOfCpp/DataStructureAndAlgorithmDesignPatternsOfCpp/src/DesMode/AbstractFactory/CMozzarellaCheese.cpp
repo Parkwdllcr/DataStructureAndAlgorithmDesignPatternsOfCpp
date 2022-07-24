@@ -8,6 +8,12 @@
 #include "DesMode/AbstractFactory/CMozzarellaCheese.h"
 
 
+CMozzarellaCheese* CMozzarellaCheese::GetInstance()
+{
+	static CMozzarellaCheese g_Instance;
+	return &g_Instance;
+}
+
 CMozzarellaCheese::CMozzarellaCheese(){
 
 }

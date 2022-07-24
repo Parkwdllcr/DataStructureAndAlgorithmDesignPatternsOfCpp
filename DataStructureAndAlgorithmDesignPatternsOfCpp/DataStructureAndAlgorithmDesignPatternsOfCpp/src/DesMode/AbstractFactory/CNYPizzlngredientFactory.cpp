@@ -8,41 +8,32 @@
 #include "DesMode/AbstractFactory/CNYPizzlngredientFactory.h"
 
 
-CNYPizzlngredientFactory::CNYPizzlngredientFactory():m_pImpCheese(nullptr),m_pImpClam(nullptr),m_pImpDough(nullptr)
+CNYPizzlngredientFactory::CNYPizzlngredientFactory()
 {
 
 }
 
 CNYPizzlngredientFactory::~CNYPizzlngredientFactory()
 {
-	if (nullptr != m_pImpCheese)
-	{
-		delete m_pImpCheese;
-		m_pImpCheese = nullptr;
-	}
-
-	if (nullptr != m_pImpClam)
-	{
-		delete m_pImpClam;
-		m_pImpClam = nullptr;
-	}
-
-	if (nullptr != m_pImpDough)
-	{
-		delete m_pImpDough;
-		m_pImpDough = nullptr;
-	}
+	
 }
 
+
+CNYPizzlngredientFactory* CNYPizzlngredientFactory::GetInstance()
+{
+	static CNYPizzlngredientFactory  g_Instance;
+	return &g_Instance;
+}
 
 ImpCheese* CNYPizzlngredientFactory::CreatCheese()
 {
 	try
 	{
-		if (m_pImpCheese == nullptr)
+		ImpCheese* pImpCheese = nullptr;
+		if (pImpCheese == nullptr)
 		{
-			m_pImpCheese = new CMozzarellaCheese();
-			return  m_pImpCheese;
+			ImpCheese* pImpCheese = CMozzarellaCheese::GetInstance();
+			return  pImpCheese;
 		}
 		return nullptr;
 	}
@@ -57,10 +48,11 @@ ImpClam* CNYPizzlngredientFactory::CreateClam()
 {
 	try
 	{
-		if (m_pImpClam == nullptr)
+		ImpClam* pImpCham = nullptr;
+		if (pImpCham == nullptr)
 		{
-			m_pImpClam = new CFrozenClams;
-			return  m_pImpClam;
+			ImpClam* pImpCham = CFrozenClams::GetInstance();
+			return pImpCham;
 		}
 		return nullptr;
 	}
@@ -77,10 +69,11 @@ ImpDough* CNYPizzlngredientFactory::CreateDough()
 
 	try
 	{
-		if (m_pImpDough == nullptr)
+		ImpDough* pImpDough = nullptr;
+		if (pImpDough == nullptr)
 		{
-			m_pImpDough = new CThickCrustDough;
-			return  m_pImpDough;
+			pImpDough = CThickCrustDough::GetInstance();
+			return  pImpDough;
 		}
 		return nullptr;
 	}

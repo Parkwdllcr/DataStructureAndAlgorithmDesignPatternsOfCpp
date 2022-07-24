@@ -22,6 +22,13 @@ CFrozenClams::~CFrozenClams(){
 
 
 
+CFrozenClams* CFrozenClams::GetInstance()
+{
+	static CFrozenClams    g_Instance;
+	return &g_Instance;
+
+}
+
 std::string CFrozenClams::ToString()
 {
 	std::string strName("This is CFrozenClams");

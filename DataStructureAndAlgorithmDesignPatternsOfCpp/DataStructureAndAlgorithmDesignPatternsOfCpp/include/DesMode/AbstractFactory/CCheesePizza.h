@@ -16,13 +16,17 @@ class CCheesePizza : public CPizza
 {
 
 public:
-	CCheesePizza(ImpPizzalngredientFactory* pIngredientFactory);
+	
 	virtual ~CCheesePizza();
+	CCheesePizza(const CCheesePizza&) = delete;
+	CCheesePizza& operator=(const CCheesePizza&) = delete;
 	std::string Prepare();
+	static CCheesePizza* GetInstance(ImpPizzalngredientFactory* pIngredientFactory);
 
 private:
 	ImpPizzalngredientFactory * m_pIngredientFactory;
 	CCheesePizza();
+	CCheesePizza(ImpPizzalngredientFactory* pIngredientFactory);
 
 };
 #endif

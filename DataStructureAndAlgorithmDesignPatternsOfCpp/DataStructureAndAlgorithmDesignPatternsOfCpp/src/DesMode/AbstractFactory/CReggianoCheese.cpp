@@ -8,15 +8,21 @@
 #include "DesMode/AbstractFactory/CReggianoCheese.h"
 
 
-CReggianoCheese::CReggianoCheese(){
 
+CReggianoCheese* CReggianoCheese::GetInstance()
+{
+	static CReggianoCheese g_Instance;
+	return &g_Instance;
 }
 
+CReggianoCheese::CReggianoCheese() {
 
+}
 CReggianoCheese::~CReggianoCheese()
 {
 
 }
+
 
 std::string CReggianoCheese::ToString()
 {

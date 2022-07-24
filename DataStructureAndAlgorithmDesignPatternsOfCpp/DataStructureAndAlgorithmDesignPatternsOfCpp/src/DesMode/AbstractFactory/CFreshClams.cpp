@@ -8,16 +8,22 @@
 #include "DesMode/AbstractFactory/CFreshClams.h"
 
 
-CFreshClams::CFreshClams(){
 
+
+CFreshClams* CFreshClams::GetInstance()
+{
+	static CFreshClams g_Instance;
+	return &g_Instance;
 }
 
+CFreshClams::CFreshClams() {
+
+}
 
 
 CFreshClams::~CFreshClams(){
 
 }
-
 
 std::string CFreshClams::ToString()
 {

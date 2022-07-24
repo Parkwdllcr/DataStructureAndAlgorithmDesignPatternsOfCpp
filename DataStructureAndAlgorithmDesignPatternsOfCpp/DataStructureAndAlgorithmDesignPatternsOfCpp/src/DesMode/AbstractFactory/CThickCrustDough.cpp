@@ -7,6 +7,14 @@
 
 #include "DesMode/AbstractFactory/CThickCrustDough.h"
 
+
+
+CThickCrustDough* CThickCrustDough::GetInstance()
+{
+	static CThickCrustDough g_Instance;
+	return &g_Instance;
+}
+
 CThickCrustDough::CThickCrustDough()
 {
 

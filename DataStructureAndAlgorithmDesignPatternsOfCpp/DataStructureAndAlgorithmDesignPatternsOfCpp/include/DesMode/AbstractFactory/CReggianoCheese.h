@@ -12,11 +12,15 @@
 
 class CReggianoCheese : public ImpCheese
 {
-
 public:
-	CReggianoCheese();
+	
 	virtual ~CReggianoCheese();
+	static CReggianoCheese* GetInstance();
+	CReggianoCheese(const CReggianoCheese&) = delete;
+	CReggianoCheese& operator=(const CReggianoCheese&) = delete;
 	virtual std::string ToString() ;
+private:
+	CReggianoCheese();
 
 };
 #endif 

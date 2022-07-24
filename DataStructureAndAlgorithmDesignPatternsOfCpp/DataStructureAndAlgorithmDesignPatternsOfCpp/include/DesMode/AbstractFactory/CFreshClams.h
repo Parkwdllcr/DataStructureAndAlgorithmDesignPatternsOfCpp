@@ -15,9 +15,13 @@ class CFreshClams : public ImpClam
 {
 
 public:
-	CFreshClams();
+	static CFreshClams* GetInstance();
 	virtual ~CFreshClams();
+	CFreshClams(const CFreshClams&) = delete;
+	CFreshClams& operator= (const CFreshClams&) = delete;
 	std::string ToString();
+private:
+	CFreshClams();
 
 };
 #endif 
