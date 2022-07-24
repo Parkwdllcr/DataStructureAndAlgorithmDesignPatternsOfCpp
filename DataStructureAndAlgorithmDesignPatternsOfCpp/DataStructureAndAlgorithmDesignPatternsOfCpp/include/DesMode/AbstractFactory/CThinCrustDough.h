@@ -14,9 +14,15 @@ class CThinCrustDough : public ImpDough
 {
 
 public:
-	CThinCrustDough();
+	CThinCrustDough(const CThinCrustDough&) = delete;
+	CThinCrustDough& operator=(const CThinCrustDough&) = delete;
 	virtual ~CThinCrustDough();
+
+	static CThinCrustDough* GetInstance();
+public:
 	std::string ToString();
+private:
+	CThinCrustDough();
 
 };
 #endif 

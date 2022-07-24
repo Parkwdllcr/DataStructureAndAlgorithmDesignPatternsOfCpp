@@ -18,6 +18,12 @@ CThinCrustDough::~CThinCrustDough()
 
 }
 
+CThinCrustDough* CThinCrustDough::GetInstance()
+{
+	static CThinCrustDough g_instance;
+	return &g_instance;
+}
+
 
 
 std::string CThinCrustDough::ToString()
