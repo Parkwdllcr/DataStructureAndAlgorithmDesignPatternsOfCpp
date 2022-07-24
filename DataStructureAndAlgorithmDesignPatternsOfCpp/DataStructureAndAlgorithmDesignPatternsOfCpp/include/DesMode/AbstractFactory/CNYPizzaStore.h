@@ -10,6 +10,8 @@
 
 #include "CPizzaStore.h"
 #include "CNYPizzlngredientFactory.h"
+#include "DesMode/AbstractFactory/CClamPizza.h"
+#include "DesMode/AbstractFactory/CCheesePizza.h"
 
 class CNYPizzaStore : public CPizzaStore
 {
@@ -20,6 +22,7 @@ public:
 	CPizza* CreatePizza(enPizzaStype enStype);
 private:
 	ImpPizzalngredientFactory* m_pChicagoPizzaIngredientFacttory;
+	CPizza*                    m_pPizza;
 
 };
 #endif 

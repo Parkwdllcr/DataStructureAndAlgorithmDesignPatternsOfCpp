@@ -11,7 +11,7 @@
 #include <iostream>
 
 
-CChicagoPizzaStore::CChicagoPizzaStore() :m_pChicagoPizzaIngredientFacttory(nullptr)
+CChicagoPizzaStore::CChicagoPizzaStore() :m_pChicagoPizzaIngredientFacttory(nullptr),m_pPizza(nullptr)
 {
 
 }
@@ -23,31 +23,36 @@ CChicagoPizzaStore::~CChicagoPizzaStore()
 		delete m_pChicagoPizzaIngredientFacttory;
 		m_pChicagoPizzaIngredientFacttory = nullptr;
 	}
+
+	if (nullptr != m_pPizza)
+	{
+		delete m_pPizza;
+		m_pPizza = nullptr;
+	}
 }
 
 
 CPizza* CChicagoPizzaStore::CreatePizza(enPizzaStype enStype)
 {
 	std::string strName("");
-	CPizza* pPizza = nullptr;
 	m_pChicagoPizzaIngredientFacttory = new CChicagoPizzlngredientFactory();
 
 	switch (enStype)
 	{
 	case CheesePizza:
-		pPizza = new CCheesePizza(m_pChicagoPizzaIngredientFacttory);
+		m_pPizza = new CCheesePizza(m_pChicagoPizzaIngredientFacttory);
 		strName = "CCheesePizza Style Cheese Pizza";
-		pPizza->SetName(strName);
+		m_pPizza->SetName(strName);
 		break;
 	case ClamPizza:
-		pPizza = new CClamPizza(m_pChicagoPizzaIngredientFacttory);
+		m_pPizza = new CClamPizza(m_pChicagoPizzaIngredientFacttory);
 		strName = "CClamPizza Style Cheese Pizza";
-		pPizza->SetName(strName);
+		m_pPizza->SetName(strName);
 		break;
 	default:
 		std::cout << "Input Error Pizza stype" << std::endl;
 		break;
 	}
 
-	return  pPizza;
+	return  m_pPizza;
 }

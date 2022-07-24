@@ -20,5 +20,6 @@ public:
 	CPizza* CreatePizza(enPizzaStype enStype);
 private:
 	ImpPizzalngredientFactory* m_pChicagoPizzaIngredientFacttory;
+	CPizza*                    m_pPizza                  ;
 };
 #endif 
