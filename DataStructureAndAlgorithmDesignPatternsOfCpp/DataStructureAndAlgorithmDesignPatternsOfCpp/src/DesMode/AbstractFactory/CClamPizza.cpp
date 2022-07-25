@@ -26,6 +26,12 @@ CClamPizza::~CClamPizza(){
 }
 
 
+CClamPizza* CClamPizza::GetInstance(ImpPizzalngredientFactory* pPizzalngredientFactory)
+{
+	static CClamPizza g_instance(pPizzalngredientFactory);
+	return &g_instance;
+}
+
 std::string CClamPizza::Prepare()
 {
 	std::string strName("CClamPizza::Prepare");

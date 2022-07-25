@@ -18,11 +18,12 @@ class CNYPizzaStore : public CPizzaStore
 
 public:
 	virtual ~CNYPizzaStore();
-	CNYPizzaStore();
+	static CNYPizzaStore* GetInstance();
+	CNYPizzaStore(const CNYPizzaStore&) = delete;
+	CNYPizzaStore& operator=(const CNYPizzaStore&) = delete;
 	CPizza* CreatePizza(enPizzaStype enStype);
 private:
-	ImpPizzalngredientFactory* m_pChicagoPizzaIngredientFacttory;
-	CPizza*                    m_pPizza;
+	CNYPizzaStore();
 
 };
 #endif 

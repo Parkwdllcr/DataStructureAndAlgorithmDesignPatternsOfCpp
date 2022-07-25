@@ -16,15 +16,15 @@ class CChicagoPizzlngredientFactory : public ImpPizzalngredientFactory
 {
 
 public:
+	static CChicagoPizzlngredientFactory* GetInstance();
+	CChicagoPizzlngredientFactory& operator=(const CChicagoPizzlngredientFactory&) = delete;
+	CChicagoPizzlngredientFactory(const CChicagoPizzlngredientFactory&) = delete;
 	virtual ~CChicagoPizzlngredientFactory();
-
-	CChicagoPizzlngredientFactory();
+public:
 	ImpCheese* CreatCheese();
 	ImpClam* CreateClam();
 	ImpDough* CreateDough();
 private:
-	ImpCheese*        m_pImpCheese;
-	ImpClam*          m_pImpClam;
-	ImpDough*         m_pImpDough;
+	CChicagoPizzlngredientFactory();
 };
 #endif 

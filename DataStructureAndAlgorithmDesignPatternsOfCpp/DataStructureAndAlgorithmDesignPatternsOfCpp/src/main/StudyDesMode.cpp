@@ -42,34 +42,12 @@ void SimpleFactoryMode()
 }
 void AbstractFactoryMode()
 {
-	CPizzaStore* pPizzaStore = new CChicagoPizzaStore();
+	CPizzaStore* pPizzaStore = CChicagoPizzaStore::GetInstance();
 	CPizza* pPizza = pPizzaStore->OrderPizza(ClamPizza);
 
-	CPizzaStore* pNYPizzaStore = new CNYPizzaStore();
+	CPizzaStore* pNYPizzaStore = CNYPizzaStore::GetInstance();
 	CPizza* pNYPizza = pNYPizzaStore->OrderPizza(CheesePizza);
-
-
-	if (nullptr == pPizza)
-	{
-		delete pPizza;
-		pPizza = nullptr;
-	}
-	if (nullptr == pPizzaStore)
-	{
-		delete pPizzaStore;
-		pPizzaStore = nullptr;
-	}
 	
-	if (nullptr == pNYPizza)
-	{
-		delete pNYPizza;
-		pNYPizza = nullptr;
-	}
-	if (nullptr == pNYPizzaStore)
-	{
-		delete pNYPizzaStore;
-		pNYPizzaStore = nullptr;
-	}
 }
 void StrategyMode()
 {
@@ -157,6 +135,13 @@ void ObserverMode()
 
 }
 
+void ReadXMl()
+{
+	CReadAndWrite* pReadxml = CReadAndWrite::GetInstance();
+	boost::property_tree::ptree pt;
+	pReadxml->ReadXml(pt);
+}
+
 int main()
 {
 	try
@@ -174,9 +159,8 @@ int main()
 		//抽象工厂模式客户端
 		AbstractFactoryMode();
 
-		CReadAndWrite* pReadxml = CReadAndWrite::GetInstance();
-		boost::property_tree::ptree pt;
-		pReadxml->ReadXml(pt);
+		//读xml文件
+		ReadXMl();
 		return 1;
 	}
 	catch (std::exception& e)

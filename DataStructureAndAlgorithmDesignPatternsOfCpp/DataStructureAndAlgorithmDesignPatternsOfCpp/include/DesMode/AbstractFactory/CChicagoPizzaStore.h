@@ -16,11 +16,11 @@ class CChicagoPizzaStore : public CPizzaStore
 
 public:
 	virtual ~CChicagoPizzaStore();
-
-	CChicagoPizzaStore();
+	static CChicagoPizzaStore* GetInstance();
+	CChicagoPizzaStore(const CChicagoPizzaStore&) = delete;
+	CChicagoPizzaStore& operator=(const CChicagoPizzaStore&) = delete;
 	CPizza* CreatePizza(enPizzaStype enStype);
 private:
-	ImpPizzalngredientFactory* m_pChicagoPizzaIngredientFacttory;
-	CPizza*                    m_pPizza                  ;
+	CChicagoPizzaStore();                ;
 };
 #endif 

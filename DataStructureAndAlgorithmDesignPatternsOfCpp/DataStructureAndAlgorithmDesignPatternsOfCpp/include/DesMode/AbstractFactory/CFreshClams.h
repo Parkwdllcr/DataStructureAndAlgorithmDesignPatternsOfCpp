@@ -19,6 +19,8 @@ public:
 	virtual ~CFreshClams();
 	CFreshClams(const CFreshClams&) = delete;
 	CFreshClams& operator= (const CFreshClams&) = delete;
+
+public:
 	std::string ToString();
 private:
 	CFreshClams();

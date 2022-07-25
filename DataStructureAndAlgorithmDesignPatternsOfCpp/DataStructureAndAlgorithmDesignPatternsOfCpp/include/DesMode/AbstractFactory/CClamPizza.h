@@ -16,12 +16,16 @@ class CClamPizza : public CPizza
 {
 
 public:
-	CClamPizza(ImpPizzalngredientFactory* pPizzalngredientFactory);
+	
 	virtual ~CClamPizza();
+	static CClamPizza* GetInstance(ImpPizzalngredientFactory* pPizzalngredientFactory);
+	CClamPizza& operator=(const CClamPizza&) = delete;
+	CClamPizza(const CClamPizza&) = delete;
 	std::string Prepare();
 private:
 	ImpPizzalngredientFactory * m_pIngredientFactory;
 	CClamPizza();
+	CClamPizza(ImpPizzalngredientFactory* pPizzalngredientFactory);
 
 };
 #endif 

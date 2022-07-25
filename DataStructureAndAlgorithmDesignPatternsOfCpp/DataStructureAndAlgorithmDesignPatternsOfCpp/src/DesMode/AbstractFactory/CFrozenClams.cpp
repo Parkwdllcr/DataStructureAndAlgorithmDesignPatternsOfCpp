@@ -8,6 +8,14 @@
 #include "DesMode/AbstractFactory/CFrozenClams.h"
 
 
+
+CFrozenClams* CFrozenClams::GetInstance()
+{
+	static CFrozenClams    g_Instance;
+	return &g_Instance;
+
+}
+
 CFrozenClams::CFrozenClams(){
 
 }
@@ -18,16 +26,6 @@ CFrozenClams::~CFrozenClams(){
 
 }
 
-
-
-
-
-CFrozenClams* CFrozenClams::GetInstance()
-{
-	static CFrozenClams    g_Instance;
-	return &g_Instance;
-
-}
 
 std::string CFrozenClams::ToString()
 {
