@@ -34,6 +34,7 @@ CPizza* CChicagoPizzaStore::CreatePizza(enPizzaStype enStype)
 {
 	std::string strName("");
 	ImpPizzalngredientFactory* pChicagoPizzaIngredientFacttory = CChicagoPizzlngredientFactory::GetInstance();
+
 	CPizza* pPizza = nullptr;
 	switch (enStype)
 	{
