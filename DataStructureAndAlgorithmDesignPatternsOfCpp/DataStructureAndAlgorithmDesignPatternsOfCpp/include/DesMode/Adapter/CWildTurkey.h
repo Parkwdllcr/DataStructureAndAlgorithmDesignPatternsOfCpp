@@ -5,24 +5,29 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_F54CBF08_0461_47e2_9760_AC49CE0DF1C8__INCLUDED_)
-#define EA_F54CBF08_0461_47e2_9760_AC49CE0DF1C8__INCLUDED_
+#ifndef _WILD_TURKEY_H_
+#define _WILD_TURKEY_H_
 
-#include "Turkey.h"
+#include "ImpTurkey.h"
 #include <string>
 
 /**
  * Summary description for WildTurkey.
  */
-class WildTurkey : public Turkey
+class CWildTurkey : public ImpTurkey
 {
 
 public:
-	virtual ~WildTurkey();
+	virtual ~CWildTurkey();
+	static CWildTurkey* GetInstance();
+	CWildTurkey(const CWildTurkey&) = delete;
+	CWildTurkey& operator=(const CWildTurkey&) = delete;
 
-	WildTurkey();
 	std::string Fly();
 	std::string Gobble();
+
+private:
+	CWildTurkey();
 
 };
 #endif // !defined(EA_F54CBF08_0461_47e2_9760_AC49CE0DF1C8__INCLUDED_)

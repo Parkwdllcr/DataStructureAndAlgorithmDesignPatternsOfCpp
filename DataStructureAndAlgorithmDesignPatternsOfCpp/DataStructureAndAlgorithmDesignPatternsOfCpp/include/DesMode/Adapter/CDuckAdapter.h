@@ -8,26 +8,30 @@
 #if !defined(EA_7CA6CC48_EDCE_4ca1_B356_7E1B3CE3EB5B__INCLUDED_)
 #define EA_7CA6CC48_EDCE_4ca1_B356_7E1B3CE3EB5B__INCLUDED_
 
-#include "Duck.h"
-#include "Turkey.h"
+#include "ImpDuck.h"
+#include "ImpTurkey.h"
 #include <string>
 
-/**
- * Summary description for TurkeyAdapter.
- */
-class DuckAdapter : public Turkey
+
+class CDuckAdapter : public ImpTurkey
 {
 
 public:
-	DuckAdapter();
-	virtual ~DuckAdapter();
 
-	DuckAdapter(Duck duck);
+	static CDuckAdapter* GetInstance();
+	virtual ~CDuckAdapter();
+	CDuckAdapter(const CDuckAdapter&) = delete;
+	CDuckAdapter& operator=(const CDuckAdapter&) = delete;
+
 	std::string Fly();
 	std::string Gobble();
 
 private:
-	Duck duck;
+	ImpDuck*            m_pDuck;
+
+private:
+	CDuckAdapter();
+	CDuckAdapter(ImpDuck* pDuck);
 
 };
 #endif // !defined(EA_7CA6CC48_EDCE_4ca1_B356_7E1B3CE3EB5B__INCLUDED_)

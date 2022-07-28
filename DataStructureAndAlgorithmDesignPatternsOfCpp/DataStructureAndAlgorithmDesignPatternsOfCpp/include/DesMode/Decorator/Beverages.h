@@ -4,28 +4,29 @@
 //  Created on:      26-7ÔÂ-2022 21:56:43
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
+#ifndef _BEVERAGES_H_
+#define _BEVERAGES_H_
 
-#if !defined(EA_23292275_1931_4a4f_8A2F_CA3ECA6305C5__INCLUDED_)
-#define EA_23292275_1931_4a4f_8A2F_CA3ECA6305C5__INCLUDED_
 
 #include "BeverageSize.h"
+#include <string>
 
-/**
- * Summary description for Beverage.
- */
-class Beverage
+
+
+class CBeverage
 {
 
 public:
-	Beverage();
-	virtual ~Beverage();
-
+	
+	virtual ~CBeverage();
+	CBeverage();
 	virtual double Cost();
-	string GetDescription();
-	BeverageSize Size();
+	std::string GetDescription();
+	enumBeverageSize Size();
+
 
 private:
-	BeverageSize size;
+	enumBeverageSize m_enumSize;
 
 };
 #endif // !defined(EA_23292275_1931_4a4f_8A2F_CA3ECA6305C5__INCLUDED_)

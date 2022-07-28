@@ -14,19 +14,21 @@
 /**
  * Summary description for SteamedMilk.
  */
-class SteamedMilk : public CondimentDecorator
+class SteamedMilk : public CCondimentDecorator
 {
 
 public:
-	SteamedMilk();
 	virtual ~SteamedMilk();
-
-	SteamedMilk(Beverage beverage);
+	static  SteamedMilk* GetInstance(CBeverage* pBeverage);
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription();
 
 private:
-	Beverage beverage;
+	SteamedMilk();
+	SteamedMilk(CBeverage* pBeverage);
+
+private:
+	CBeverage *        m_pBeverage;
 
 };
 #endif // !defined(EA_8E421417_2F31_4598_B4DE_0D60F59AF0D9__INCLUDED_)

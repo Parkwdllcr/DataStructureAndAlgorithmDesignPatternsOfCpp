@@ -5,24 +5,16 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_72950F43_A3B8_45c7_A74D_2AF1DE158018__INCLUDED_)
-#define EA_72950F43_A3B8_45c7_A74D_2AF1DE158018__INCLUDED_
-
-/**
- * Summary description for Duck.
- */
+#ifndef _THIN_IMP_DUCK_H_
+#define _THIN_IMP_DUCK_H_
 
 #include <string>
 
-class Duck
+class ImpDuck
 {
 
 public:
-	Duck() {
-
-	}
-
-	virtual ~Duck() {
+	virtual ~ImpDuck() {
 
 	}
 

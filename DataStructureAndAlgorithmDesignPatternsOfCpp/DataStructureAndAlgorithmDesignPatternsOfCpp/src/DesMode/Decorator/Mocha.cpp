@@ -8,7 +8,16 @@
 #include "DesMode/Decorator/Mocha.h"
 
 
-Mocha::Mocha() {
+
+Mocha* Mocha::Getinstance(CBeverage* pBeverage)
+{
+	static Mocha g_Instance(pBeverage);
+	return &g_Instance;
+}
+
+
+
+Mocha::Mocha:m_pBeverage(nullptr) {
 
 }
 
@@ -17,6 +26,8 @@ Mocha::Mocha() {
 Mocha::~Mocha() {
 
 }
+
+
 
 
 

@@ -14,21 +14,22 @@
 /**
  * Summary description for Mocha.
  */
-class Mocha : public CondimentDecorator
+class Mocha : public CCondimentDecorator
 {
 
 public:
-	Mocha();
 	virtual ~Mocha();
-
-	Mocha(Beverage beverage);
-	double Cost() override;
-	string GetDescription() override;
+	static Mocha* Getinstance(CBeverage* pBeverage);
+	double Cost() ;
+	std::string GetDescription();
 
 private:
-	Beverage beverage;
+	Mocha(CBeverage* pBeverage);
+	Mocha();
 
-	double GetSize(BeverageSize size);
+private:
+	CBeverage* m_pBeverage;
+	double GetSize(enumBeverageSize size);
 
 };
 #endif // !defined(EA_B40B37B9_8BE7_4d91_AD23_02DC8E91D40D__INCLUDED_)

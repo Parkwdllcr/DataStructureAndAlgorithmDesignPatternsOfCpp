@@ -14,14 +14,10 @@
 
 #include <string>
 
-class Turkey
+class ImpTurkey
 {
 
 public:
-	Turkey() {
-
-	}
-
 	virtual ~Turkey() {
 
 	}

@@ -14,19 +14,22 @@
 /**
  * Summary description for Soy.
  */
-class Soy : public CondimentDecorator
+class Soy : public CCondimentDecorator
 {
 
 public:
-	Soy();
 	virtual ~Soy();
+	static Soy* GetInstance(CBeverage* pBeverage);
 
-	Soy(Beverage beverage);
+public:
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription();
 
 private:
-	Beverage beverage;
+	Soy(CBeverage* pBeverage);
+	Soy();
+private:
+	CBeverage*          m_pBeverage;
 
 };
 #endif // !defined(EA_0B964495_5B93_4cfa_9982_DE9B5BDE4FBF__INCLUDED_)

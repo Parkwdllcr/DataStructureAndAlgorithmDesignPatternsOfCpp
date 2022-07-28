@@ -204,18 +204,6 @@
     <ClCompile Include="src\Public\CReadAndWrite.cpp">
       <Filter>src\Public</Filter>
     </ClCompile>
-    <ClCompile Include="src\DesMode\Adapter\DuckAdapter.cpp">
-      <Filter>src\DesMode\Adapter</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Adapter\MallardDuck.cpp">
-      <Filter>src\DesMode\Adapter</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Adapter\TurkeyAdapter.cpp">
-      <Filter>src\DesMode\Adapter</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Adapter\WildTurkey.cpp">
-      <Filter>src\DesMode\Adapter</Filter>
-    </ClCompile>
     <ClCompile Include="src\DesMode\Decorator\Beverages.cpp">
       <Filter>src\DesMode\Decorator</Filter>
     </ClCompile>
@@ -317,6 +305,18 @@
     </ClCompile>
     <ClCompile Include="src\DesMode\State\WinnerState.cpp">
       <Filter>src\DesMode\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Adapter\CDuckAdapter.cpp">
+      <Filter>src\DesMode\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Adapter\CMallardDuck.cpp">
+      <Filter>src\DesMode\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Adapter\CTurkeyAdapter.cpp">
+      <Filter>src\DesMode\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Adapter\CWildTurkey.cpp">
+      <Filter>src\DesMode\Adapter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -446,24 +446,6 @@
     <ClInclude Include="include\Public\CReadAndWrite.h">
       <Filter>include\Public</Filter>
     </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\DuckAdapter.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\Duck.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\MallardDuck.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\Turkey.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\TurkeyAdapter.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Adapter\WildTurkey.h">
-      <Filter>include\DesMode\Adapter</Filter>
-    </ClInclude>
     <ClInclude Include="include\DesMode\Decorator\BeverageSize.h">
       <Filter>include\DesMode\Decorator</Filter>
     </ClInclude>
@@ -577,6 +559,24 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\State\WinnerState.h">
       <Filter>include\DesMode\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\ImpDuck.h">
+      <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\ImpTurkey.h">
+      <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\CTurkeyAdapter.h">
+      <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\CDuckAdapter.h">
+      <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\CMallardDuck.h">
+      <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Adapter\CWildTurkey.h">
+      <Filter>include\DesMode\Adapter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

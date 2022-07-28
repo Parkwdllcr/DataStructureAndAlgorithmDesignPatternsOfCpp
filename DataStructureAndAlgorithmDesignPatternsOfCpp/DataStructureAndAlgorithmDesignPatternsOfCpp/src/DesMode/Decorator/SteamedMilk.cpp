@@ -8,6 +8,17 @@
 #include "DesMode/Decorator/SteamedMilk.h"
 
 
+
+SteamedMilk* SteamedMilk::GetInstance(CBeverage* pBeverage)
+{
+	static SteamedMilk g_instance(pBeverage);
+	return &g_instance;
+}
+
+SteamedMilk::SteamedMilk(CBeverage *pBeverage) {
+
+}
+
 SteamedMilk::SteamedMilk() {
 
 }
@@ -18,22 +29,13 @@ SteamedMilk::~SteamedMilk() {
 
 }
 
-
-
-
-
-SteamedMilk::SteamedMilk(Beverage beverage) {
-
-}
-
-
 double SteamedMilk::Cost() {
 
 	return 0;
 }
 
 
-string SteamedMilk::GetDescription() {
-
-	return  NULL;
+std::string SteamedMilk::GetDescription() {
+	std::string strName("lku");
+	return  strName;
 }

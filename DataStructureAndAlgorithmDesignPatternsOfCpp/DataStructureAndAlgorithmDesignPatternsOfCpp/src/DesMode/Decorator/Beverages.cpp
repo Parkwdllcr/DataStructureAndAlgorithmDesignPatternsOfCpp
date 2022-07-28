@@ -8,33 +8,34 @@
 #include "DesMode/Decorator/Beverages.h"
 
 
-Beverage::Beverage() {
+
+CBeverage::CBeverage() {
+
+}
+
+
+CBeverage::~CBeverage() {
 
 }
 
 
 
-Beverage::~Beverage() {
-
-}
-
-
-
-
-
-double Beverage::Cost() {
+double CBeverage::Cost() {
 
 	return 0;
 }
 
 
-string Beverage::GetDescription() {
+std::string CBeverage::GetDescription() {
 
-	return  NULL;
+	std::string   strName("lcr");
+	return  strName;
 }
 
 
-BeverageSize Beverage::Size() {
+enumBeverageSize CBeverage::Size() {
 
-	return  NULL;
+	return  TALL;
 }
+
+

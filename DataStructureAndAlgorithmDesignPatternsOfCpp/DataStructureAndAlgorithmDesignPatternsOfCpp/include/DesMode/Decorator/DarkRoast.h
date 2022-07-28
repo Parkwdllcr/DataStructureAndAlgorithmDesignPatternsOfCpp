@@ -4,16 +4,14 @@
 //  Created on:      26-7ÔÂ-2022 21:56:43
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
+#ifndef _DARK_ROAST_H_
+#define _DARK_ROAST_H_
 
-#if !defined(EA_85004634_8AAE_4101_BFE4_7B02C1E994AC__INCLUDED_)
-#define EA_85004634_8AAE_4101_BFE4_7B02C1E994AC__INCLUDED_
 
 #include "Beverages.h"
 
-/**
- * Summary description for DarkRoast.
- */
-class DarkRoast : public Beverage
+
+class DarkRoast : public CBeverage
 {
 
 public:
@@ -21,7 +19,7 @@ public:
 
 	DarkRoast();
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription() override;
 
 };
-#endif // !defined(EA_85004634_8AAE_4101_BFE4_7B02C1E994AC__INCLUDED_)
+#endif 

@@ -5,28 +5,29 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_3749E8C0_5CC8_47a2_8BB0_91954454CF82__INCLUDED_)
-#define EA_3749E8C0_5CC8_47a2_8BB0_91954454CF82__INCLUDED_
+#ifndef _WHIP_H_
+#define _WHIP_H_
 
 #include "Beverages.h"
 #include "CondimentDecorator.h"
 
-/**
- * Summary description for Whip.
- */
-class Whip : public CondimentDecorator
+
+class Whip : public CCondimentDecorator
 {
 
 public:
-	Whip();
 	virtual ~Whip();
+	static Whip* GetInstance(CBeverage* pBeverage);
 
-	Whip(Beverage beverage);
+public:
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription() override;
 
 private:
-	Beverage beverage;
+	Whip(CBeverage* pBeverage);
+	Whip();
+private:
+	CBeverage*  m_pBeverage;
 
 };
 #endif // !defined(EA_3749E8C0_5CC8_47a2_8BB0_91954454CF82__INCLUDED_)

@@ -8,6 +8,17 @@
 #include "DesMode/Decorator/Whip.h"
 
 
+
+Whip* Whip::GetInstance(CBeverage* pBeverage)
+{
+	static  Whip  g_instance(pBeverage);
+	return &g_instance;
+}
+
+Whip::Whip(CBeverage* pBeverage) {
+
+}
+
 Whip::Whip() {
 
 }
@@ -18,22 +29,13 @@ Whip::~Whip() {
 
 }
 
-
-
-
-
-Whip::Whip(Beverage beverage) {
-
-}
-
-
 double Whip::Cost() {
 
 	return 0;
 }
 
 
-string Whip::GetDescription() {
-
-	return  NULL;
+std::string Whip::GetDescription() {
+	std::string   strName("lcr");
+	return  strName;
 }

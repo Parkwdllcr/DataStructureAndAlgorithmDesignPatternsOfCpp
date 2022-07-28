@@ -8,14 +8,16 @@
 #include "DesMode/Decorator/CondimentDecorator.h"
 
 
-CondimentDecorator::~CondimentDecorator() {
+
+
+
+
+CCondimentDecorator::CCondimentDecorator()
+{
 
 }
 
-
-
-
-
-CondimentDecorator::CondimentDecorator() {
+CCondimentDecorator::~CCondimentDecorator()
+{
 
 }

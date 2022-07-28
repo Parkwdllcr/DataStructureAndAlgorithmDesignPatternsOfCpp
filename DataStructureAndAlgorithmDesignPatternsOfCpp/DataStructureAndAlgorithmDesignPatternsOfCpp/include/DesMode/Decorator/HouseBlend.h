@@ -13,7 +13,7 @@
 /**
  * Summary description for HouseBlend.
  */
-class HouseBlend : public Beverage
+class HouseBlend : public CBeverage
 {
 
 public:
@@ -21,7 +21,7 @@ public:
 
 	HouseBlend();
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription() override;
 
 };
 #endif // !defined(EA_E999824E_E0C8_42af_9CA4_0B70E30FE1A3__INCLUDED_)

@@ -5,15 +5,13 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_1AC5D13C_B64C_4d44_ADEF_F6A6F2466370__INCLUDED_)
-#define EA_1AC5D13C_B64C_4d44_ADEF_F6A6F2466370__INCLUDED_
+#ifndef _EXPRESSO_H_
+#define _EXPRESSO_H_
 
 #include "Beverages.h"
 
-/**
- * Summary description for Expresso.
- */
-class Expresso : public Beverage
+
+class Expresso : public CBeverage
 {
 
 public:
@@ -21,10 +19,10 @@ public:
 
 	Expresso();
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription() override;
 
 private:
-	double GetSize(BeverageSize size);
+	double GetSize(enumBeverageSize size);
 
 };
 #endif // !defined(EA_1AC5D13C_B64C_4d44_ADEF_F6A6F2466370__INCLUDED_)

@@ -5,21 +5,19 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_ADB0D56F_9310_434b_9583_3A641A66933C__INCLUDED_)
-#define EA_ADB0D56F_9310_434b_9583_3A641A66933C__INCLUDED_
+#ifndef _CONDIMENT_DECORATOR_H_
+#define _CONDIMENT_DECORATOR_H_
 
 #include "Beverages.h"
 
-/**
- * Summary description for CondimentDecorator.
- */
-class CondimentDecorator : public Beverage
+
+class CCondimentDecorator : public CBeverage
 {
 
 public:
-	virtual ~CondimentDecorator();
+	virtual ~CCondimentDecorator();
 
-	CondimentDecorator();
+	CCondimentDecorator();
 
 };
-#endif // !defined(EA_ADB0D56F_9310_434b_9583_3A641A66933C__INCLUDED_)
+#endif 

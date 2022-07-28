@@ -8,21 +8,25 @@
 #include "DesMode/Decorator/Soy.h"
 
 
-Soy::Soy() {
-
+Soy* Soy::GetInstance(CBeverage* pBeverage)
+{
+	static Soy g_instance(pBeverage);
+	return &g_instance;
 }
 
 
+Soy::Soy() :m_pBeverage(nullptr)
+{
+
+}
 
 Soy::~Soy() {
 
 }
 
 
-
-
-
-Soy::Soy(Beverage beverage) {
+Soy::Soy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
+{
 
 }
 
@@ -33,7 +37,7 @@ double Soy::Cost() {
 }
 
 
-string Soy::GetDescription() {
-
-	return  NULL;
+std::string Soy::GetDescription() {
+	std::string strName("ljuy");
+	return  strName;
 }

@@ -5,16 +5,14 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_0205E1FF_D243_4f2e_8C4F_81300EE57AF8__INCLUDED_)
-#define EA_0205E1FF_D243_4f2e_8C4F_81300EE57AF8__INCLUDED_
+#ifndef _BEVERAGE_SIZE_H_
+#define _BEVERAGE_SIZE_H_
 
-/**
- * Summary description for BeverageSize Enumerator.
- */
-enum BeverageSize
+
+enum enumBeverageSize
 {
 	TALL,
 	GRANDE,
 	VENTI
 };
-#endif // !defined(EA_0205E1FF_D243_4f2e_8C4F_81300EE57AF8__INCLUDED_)
+#endif 

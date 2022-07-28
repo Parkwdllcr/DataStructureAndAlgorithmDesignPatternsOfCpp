@@ -5,15 +5,13 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_1BCE9ADD_CDE3_4556_ABAC_093336E88F16__INCLUDED_)
-#define EA_1BCE9ADD_CDE3_4556_ABAC_093336E88F16__INCLUDED_
+#ifndef _DECAF_H_
+#define _DECAF_H_
 
 #include "Beverages.h"
 
-/**
- * Summary description for Decaf.
- */
-class Decaf : public Beverage
+
+class Decaf : public CBeverage
 {
 
 public:
@@ -21,7 +19,7 @@ public:
 
 	Decaf();
 	double Cost() override;
-	string GetDescription() override;
+	std::string GetDescription() override;
 
 };
 #endif // !defined(EA_1BCE9ADD_CDE3_4556_ABAC_093336E88F16__INCLUDED_)

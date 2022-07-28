@@ -5,24 +5,26 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_66DD3364_D2FD_41b6_B898_934C9962DC19__INCLUDED_)
-#define EA_66DD3364_D2FD_41b6_B898_934C9962DC19__INCLUDED_
+#ifndef _MALLARD_DUCK_H_
+#define _MALLARD_DUCK_H_
 
-#include "Duck.h"
+#include "ImpDuck.h"
 #include <string>
 
-/**
- * Summary description for MallardDuck.
- */
-class MallardDuck : public Duck
+
+class CMallardDuck : public ImpDuck
 {
 
 public:
-	virtual ~MallardDuck();
+	virtual ~CMallardDuck();
+	static CMallardDuck* GetInstance();
+	CMallardDuck(const CMallardDuck&) = delete;
+	CMallardDuck& operator=(const CMallardDuck&) = delete;
 
-	MallardDuck();
 	std::string Fly();
 	std::string Quack();
+private:
+	CMallardDuck();
 
 };
 #endif // !defined(EA_66DD3364_D2FD_41b6_B898_934C9962DC19__INCLUDED_)
