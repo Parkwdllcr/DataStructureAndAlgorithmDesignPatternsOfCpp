@@ -9,7 +9,7 @@
 
 
 
-CBeverage::CBeverage() {
+CBeverage::CBeverage():m_enumSize(TALL){
 
 }
 

@@ -11,15 +11,18 @@
 #include "Beverages.h"
 
 
-class Decaf : public CBeverage
+class CDecaf : public CBeverage
 {
 
 public:
-	virtual ~Decaf();
+	virtual ~CDecaf();
+	static CDecaf* GetInstance();
+	double Cost();
+	std::string GetDescription();
 
-	Decaf();
-	double Cost() override;
-	std::string GetDescription() override;
+private:
+	CDecaf();
+	
 
 };
-#endif // !defined(EA_1BCE9ADD_CDE3_4556_ABAC_093336E88F16__INCLUDED_)
+#endif 

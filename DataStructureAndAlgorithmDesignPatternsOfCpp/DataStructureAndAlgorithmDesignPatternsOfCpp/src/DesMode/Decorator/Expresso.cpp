@@ -8,32 +8,37 @@
 #include "DesMode/Decorator/Expresso.h"
 
 
-Expresso::~Expresso() {
+
+CExpresso* CExpresso::GetInstance()
+{
+	static CExpresso g_instance;
+	return &g_instance;
+}
+
+CExpresso::~CExpresso() {
 
 }
 
 
-
-
-
-Expresso::Expresso() {
+CExpresso::CExpresso() {
 
 }
 
 
-double Expresso::Cost() {
+double CExpresso::Cost() {
 
 	return 0;
 }
 
 
-string Expresso::GetDescription() {
+std::string CExpresso::GetDescription() {
 
 	return  NULL;
 }
 
 
-double Expresso::GetSize(BeverageSize size) {
+double CExpresso::GetSize(enumBeverageSize size) {
 
 	return 0;
 }
+

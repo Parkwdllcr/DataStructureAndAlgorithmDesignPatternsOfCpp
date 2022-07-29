@@ -11,17 +11,17 @@
 #include "Beverages.h"
 
 
-class Expresso : public CBeverage
+class CExpresso : public CBeverage
 {
 
 public:
-	virtual ~Expresso();
-
-	Expresso();
+	virtual ~CExpresso();
+	static CExpresso* GetInstance();
 	double Cost() override;
 	std::string GetDescription() override;
 
 private:
+	CExpresso();
 	double GetSize(enumBeverageSize size);
 
 };

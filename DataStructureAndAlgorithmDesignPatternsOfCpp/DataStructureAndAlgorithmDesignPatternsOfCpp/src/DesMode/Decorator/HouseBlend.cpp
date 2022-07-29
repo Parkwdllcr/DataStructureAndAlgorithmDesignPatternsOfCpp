@@ -8,26 +8,28 @@
 #include "DesMode/Decorator/HouseBlend.h"
 
 
-HouseBlend::~HouseBlend() {
+CHouseBlend* CHouseBlend::GetInstance()
+{
+	static  CHouseBlend g_instance;
+	return &g_instance;
+}
+
+CHouseBlend::~CHouseBlend() {
+
+}
+
+CHouseBlend::CHouseBlend() {
 
 }
 
 
-
-
-
-HouseBlend::HouseBlend() {
-
-}
-
-
-double HouseBlend::Cost() {
+double CHouseBlend::Cost() {
 
 	return 0;
 }
 
 
-string HouseBlend::GetDescription() {
-
-	return  NULL;
+std::string CHouseBlend::GetDescription() {
+	std::string  strName("lct");
+	return  strName;
 }

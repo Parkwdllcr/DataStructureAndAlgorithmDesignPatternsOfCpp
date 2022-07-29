@@ -13,15 +13,17 @@
 /**
  * Summary description for HouseBlend.
  */
-class HouseBlend : public CBeverage
+class CHouseBlend : public CBeverage
 {
 
 public:
-	virtual ~HouseBlend();
+	virtual ~CHouseBlend();
+	static CHouseBlend* GetInstance();
 
-	HouseBlend();
-	double Cost() override;
-	std::string GetDescription() override;
+	double Cost() ;
+	std::string GetDescription() ;
 
+private:
+	CHouseBlend();
 };
 #endif // !defined(EA_E999824E_E0C8_42af_9CA4_0B70E30FE1A3__INCLUDED_)

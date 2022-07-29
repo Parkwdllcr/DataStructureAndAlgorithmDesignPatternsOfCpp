@@ -11,15 +11,14 @@
 #include "Beverages.h"
 
 
-class DarkRoast : public CBeverage
+class CDarkRoast : public CBeverage
 {
-
 public:
-	virtual ~DarkRoast();
-
-	DarkRoast();
-	double Cost() override;
-	std::string GetDescription() override;
+	virtual ~CDarkRoast();
+	static CDarkRoast* GetInstance();
+	double Cost();
+	std::string GetDescription() ;
+private:
+	CDarkRoast();
 
 };
-#endif 

@@ -8,26 +8,33 @@
 #include "DesMode/Decorator/DarkRoast.h"
 
 
-DarkRoast::~DarkRoast() {
+
+
+
+CDarkRoast* CDarkRoast::GetInstance()
+{
+	static CDarkRoast g_instance;
+	return &g_instance;
+}
+
+CDarkRoast::~CDarkRoast() {
 
 }
 
 
-
-
-
-DarkRoast::DarkRoast() {
+CDarkRoast::CDarkRoast() {
 
 }
 
 
-double DarkRoast::Cost() {
+double CDarkRoast::Cost() {
 
 	return 0;
 }
 
 
-string DarkRoast::GetDescription() {
-
-	return  NULL;
+std::string CDarkRoast::GetDescription()
+{
+	std::string strName("lcr");
+	return  strName;
 }

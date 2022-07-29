@@ -8,26 +8,31 @@
 #include "DesMode/Decorator/Decaf.h"
 
 
-Decaf::~Decaf() {
+CDecaf* CDecaf::GetInstance()
+{
+	static CDecaf g_instance;
+	return &g_instance;
+}
+
+CDecaf::~CDecaf() {
 
 }
 
 
 
 
-
-Decaf::Decaf() {
+CDecaf::CDecaf() {
 
 }
 
 
-double Decaf::Cost() {
+double CDecaf::Cost() {
 
 	return 0;
 }
 
 
-string Decaf::GetDescription() {
-
-	return  NULL;
+std::string CDecaf::GetDescription() {
+	std::string strName("lt");
+	return  strName;
 }
