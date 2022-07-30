@@ -5,8 +5,8 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_0B964495_5B93_4cfa_9982_DE9B5BDE4FBF__INCLUDED_)
-#define EA_0B964495_5B93_4cfa_9982_DE9B5BDE4FBF__INCLUDED_
+#ifndef _SOY_H_
+#define _SOY_H_
 
 #include "Beverages.h"
 #include "CondimentDecorator.h"

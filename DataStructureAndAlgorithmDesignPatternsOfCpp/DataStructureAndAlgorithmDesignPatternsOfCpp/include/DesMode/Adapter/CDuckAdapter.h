@@ -5,8 +5,8 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_7CA6CC48_EDCE_4ca1_B356_7E1B3CE3EB5B__INCLUDED_)
-#define EA_7CA6CC48_EDCE_4ca1_B356_7E1B3CE3EB5B__INCLUDED_
+#ifndef _DUCK_ADAPTER_H_
+#define _DUCK_ADAPTER_H_
 
 #include "ImpDuck.h"
 #include "ImpTurkey.h"

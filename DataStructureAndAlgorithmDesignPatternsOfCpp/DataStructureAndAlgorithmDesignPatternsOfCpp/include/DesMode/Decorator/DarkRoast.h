@@ -4,6 +4,7 @@
 //  Created on:      26-7ÔÂ-2022 21:56:43
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
+
 #ifndef _DARK_ROAST_H_
 #define _DARK_ROAST_H_
 
@@ -22,3 +23,5 @@ private:
 	CDarkRoast();
 
 };
+
+#endif

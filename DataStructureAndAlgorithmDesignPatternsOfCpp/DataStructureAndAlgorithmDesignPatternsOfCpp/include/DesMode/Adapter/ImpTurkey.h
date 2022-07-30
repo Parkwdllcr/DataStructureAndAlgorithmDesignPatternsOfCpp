@@ -5,12 +5,8 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_849A98BD_E51A_49d7_949E_43D600E30D68__INCLUDED_)
-#define EA_849A98BD_E51A_49d7_949E_43D600E30D68__INCLUDED_
-
-/**
- * Summary description for Turkey.
- */
+#ifndef _THIN_IMP_TURKEY_H_
+#define _THIN_IMP_TURKEY_H_
 
 #include <string>
 

@@ -5,8 +5,8 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_8E421417_2F31_4598_B4DE_0D60F59AF0D9__INCLUDED_)
-#define EA_8E421417_2F31_4598_B4DE_0D60F59AF0D9__INCLUDED_
+#ifndef _STEAMED_MILK_H_
+#define _STEAMED_MILK_H_
 
 #include "Beverages.h"
 #include "CondimentDecorator.h"

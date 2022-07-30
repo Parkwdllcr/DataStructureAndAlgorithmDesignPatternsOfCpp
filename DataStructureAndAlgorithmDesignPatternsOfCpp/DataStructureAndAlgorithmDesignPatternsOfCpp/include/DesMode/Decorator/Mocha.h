@@ -5,8 +5,8 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_B40B37B9_8BE7_4d91_AD23_02DC8E91D40D__INCLUDED_)
-#define EA_B40B37B9_8BE7_4d91_AD23_02DC8E91D40D__INCLUDED_
+#ifndef _MOCHA_H_
+#define _MOCHA_H_
 
 #include "Beverages.h"
 #include "CondimentDecorator.h"
