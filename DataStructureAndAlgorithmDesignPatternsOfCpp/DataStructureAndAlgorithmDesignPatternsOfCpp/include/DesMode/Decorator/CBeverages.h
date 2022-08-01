@@ -13,15 +13,12 @@
 
 class CBeverage
 {
-
 public:
-	
 	virtual ~CBeverage();
 	CBeverage();
 	virtual double Cost();
 	std::string GetDescription();
 	enumBeverageSize Size();
-
 
 private:
 	enumBeverageSize m_enumSize;

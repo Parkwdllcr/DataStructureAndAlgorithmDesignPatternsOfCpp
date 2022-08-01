@@ -8,9 +8,6 @@
 #include "DesMode/Decorator/CDarkRoast.h"
 
 
-
-
-
 CDarkRoast* CDarkRoast::GetInstance()
 {
 	static CDarkRoast g_instance;

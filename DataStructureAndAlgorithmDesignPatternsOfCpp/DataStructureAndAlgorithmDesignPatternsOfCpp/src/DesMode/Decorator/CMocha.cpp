@@ -17,11 +17,10 @@ CMocha* CMocha::Getinstance(CBeverage* pBeverage)
 
 
 
-CMocha::CMocha():m_pBeverage(nullptr) {
+CMocha::CMocha():m_pBeverage(nullptr)
+{
 
 }
-
-
 
 CMocha::~CMocha() {
 
