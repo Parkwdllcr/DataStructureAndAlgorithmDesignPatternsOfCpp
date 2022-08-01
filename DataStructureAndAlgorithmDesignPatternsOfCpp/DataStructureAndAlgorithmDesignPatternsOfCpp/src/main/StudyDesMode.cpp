@@ -17,7 +17,7 @@
 #include "DesMode/Adapter/CMallardDuck.h"
 #include "DesMode/Adapter/CTurkeyAdapter.h"
 #include "DesMode/Decorator/CDarkRoast.h"
-#include "DesMode/Decorator/CDarkRoast.h"
+#include "DesMode/Decorator/CExpresso.h"
 
 
 #include <iostream>
@@ -47,6 +47,7 @@ void SimpleFactoryMode()
 
 	
 }
+
 void AbstractFactoryMode()
 {
 	CPizzaStore* pPizzaStore = CChicagoPizzaStore::GetInstance();
@@ -56,6 +57,7 @@ void AbstractFactoryMode()
 	CPizza* pNYPizza = pNYPizzaStore->OrderPizza(CheesePizza);
 	
 }
+
 void StrategyMode()
 {
 	try {
@@ -163,7 +165,13 @@ void AdapterMode()
 
 void DecoratorMode()
 {
-	CBeverage* pBerver = CDarkRoast::GetInstance();
+	CBeverage* pBerver = CExpresso::GetInstance();
+	std::string strDescription = pBerver->GetDescription();
+	double dbResuit = pBerver->Cost();
+	std::cout << strDescription << std::endl;
+	std::cout << dbResuit << std::endl;
+
+
 }
 int main()
 {
