@@ -6,7 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "DesMode/Decorator/CBeverages.h"
-
+#include <iostream>
 
 
 CBeverage::CBeverage():m_enumSize(TALL){
@@ -33,9 +33,34 @@ std::string CBeverage::GetDescription() {
 }
 
 
-enumBeverageSize CBeverage::Size() {
+bool CBeverage::GetSize(enumBeverageSize enumBerSize)
+{
+	try
+	{
+		enumBerSize = m_enumSize;
+		return true;
+	}
+	catch (...)
+	{
+		std::cout << "CBeverage::GetSize UnKnow Error!" << std::endl;
+		return false;
+	}
 
-	return  TALL;
 }
+
+bool CBeverage::SetSize(const enumBeverageSize enumBerSize)
+{
+	try
+	{
+		 m_enumSize = enumBerSize ;
+		return true;
+	}
+	catch (...)
+	{
+		std::cout << "CBeverage::SetSize UnKnow Error!" << std::endl;
+		return false;
+	}
+}
+
 
 

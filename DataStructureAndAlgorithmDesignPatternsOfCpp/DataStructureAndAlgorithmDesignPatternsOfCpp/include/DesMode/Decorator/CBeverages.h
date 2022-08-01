@@ -18,7 +18,9 @@ public:
 	CBeverage();
 	virtual double Cost();
 	std::string GetDescription();
-	enumBeverageSize Size();
+	bool GetSize(enumBeverageSize enumBerSize);
+	bool SetSize(const enumBeverageSize enumBerSize);
+
 
 private:
 	enumBeverageSize m_enumSize;
