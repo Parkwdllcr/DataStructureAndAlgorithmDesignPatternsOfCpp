@@ -5,12 +5,14 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_BD65B812_5E2E_426c_9068_F0BC627A5AC0__INCLUDED_)
-#define EA_BD65B812_5E2E_426c_9068_F0BC627A5AC0__INCLUDED_
+#pragma once
 
 #include "CdPlayer.h"
 #include "DvdPlayer.h"
 #include "Tuner.h"
+#include<string>
+
+using namespace std;
 
 /**
  * Summary description for Amplifier.
@@ -40,4 +42,4 @@ private:
 	Tuner tuner;
 
 };
-#endif // !defined(EA_BD65B812_5E2E_426c_9068_F0BC627A5AC0__INCLUDED_)
+

@@ -79,17 +79,11 @@
     <Filter Include="include\DesMode\Decorator">
       <UniqueIdentifier>{9ea6ba9a-f267-42a5-99c2-c5fa41b52fc1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DesMode\Facade">
-      <UniqueIdentifier>{29359ec0-326a-43fb-8758-7bf5055d6056}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\DesMode\Adapter">
       <UniqueIdentifier>{e3bcaa4b-1791-4a96-a342-4d39bbd4936a}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\DesMode\Decorator">
       <UniqueIdentifier>{a0ec2167-d42e-485e-8ca2-e9ec77dd56dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DesMode\Facade">
-      <UniqueIdentifier>{98c6c4a4-0597-4caf-8aa4-8896c7af74e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\DesMode\Iterator">
       <UniqueIdentifier>{7cd0559d-669a-4f1e-8b98-a86d445f6c72}</UniqueIdentifier>
@@ -233,33 +227,6 @@
     </ClCompile>
     <ClCompile Include="src\DesMode\Decorator\Whip.cpp">
       <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\Amplifier.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\CdPlayer.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\DvdPlayer.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\HomeTheaterFacade.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\PopcornPopper.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\Projector.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\Screen.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\TheaterLights.cpp">
-      <Filter>src\DesMode\Facade</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Facade\Tuner.cpp">
-      <Filter>src\DesMode\Facade</Filter>
     </ClCompile>
     <ClCompile Include="src\DesMode\Iterator\CafeMenu.cpp">
       <Filter>src\DesMode\Iterator</Filter>
@@ -478,33 +445,6 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\Decorator\Whip.h">
       <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\Amplifier.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\CdPlayer.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\DvdPlayer.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\HomeTheaterFacade.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\PopcornPopper.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\Projector.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\Screen.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\TheaterLights.h">
-      <Filter>include\DesMode\Facade</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Facade\Tuner.h">
-      <Filter>include\DesMode\Facade</Filter>
     </ClInclude>
     <ClInclude Include="include\DesMode\Iterator\CafeMenu.h">
       <Filter>include\DesMode\Iterator</Filter>

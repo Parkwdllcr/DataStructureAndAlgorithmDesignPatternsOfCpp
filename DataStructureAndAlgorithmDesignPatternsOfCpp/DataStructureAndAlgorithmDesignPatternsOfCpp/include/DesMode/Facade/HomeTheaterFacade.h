@@ -5,8 +5,7 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_2956FF62_AB39_4748_BB49_F80DE1D2CD79__INCLUDED_)
-#define EA_2956FF62_AB39_4748_BB49_F80DE1D2CD79__INCLUDED_
+#pragma once
 
 #include "Amplifier.h"
 #include "CdPlayer.h"
@@ -46,4 +45,4 @@ private:
 	Tuner tuner;
 
 };
-#endif // !defined(EA_2956FF62_AB39_4748_BB49_F80DE1D2CD79__INCLUDED_)
+

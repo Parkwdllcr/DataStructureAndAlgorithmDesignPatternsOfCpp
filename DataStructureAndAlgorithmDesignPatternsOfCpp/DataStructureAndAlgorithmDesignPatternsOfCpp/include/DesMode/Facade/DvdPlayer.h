@@ -4,9 +4,7 @@
 //  Created on:      26-7ÔÂ-2022 23:21:36
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
-
-#if !defined(EA_84C98E77_E4ED_4fa6_B615_77367F00E2BC__INCLUDED_)
-#define EA_84C98E77_E4ED_4fa6_B615_77367F00E2BC__INCLUDED_
+#pragma once
 
 #include "Amplifier.h"
 
@@ -39,4 +37,4 @@ private:
 	string movie;
 
 };
-#endif // !defined(EA_84C98E77_E4ED_4fa6_B615_77367F00E2BC__INCLUDED_)
+

@@ -5,8 +5,7 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_FA415167_D2D2_4798_8396_0375595A8FB4__INCLUDED_)
-#define EA_FA415167_D2D2_4798_8396_0375595A8FB4__INCLUDED_
+#pragma once
 
 #include "Amplifier.h"
 
