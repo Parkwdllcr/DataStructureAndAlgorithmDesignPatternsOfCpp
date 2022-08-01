@@ -5,37 +5,37 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/SteamedMilk.h"
+#include "DesMode/Decorator/CSteamedMilk.h"
 
 
 
-SteamedMilk* SteamedMilk::GetInstance(CBeverage* pBeverage)
+CSteamedMilk* CSteamedMilk::GetInstance(CBeverage* pBeverage)
 {
-	static SteamedMilk g_instance(pBeverage);
+	static CSteamedMilk g_instance(pBeverage);
 	return &g_instance;
 }
 
-SteamedMilk::SteamedMilk(CBeverage *pBeverage) {
+CSteamedMilk::CSteamedMilk(CBeverage *pBeverage) {
 
 }
 
-SteamedMilk::SteamedMilk() {
+CSteamedMilk::CSteamedMilk() {
 
 }
 
 
 
-SteamedMilk::~SteamedMilk() {
+CSteamedMilk::~CSteamedMilk() {
 
 }
 
-double SteamedMilk::Cost() {
+double CSteamedMilk::Cost() {
 
 	return 0;
 }
 
 
-std::string SteamedMilk::GetDescription() {
+std::string CSteamedMilk::GetDescription() {
 	std::string strName("lku");
 	return  strName;
 }

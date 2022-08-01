@@ -5,7 +5,7 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/HouseBlend.h"
+#include "DesMode/Decorator/CHouseBlend.h"
 
 
 CHouseBlend* CHouseBlend::GetInstance()

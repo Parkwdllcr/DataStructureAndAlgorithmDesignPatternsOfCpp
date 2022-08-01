@@ -79,6 +79,12 @@
     <Filter Include="src\DesMode\Adapter">
       <UniqueIdentifier>{e3bcaa4b-1791-4a96-a342-4d39bbd4936a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\DesMode\Decorator">
+      <UniqueIdentifier>{bb3f1c75-67c9-413a-9308-d32d48e9becb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DesMode\Decorator">
+      <UniqueIdentifier>{e636cf42-236c-47db-bc01-067332277129}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main\StudyDesMode.cpp">
@@ -191,6 +197,36 @@
     </ClCompile>
     <ClCompile Include="src\DesMode\Adapter\CWildTurkey.cpp">
       <Filter>src\DesMode\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CondimentDecorator.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CBeverages.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CDarkRoast.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CDecaf.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CExpresso.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CHouseBlend.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CMocha.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CSoy.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CSteamedMilk.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesMode\Decorator\CWhip.cpp">
+      <Filter>src\DesMode\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -337,6 +373,39 @@
     </ClInclude>
     <ClInclude Include="include\DesMode\Adapter\CWildTurkey.h">
       <Filter>include\DesMode\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\BeverageSize.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CondimentDecorator.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CBeverages.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CDarkRoast.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CDecaf.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CExpresso.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CHouseBlend.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CMocha.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CSoy.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CSteamedMilk.h">
+      <Filter>include\DesMode\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Decorator\CWhip.h">
+      <Filter>include\DesMode\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

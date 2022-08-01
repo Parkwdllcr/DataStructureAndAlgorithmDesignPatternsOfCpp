@@ -5,39 +5,39 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/Soy.h"
+#include "DesMode/Decorator/CSoy.h"
 
 
-Soy* Soy::GetInstance(CBeverage* pBeverage)
+CSoy* CSoy::GetInstance(CBeverage* pBeverage)
 {
-	static Soy g_instance(pBeverage);
+	static CSoy g_instance(pBeverage);
 	return &g_instance;
 }
 
 
-Soy::Soy() :m_pBeverage(nullptr)
+CSoy::CSoy() :m_pBeverage(nullptr)
 {
 
 }
 
-Soy::~Soy() {
+CSoy::~CSoy() {
 
 }
 
 
-Soy::Soy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
+CSoy::CSoy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
 {
 
 }
 
 
-double Soy::Cost() {
+double CSoy::Cost() {
 
 	return 0;
 }
 
 
-std::string Soy::GetDescription() {
+std::string CSoy::GetDescription() {
 	std::string strName("ljuy");
 	return  strName;
 }

@@ -8,22 +8,21 @@
 #ifndef _MOCHA_H_
 #define _MOCHA_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 #include "CondimentDecorator.h"
 
 
-class Mocha : public CCondimentDecorator
+class CMocha : public CCondimentDecorator
 {
-
 public:
-	virtual ~Mocha();
-	static Mocha* Getinstance(CBeverage* pBeverage);
+	virtual ~CMocha();
+	static CMocha* Getinstance(CBeverage* pBeverage);
 	double Cost() ;
 	std::string GetDescription();
 
 private:
-	Mocha(CBeverage* pBeverage);
-	Mocha();
+	CMocha(CBeverage* pBeverage);
+	CMocha();
 
 private:
 	CBeverage* m_pBeverage;

@@ -11,8 +11,6 @@
 #include "BeverageSize.h"
 #include <string>
 
-
-
 class CBeverage
 {
 

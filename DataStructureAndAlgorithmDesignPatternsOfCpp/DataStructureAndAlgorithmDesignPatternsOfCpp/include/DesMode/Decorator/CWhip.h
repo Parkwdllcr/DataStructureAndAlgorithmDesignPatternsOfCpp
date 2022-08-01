@@ -8,26 +8,26 @@
 #ifndef _WHIP_H_
 #define _WHIP_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 #include "CondimentDecorator.h"
 
 
-class Whip : public CCondimentDecorator
+class CWhip : public CCondimentDecorator
 {
 
 public:
-	virtual ~Whip();
-	static Whip* GetInstance(CBeverage* pBeverage);
+	virtual ~CWhip();
+	static CWhip* GetInstance(CBeverage* pBeverage);
 
 public:
 	double Cost() override;
-	std::string GetDescription() override;
+	std::string GetDescription();
 
 private:
-	Whip(CBeverage* pBeverage);
-	Whip();
+	CWhip(CBeverage* pBeverage);
+	CWhip();
 private:
 	CBeverage*  m_pBeverage;
 
 };
-#endif // !defined(EA_3749E8C0_5CC8_47a2_8BB0_91954454CF82__INCLUDED_)
+#endif 

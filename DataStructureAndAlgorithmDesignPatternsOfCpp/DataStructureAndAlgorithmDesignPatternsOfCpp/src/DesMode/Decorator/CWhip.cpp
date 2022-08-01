@@ -5,37 +5,37 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/Whip.h"
+#include "DesMode/Decorator/CWhip.h"
 
 
 
-Whip* Whip::GetInstance(CBeverage* pBeverage)
+CWhip* CWhip::GetInstance(CBeverage* pBeverage)
 {
-	static  Whip  g_instance(pBeverage);
+	static  CWhip  g_instance(pBeverage);
 	return &g_instance;
 }
 
-Whip::Whip(CBeverage* pBeverage) {
+CWhip::CWhip(CBeverage* pBeverage) {
 
 }
 
-Whip::Whip() {
+CWhip::CWhip() {
 
 }
 
 
 
-Whip::~Whip() {
+CWhip::~CWhip() {
 
 }
 
-double Whip::Cost() {
+double CWhip::Cost() {
 
 	return 0;
 }
 
 
-std::string Whip::GetDescription() {
+std::string CWhip::GetDescription() {
 	std::string   strName("lcr");
 	return  strName;
 }

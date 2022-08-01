@@ -8,7 +8,7 @@
 #ifndef _CONDIMENT_DECORATOR_H_
 #define _CONDIMENT_DECORATOR_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 
 
 class CCondimentDecorator : public CBeverage

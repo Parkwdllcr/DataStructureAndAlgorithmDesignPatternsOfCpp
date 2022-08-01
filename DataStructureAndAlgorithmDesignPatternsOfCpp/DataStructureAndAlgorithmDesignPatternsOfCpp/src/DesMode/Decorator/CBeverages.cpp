@@ -5,7 +5,7 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/Beverages.h"
+#include "DesMode/Decorator/CBeverages.h"
 
 
 

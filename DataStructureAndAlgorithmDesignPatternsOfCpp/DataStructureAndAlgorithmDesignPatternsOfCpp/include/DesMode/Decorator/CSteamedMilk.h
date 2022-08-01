@@ -8,24 +8,24 @@
 #ifndef _STEAMED_MILK_H_
 #define _STEAMED_MILK_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 #include "CondimentDecorator.h"
 
 /**
  * Summary description for SteamedMilk.
  */
-class SteamedMilk : public CCondimentDecorator
+class CSteamedMilk : public CCondimentDecorator
 {
 
 public:
-	virtual ~SteamedMilk();
-	static  SteamedMilk* GetInstance(CBeverage* pBeverage);
+	virtual ~CSteamedMilk();
+	static  CSteamedMilk* GetInstance(CBeverage* pBeverage);
 	double Cost() override;
 	std::string GetDescription();
 
 private:
-	SteamedMilk();
-	SteamedMilk(CBeverage* pBeverage);
+	CSteamedMilk();
+	CSteamedMilk(CBeverage* pBeverage);
 
 private:
 	CBeverage *        m_pBeverage;

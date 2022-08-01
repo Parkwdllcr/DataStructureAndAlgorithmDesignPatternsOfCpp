@@ -8,7 +8,7 @@
 #ifndef _DECAF_H_
 #define _DECAF_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 
 
 class CDecaf : public CBeverage

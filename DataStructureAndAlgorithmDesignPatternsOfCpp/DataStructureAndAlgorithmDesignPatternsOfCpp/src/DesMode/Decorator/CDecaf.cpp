@@ -5,7 +5,7 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#include "DesMode/Decorator/Decaf.h"
+#include "DesMode/Decorator/CDecaf.h"
 
 
 CDecaf* CDecaf::GetInstance()

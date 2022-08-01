@@ -161,20 +161,20 @@ int main()
 	try
 	{
 		//简单工厂模式的客户端
-		SimpleFactoryMode();
+		//SimpleFactoryMode();
 
 		//策略模式的客户端
-		StrategyMode();
+		//StrategyMode();
 
 		//观察者模式客户端
 		//观察者模式的核心思想就是，Observer可以订阅或者不订阅主题（在new观察者的时候就可以在构造函数里面去订阅），主题将状态告诉所有的观察者NotifyObserver。
-		ObserverMode();
+		//ObserverMode();
 
 		//抽象工厂模式客户端
-		AbstractFactoryMode();
+		//AbstractFactoryMode();
 
 		//适配器模式客户端
-		AdapterMode();
+		//AdapterMode();
 
 		//读xml文件
 		//ReadXMl();

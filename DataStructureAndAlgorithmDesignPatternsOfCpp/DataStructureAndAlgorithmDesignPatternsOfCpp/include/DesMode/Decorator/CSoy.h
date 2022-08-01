@@ -8,26 +8,26 @@
 #ifndef _SOY_H_
 #define _SOY_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 #include "CondimentDecorator.h"
 
 /**
  * Summary description for Soy.
  */
-class Soy : public CCondimentDecorator
+class CSoy : public CCondimentDecorator
 {
 
 public:
-	virtual ~Soy();
-	static Soy* GetInstance(CBeverage* pBeverage);
+	virtual ~CSoy();
+	static CSoy* GetInstance(CBeverage* pBeverage);
 
 public:
 	double Cost() override;
 	std::string GetDescription();
 
 private:
-	Soy(CBeverage* pBeverage);
-	Soy();
+	CSoy(CBeverage* pBeverage);
+	CSoy();
 private:
 	CBeverage*          m_pBeverage;
 

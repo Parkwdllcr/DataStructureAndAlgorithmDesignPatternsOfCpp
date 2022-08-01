@@ -8,7 +8,7 @@
 #ifndef _HOUSEBLEND_H_
 #define _HOUSEBLEND_H_
 
-#include "Beverages.h"
+#include "CBeverages.h"
 
 /**
  * Summary description for HouseBlend.
