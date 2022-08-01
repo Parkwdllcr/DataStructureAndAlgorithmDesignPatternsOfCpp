@@ -8,9 +8,6 @@
 #include "DesMode/Adapter/CMallardDuck.h"
 
 
-
-
-
 CMallardDuck* CMallardDuck::GetInstance()
 {
 	static CMallardDuck   g_Instance;
@@ -29,13 +26,13 @@ CMallardDuck::~CMallardDuck() {
 
 std::string CMallardDuck::Fly()
 {
-	std::string strMyName("chongrui.lu Fly");
+	std::string strMyName("CMallardDuck:: Fly");
 	return  strMyName;
 }
 
 
 std::string CMallardDuck::Quack() {
 
-	std::string strMyName("chongrui.lu Quack");
+	std::string strMyName(" CMallardDuck::Quack");
 	return  strMyName;
 }

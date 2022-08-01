@@ -13,6 +13,9 @@
 #include "DesMode/Observer/CThirdPartyDisplay.h"
 #include "DesMode/AbstractFactory/CNYPizzaStore.h"
 #include "DesMode/AbstractFactory/CChicagoPizzaStore.h"
+#include "DesMode/Adapter/CDuckAdapter.h"
+#include "DesMode/Adapter/CMallardDuck.h"
+#include "DesMode/Adapter/CTurkeyAdapter.h"
 #include <iostream>
 #include <exception>
 
@@ -142,6 +145,17 @@ void ReadXMl()
 	pReadxml->ReadXml(pt);
 }
 
+void AdapterMode()
+{
+	//客户需要火鸡（Turkey）接口，Fly和Gobble，但是只有鸭子实例，那么就这样去适配
+	ImpDuck* pDuck = CMallardDuck::GetInstance();
+	CDuckAdapter* pDuckAdapter = CDuckAdapter::GetInstance(pDuck);
+	std::string strTestFlyResult = pDuckAdapter->Fly();
+	std::cout << strTestFlyResult << std::endl;
+	std::string strTestGobbleResult = pDuckAdapter->Gobble();
+	std::cout << strTestGobbleResult << std::endl;
+
+}
 int main()
 {
 	try
@@ -159,8 +173,14 @@ int main()
 		//抽象工厂模式客户端
 		AbstractFactoryMode();
 
+		//适配器模式客户端
+		AdapterMode();
+
 		//读xml文件
-		ReadXMl();
+		//ReadXMl();
+
+
+
 		return 1;
 	}
 	catch (std::exception& e)
@@ -174,9 +194,6 @@ int main()
 		return 0;
 	}
 
-
-
-	
 }
 
 

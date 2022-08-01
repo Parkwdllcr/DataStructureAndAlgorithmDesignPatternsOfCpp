@@ -76,26 +76,8 @@
     <Filter Include="include\DesMode\Adapter">
       <UniqueIdentifier>{11f47bae-900d-4a55-89b2-4e247838c220}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DesMode\Decorator">
-      <UniqueIdentifier>{9ea6ba9a-f267-42a5-99c2-c5fa41b52fc1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\DesMode\Adapter">
       <UniqueIdentifier>{e3bcaa4b-1791-4a96-a342-4d39bbd4936a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DesMode\Decorator">
-      <UniqueIdentifier>{a0ec2167-d42e-485e-8ca2-e9ec77dd56dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DesMode\Iterator">
-      <UniqueIdentifier>{7cd0559d-669a-4f1e-8b98-a86d445f6c72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DesMode\Iterator">
-      <UniqueIdentifier>{dd26f1fc-f22f-49f9-a244-f11b4cbc27d0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\DesMode\State">
-      <UniqueIdentifier>{87fb85ea-4d28-4672-bb0e-0240e0aaea94}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\DesMode\State">
-      <UniqueIdentifier>{18f99b06-9d91-42a7-8346-ebeacaaa3533}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -197,81 +179,6 @@
     </ClCompile>
     <ClCompile Include="src\Public\CReadAndWrite.cpp">
       <Filter>src\Public</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Beverages.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\CondimentDecorator.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\DarkRoast.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Decaf.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Expresso.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\HouseBlend.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Mocha.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Soy.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\SteamedMilk.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Decorator\Whip.cpp">
-      <Filter>src\DesMode\Decorator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\CafeMenu.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\CafeMenuIterator.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\DinnerMenu.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\DinnerMenuIterator.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\MenuItem.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\PancakeHouseIterator.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\PancakeHouseMenu.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\Iterator\Waitress.cpp">
-      <Filter>src\DesMode\Iterator</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\GumballMachine.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\GumballMachineStart.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\HasQuarterState.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\NoQuarterState.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\SoldOutState.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\SoldState.cpp">
-      <Filter>src\DesMode\State</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DesMode\State\WinnerState.cpp">
-      <Filter>src\DesMode\State</Filter>
     </ClCompile>
     <ClCompile Include="src\DesMode\Adapter\CDuckAdapter.cpp">
       <Filter>src\DesMode\Adapter</Filter>
@@ -412,93 +319,6 @@
     </ClInclude>
     <ClInclude Include="include\Public\CReadAndWrite.h">
       <Filter>include\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\BeverageSize.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Beverages.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\CondimentDecorator.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\DarkRoast.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Decaf.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Expresso.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\HouseBlend.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Mocha.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Soy.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\SteamedMilk.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\Whip.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\CafeMenu.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\CafeMenuIterator.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\DinnerMenu.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\DinnerMenuIterator.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\Iterator.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\Menu.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\MenuItem.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\PancakeHouseIterator.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\PancakeHouseMenu.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\Waitress.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\GumballMachine.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\GumballMachineStart.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\HasQuarterState.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\NoQuarterState.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\SoldOutState.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\SoldState.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\State.h">
-      <Filter>include\DesMode\State</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\State\WinnerState.h">
-      <Filter>include\DesMode\State</Filter>
     </ClInclude>
     <ClInclude Include="include\DesMode\Adapter\ImpDuck.h">
       <Filter>include\DesMode\Adapter</Filter>

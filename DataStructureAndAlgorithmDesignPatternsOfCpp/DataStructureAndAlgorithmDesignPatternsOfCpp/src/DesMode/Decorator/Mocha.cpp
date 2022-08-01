@@ -33,7 +33,7 @@ Mocha::~Mocha() {
 
 
 
-Mocha::Mocha(Beverage beverage) {
+Mocha::Mocha(Beverage* beverage) {
 
 }
 

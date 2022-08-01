@@ -30,13 +30,13 @@ CWildTurkey::CWildTurkey() {
 
 std::string CWildTurkey::Fly() {
 
-	std::string strMyName("chongrui.lu Fly");
+	std::string strMyName("CWildTurkey::Fly");
 	return  strMyName;
 }
 
 
 std::string CWildTurkey::Gobble() {
 
-	std::string strMyName("chongrui.lu Fly");
+	std::string strMyName("CWildTurkey::Gobble");
 	return  strMyName;
 }

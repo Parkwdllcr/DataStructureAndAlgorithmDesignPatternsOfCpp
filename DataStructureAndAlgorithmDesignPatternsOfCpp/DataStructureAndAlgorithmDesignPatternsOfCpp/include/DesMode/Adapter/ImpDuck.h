@@ -14,9 +14,7 @@ class ImpDuck
 {
 
 public:
-	virtual ~ImpDuck() {
-
-	}
+	virtual ~ImpDuck() {}
 
 	virtual std::string Fly() = 0;
 	virtual std::string Quack() = 0;

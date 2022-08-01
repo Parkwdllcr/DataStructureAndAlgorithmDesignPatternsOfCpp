@@ -14,10 +14,10 @@
 
 class CMallardDuck : public ImpDuck
 {
-
 public:
 	virtual ~CMallardDuck();
 	static CMallardDuck* GetInstance();
+
 	CMallardDuck(const CMallardDuck&) = delete;
 	CMallardDuck& operator=(const CMallardDuck&) = delete;
 

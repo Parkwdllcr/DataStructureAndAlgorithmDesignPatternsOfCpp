@@ -14,12 +14,10 @@ class ImpTurkey
 {
 
 public:
-	virtual ~Turkey() {
-
-	}
+	virtual ~ImpTurkey() {}
 
 	virtual std::string Fly() = 0;
 	virtual std::string Gobble() = 0;
 
 };
-#endif // !defined(EA_849A98BD_E51A_49d7_949E_43D600E30D68__INCLUDED_)
+#endif 

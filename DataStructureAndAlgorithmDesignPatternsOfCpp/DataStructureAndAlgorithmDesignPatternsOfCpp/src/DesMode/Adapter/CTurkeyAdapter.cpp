@@ -21,7 +21,8 @@ CTurkeyAdapter::CTurkeyAdapter(ImpTurkey* pTurkey):m_pTurkey(pTurkey)
 
 }
 
-CTurkeyAdapter::CTurkeyAdapter() {
+CTurkeyAdapter::CTurkeyAdapter():m_pTurkey(nullptr)
+{
 
 }
 
@@ -32,15 +33,21 @@ CTurkeyAdapter::~CTurkeyAdapter() {
 
 
 
-std::string CTurkeyAdapter::Fly() {
+std::string CTurkeyAdapter::Fly()
+{
+	std::string strMyName("CTurkeyAdapter::Quack");
+	for (uint32_t i = 0; i != 3; ++i)
+	{
+		std::string strTemp = m_pTurkey->Fly();
+		strMyName.append(strTemp);
+	}
 
-	std::string strMyName("chongrui.lu Fly");
 	return  strMyName;
 }
 
 
-std::string CTurkeyAdapter::Quack() {
-
-	std::string strMyName("chongrui.lu Fly");
+std::string CTurkeyAdapter::Quack()
+{
+	std::string strMyName = m_pTurkey->Gobble();
 	return  strMyName;
 }

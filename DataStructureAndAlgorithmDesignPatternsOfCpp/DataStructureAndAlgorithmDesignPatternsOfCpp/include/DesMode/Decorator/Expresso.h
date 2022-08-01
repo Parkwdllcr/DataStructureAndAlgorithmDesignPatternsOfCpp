@@ -18,7 +18,7 @@ public:
 	virtual ~CExpresso();
 	static CExpresso* GetInstance();
 	double Cost() override;
-	std::string GetDescription() override;
+	std::string GetDescription() ;
 
 private:
 	CExpresso();

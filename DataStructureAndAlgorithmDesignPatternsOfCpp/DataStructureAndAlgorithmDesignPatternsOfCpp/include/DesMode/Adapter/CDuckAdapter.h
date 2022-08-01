@@ -18,7 +18,7 @@ class CDuckAdapter : public ImpTurkey
 
 public:
 
-	static CDuckAdapter* GetInstance();
+	static CDuckAdapter* GetInstance(ImpDuck* pDuck);
 	virtual ~CDuckAdapter();
 	CDuckAdapter(const CDuckAdapter&) = delete;
 	CDuckAdapter& operator=(const CDuckAdapter&) = delete;

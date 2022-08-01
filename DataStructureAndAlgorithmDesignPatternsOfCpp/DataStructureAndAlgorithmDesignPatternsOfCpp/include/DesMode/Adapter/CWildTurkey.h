@@ -30,4 +30,4 @@ private:
 	CWildTurkey();
 
 };
-#endif // !defined(EA_F54CBF08_0461_47e2_9760_AC49CE0DF1C8__INCLUDED_)
+#endif
