@@ -34,18 +34,15 @@ CMocha::CMocha(CBeverage* pBeverage):m_pBeverage(pBeverage) {
 
 
 double CMocha::Cost() {
-
-	return 0;
+	double dbResult = m_pBeverage->Cost();
+	return (dbResult+1.7);
 }
 
 
 std::string CMocha::GetDescription()
 {
 	std::string strMyName("CMocha::GetDescription");
+	strMyName.append(m_pBeverage->GetDescription());
 	return strMyName;
 }
 
-double CMocha::GetSize(enumBeverageSize size)
-{
-	return 0;
-}

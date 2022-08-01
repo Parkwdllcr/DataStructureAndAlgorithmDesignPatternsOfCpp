@@ -26,12 +26,12 @@ CDarkRoast::CDarkRoast() {
 
 double CDarkRoast::Cost() {
 
-	return 0;
+	return 1.9;
 }
 
 
 std::string CDarkRoast::GetDescription()
 {
-	std::string strName("lcr");
+	std::string strName("CDarkRoast::GetDescription");
 	return  strName;
 }

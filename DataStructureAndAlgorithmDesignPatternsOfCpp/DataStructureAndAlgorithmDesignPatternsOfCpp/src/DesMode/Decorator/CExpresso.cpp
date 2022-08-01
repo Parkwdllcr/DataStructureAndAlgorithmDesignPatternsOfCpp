@@ -27,18 +27,16 @@ CExpresso::CExpresso() {
 
 double CExpresso::Cost() {
 
-	return 0;
+	return 3.9;
 }
 
 
-std::string CExpresso::GetDescription() {
-
-	return  NULL;
+std::string CExpresso::GetDescription() 
+{
+	std::string strDescription("CExpresso::GetDescription");
+	return  strDescription;
 }
 
 
-double CExpresso::GetSize(enumBeverageSize size) {
 
-	return 0;
-}
 

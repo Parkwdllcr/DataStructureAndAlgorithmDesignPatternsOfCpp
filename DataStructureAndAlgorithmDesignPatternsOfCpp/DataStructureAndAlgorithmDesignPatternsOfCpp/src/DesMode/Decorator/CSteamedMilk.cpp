@@ -15,11 +15,13 @@ CSteamedMilk* CSteamedMilk::GetInstance(CBeverage* pBeverage)
 	return &g_instance;
 }
 
-CSteamedMilk::CSteamedMilk(CBeverage *pBeverage) {
+CSteamedMilk::CSteamedMilk(CBeverage *pBeverage):m_pBeverage(pBeverage)
+{
 
 }
 
-CSteamedMilk::CSteamedMilk() {
+CSteamedMilk::CSteamedMilk():m_pBeverage(nullptr) 
+{
 
 }
 
@@ -30,12 +32,13 @@ CSteamedMilk::~CSteamedMilk() {
 }
 
 double CSteamedMilk::Cost() {
-
-	return 0;
+	double dbResult = m_pBeverage->Cost();
+	return (dbResult+1.45);
 }
 
 
 std::string CSteamedMilk::GetDescription() {
-	std::string strName("lku");
+	std::string strName("CSteamedMilk::GetDescription");
+	strName.append(m_pBeverage->GetDescription());
 	return  strName;
 }

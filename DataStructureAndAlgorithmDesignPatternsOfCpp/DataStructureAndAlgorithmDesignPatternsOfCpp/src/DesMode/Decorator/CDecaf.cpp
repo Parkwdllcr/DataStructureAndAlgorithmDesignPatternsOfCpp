@@ -28,11 +28,11 @@ CDecaf::CDecaf() {
 
 double CDecaf::Cost() {
 
-	return 0;
+	return 2.9;
 }
 
 
 std::string CDecaf::GetDescription() {
-	std::string strName("lt");
+	std::string strName("CDecaf::GetDescription");
 	return  strName;
 }

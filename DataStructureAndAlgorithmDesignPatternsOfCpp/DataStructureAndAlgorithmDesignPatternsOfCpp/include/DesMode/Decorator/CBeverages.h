@@ -16,11 +16,11 @@ class CBeverage
 public:
 	virtual ~CBeverage();
 	CBeverage();
-	virtual double Cost();
+
+	virtual double Cost() = 0;
 	std::string GetDescription();
 	bool GetSize(enumBeverageSize enumBerSize);
 	bool SetSize(const enumBeverageSize enumBerSize);
-
 
 private:
 	enumBeverageSize m_enumSize;

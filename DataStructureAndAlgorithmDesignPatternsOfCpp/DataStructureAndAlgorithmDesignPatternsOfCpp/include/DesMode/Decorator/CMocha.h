@@ -26,7 +26,6 @@ private:
 
 private:
 	CBeverage* m_pBeverage;
-	double GetSize(enumBeverageSize size);
 
 };
 #endif 

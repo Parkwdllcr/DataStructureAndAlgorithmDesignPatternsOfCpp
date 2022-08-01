@@ -16,6 +16,10 @@
 #include "DesMode/Adapter/CDuckAdapter.h"
 #include "DesMode/Adapter/CMallardDuck.h"
 #include "DesMode/Adapter/CTurkeyAdapter.h"
+#include "DesMode/Decorator/CDarkRoast.h"
+#include "DesMode/Decorator/CDarkRoast.h"
+
+
 #include <iostream>
 #include <exception>
 
@@ -155,6 +159,11 @@ void AdapterMode()
 	std::string strTestGobbleResult = pDuckAdapter->Gobble();
 	std::cout << strTestGobbleResult << std::endl;
 
+}
+
+void DecoratorMode()
+{
+	CBeverage* pBerver = CDarkRoast::GetInstance();
 }
 int main()
 {

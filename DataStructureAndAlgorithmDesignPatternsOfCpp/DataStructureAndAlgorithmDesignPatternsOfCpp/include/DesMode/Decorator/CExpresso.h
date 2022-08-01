@@ -22,7 +22,7 @@ public:
 
 private:
 	CExpresso();
-	double GetSize(enumBeverageSize size);
+	
 
 };
 #endif // !defined(EA_1AC5D13C_B64C_4d44_ADEF_F6A6F2466370__INCLUDED_)

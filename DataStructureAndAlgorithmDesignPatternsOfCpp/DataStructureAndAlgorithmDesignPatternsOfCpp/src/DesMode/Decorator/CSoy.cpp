@@ -32,12 +32,13 @@ CSoy::CSoy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
 
 
 double CSoy::Cost() {
-
-	return 0;
+	double dbResult = m_pBeverage->Cost();
+	return (dbResult+ 0.98);
 }
 
 
 std::string CSoy::GetDescription() {
-	std::string strName("ljuy");
+	std::string strName("CSoy::GetDescription()");
+	strName.append(m_pBeverage->GetDescription());
 	return  strName;
 }

@@ -15,27 +15,27 @@ CWhip* CWhip::GetInstance(CBeverage* pBeverage)
 	return &g_instance;
 }
 
-CWhip::CWhip(CBeverage* pBeverage) {
+CWhip::CWhip(CBeverage* pBeverage):m_pBeverage(pBeverage) {
 
 }
 
-CWhip::CWhip() {
+CWhip::CWhip():m_pBeverage(nullptr) 
+{
 
 }
-
-
 
 CWhip::~CWhip() {
 
 }
 
 double CWhip::Cost() {
-
-	return 0;
+	double dbResult = m_pBeverage->Cost();
+	return (dbResult+2.45);
 }
 
 
 std::string CWhip::GetDescription() {
-	std::string   strName("lcr");
+	std::string   strName("CWhip::GetDescription");
+	strName.append(m_pBeverage->GetDescription());
 	return  strName;
 }

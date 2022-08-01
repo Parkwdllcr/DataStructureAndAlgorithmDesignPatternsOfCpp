@@ -25,11 +25,11 @@ CHouseBlend::CHouseBlend() {
 
 double CHouseBlend::Cost() {
 
-	return 0;
+	return 4.9;
 }
 
 
 std::string CHouseBlend::GetDescription() {
-	std::string  strName("lct");
+	std::string  strName("CHouseBlend::GetDescription");
 	return  strName;
 }

@@ -18,17 +18,9 @@ CBeverage::~CBeverage() {
 
 }
 
-
-
-double CBeverage::Cost() {
-
-	return 0;
-}
-
-
 std::string CBeverage::GetDescription() {
 
-	std::string   strName("lcr");
+	std::string   strName("Unknown Beverage");
 	return  strName;
 }
 
