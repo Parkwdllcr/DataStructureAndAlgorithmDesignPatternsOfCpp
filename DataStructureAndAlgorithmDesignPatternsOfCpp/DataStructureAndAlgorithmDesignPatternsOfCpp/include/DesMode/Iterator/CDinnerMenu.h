@@ -5,29 +5,29 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_DAB455F8_23F7_46dd_BA45_C8B5CDD61ECC__INCLUDED_)
-#define EA_DAB455F8_23F7_46dd_BA45_C8B5CDD61ECC__INCLUDED_
+#ifndef _DINNER_MENU_H_
+#define _DINNER_MENU_H_
 
-#include "MenuItem.h"
-#include "Iterator.h"
-#include "Menu.h"
+#include "CMenuItem.h"
+#include "ImpIterator.h"
+#include "ImpMenu.h"
 
 /**
  * Summary description for DinnerMenu.
  */
-class DinnerMenu : public Menu
+class CDinnerMenu : public ImpMenu
 {
 
 public:
-	virtual ~DinnerMenu();
+	virtual ~CDinnerMenu();
 
-	DinnerMenu();
+	CDinnerMenu();
 	void AddItem(string name, string description, bool isVegetarian, double price);
-	Iterator CreateIterator();
+	ImpIterator CreateIterator();
 
 private:
 	static int MAX_ITEMS;
-	MenuItem menuItems[];
+	CMenuItem menuItems[];
 	int numberOfItems;
 
 };

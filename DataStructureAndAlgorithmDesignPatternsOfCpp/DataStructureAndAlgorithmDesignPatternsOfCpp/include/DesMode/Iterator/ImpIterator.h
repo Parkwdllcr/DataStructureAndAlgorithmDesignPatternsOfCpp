@@ -11,15 +11,15 @@
 /**
  * Summary description for Iterator.
  */
-class Iterator
+class ImpIterator
 {
 
 public:
-	Iterator() {
+	ImpIterator() {
 
 	}
 
-	virtual ~Iterator() {
+	virtual ~ImpIterator() {
 
 	}
 

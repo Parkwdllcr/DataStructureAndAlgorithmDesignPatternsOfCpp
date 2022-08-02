@@ -15,14 +15,14 @@
 using namespace std;
 
 
-class MenuItem
+class CMenuItem
 {
 
 public:
-	MenuItem();
-	virtual ~MenuItem();
+	CMenuItem();
+	virtual ~CMenuItem();
 
-	MenuItem(string name, string description, bool isVegetarian, double price);
+	CMenuItem(string name, string description, bool isVegetarian, double price);
 	string Description();
 	bool IsVegetarian();
 	string Name();

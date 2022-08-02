@@ -8,12 +8,12 @@
 #if !defined(EA_E9B1D187_AD56_4ce1_81E8_D2BE059E3314__INCLUDED_)
 #define EA_E9B1D187_AD56_4ce1_81E8_D2BE059E3314__INCLUDED_
 
-#include "Iterator.h"
+#include "ImpIterator.h"
 
 /**
  * Summary description for Menu.
  */
-class Menu
+class ImpMenu
 {
 
 public:

@@ -4,29 +4,28 @@
 //  Created on:      26-7ÔÂ-2022 23:38:19
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
+#ifndef _DINNER_MENU__ITERATOR_H_
+#define _DINNER_MENU__ITERATOR_H_
 
-#if !defined(EA_91787517_0E23_4be1_9B89_D9D60F2341F4__INCLUDED_)
-#define EA_91787517_0E23_4be1_9B89_D9D60F2341F4__INCLUDED_
-
-#include "MenuItem.h"
-#include "Iterator.h"
+#include "CMenuItem.h"
+#include "ImpIterator.h"
 
 /**
  * Summary description for DinnerMenuIterator.
  */
-class DinnerMenuIterator : public Iterator
+class CDinnerMenuIterator : public ImpIterator
 {
 
 public:
-	DinnerMenuIterator();
-	virtual ~DinnerMenuIterator();
+	CDinnerMenuIterator();
+	virtual ~CDinnerMenuIterator();
 
-	DinnerMenuIterator(MenuItem[] items);
+	CDinnerMenuIterator(MenuItem[] items);
 	bool HasNext();
 	object Next();
 
 private:
-	MenuItem items[];
+	CMenuItem items[];
 	int position;
 
 };

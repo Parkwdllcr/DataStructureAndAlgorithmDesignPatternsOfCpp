@@ -5,22 +5,22 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_DE1E76BD_BDDF_4330_BF1E_A615AA1FC03F__INCLUDED_)
-#define EA_DE1E76BD_BDDF_4330_BF1E_A615AA1FC03F__INCLUDED_
+#ifndef _CAFE_MENU_ITERATOR_H_
+#define _CAFE_MENU_ITERATOR_H_
 
-#include "Iterator.h"
+#include "ImpIterator.h"
 
 /**
  * Summary description for CafeMenuIterator.
  */
-class CafeMenuIterator : public Iterator
+class CCafeMenuIterator : public ImpIterator
 {
 
 public:
-	CafeMenuIterator();
-	virtual ~CafeMenuIterator();
+	CCafeMenuIterator();
+	virtual ~CCafeMenuIterator();
 
-	CafeMenuIterator(Hashtable menuItems);
+	CCafeMenuIterator(Hashtable menuItems);
 	bool HasNext();
 	object Next();
 

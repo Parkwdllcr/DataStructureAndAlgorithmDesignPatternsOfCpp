@@ -8,8 +8,8 @@
 #if !defined(EA_FC54ADE5_8DA5_47a2_932A_68D6AAF3A632__INCLUDED_)
 #define EA_FC54ADE5_8DA5_47a2_932A_68D6AAF3A632__INCLUDED_
 
-#include "Menu.h"
-#include "Iterator.h"
+#include "ImpMenu.h"
+#include "ImpIterator.h"
 #include <string>
 using namespace std;
 

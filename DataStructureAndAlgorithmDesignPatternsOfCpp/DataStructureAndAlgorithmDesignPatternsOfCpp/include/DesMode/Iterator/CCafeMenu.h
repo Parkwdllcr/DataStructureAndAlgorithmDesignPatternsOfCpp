@@ -5,26 +5,26 @@
 //  Original author: LEGION
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_F32052D4_E391_4563_A211_A494E0801E50__INCLUDED_)
-#define EA_F32052D4_E391_4563_A211_A494E0801E50__INCLUDED_
+#ifndef _CAFE_MENU_H_
+#define  _CAFE_MENU_H_
 
-#include "Iterator.h"
-#include "Menu.h"
+#include "ImpIterator.h"
+#include "ImpMenu.h"
 #include <string>
 using namespace std;
 
 /**
  * Summary description for CafeMenu.
  */
-class CafeMenu : public Menu
+class CCafeMenu : public ImpMenu
 {
 
 public:
-	virtual ~CafeMenu();
+	virtual ~CCafeMenu();
 
-	CafeMenu();
+	CCafeMenu();
 	void AddItem(string name, string description, bool isVegetarian, double price, int index);
-	Iterator CreateIterator();
+	ImpIterator CreateIterator();
 
 private:
 	Hashtable menuItems;

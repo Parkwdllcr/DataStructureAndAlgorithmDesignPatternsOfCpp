@@ -8,12 +8,12 @@
 #if !defined(EA_FE45E12A_85E0_453e_A607_CFAA203759E2__INCLUDED_)
 #define EA_FE45E12A_85E0_453e_A607_CFAA203759E2__INCLUDED_
 
-#include "Iterator.h"
+#include "ImpIterator.h"
 
 /**
  * Summary description for PancakeHouseIterator.
  */
-class PancakeHouseIterator : public Iterator
+class PancakeHouseIterator : public ImpIterator
 {
 
 public:
