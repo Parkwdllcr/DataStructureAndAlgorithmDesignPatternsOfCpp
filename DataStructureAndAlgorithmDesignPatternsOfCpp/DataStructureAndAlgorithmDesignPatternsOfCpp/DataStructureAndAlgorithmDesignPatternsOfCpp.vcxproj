@@ -256,12 +256,12 @@
     <ClInclude Include="include\DesMode\Iterator\CCafeMenuIterator.h" />
     <ClInclude Include="include\DesMode\Iterator\CDinnerMenu.h" />
     <ClInclude Include="include\DesMode\Iterator\CDinnerMenuIterator.h" />
-    <ClInclude Include="include\DesMode\Iterator\ImpIterator.h" />
-    <ClInclude Include="include\DesMode\Iterator\ImpMenu.h" />
     <ClInclude Include="include\DesMode\Iterator\CMenuItem.h" />
     <ClInclude Include="include\DesMode\Iterator\CPancakeHouseIterator.h" />
     <ClInclude Include="include\DesMode\Iterator\CPancakeHouseMenu.h" />
     <ClInclude Include="include\DesMode\Iterator\CWaitress.h" />
+    <ClInclude Include="include\DesMode\Iterator\ImpIterator.h" />
+    <ClInclude Include="include\DesMode\Iterator\ImpMenu.h" />
     <ClInclude Include="include\DesMode\Observer\CCurrentConditionDisplay.h" />
     <ClInclude Include="include\DesMode\Observer\CForecastDisplay.h" />
     <ClInclude Include="include\DesMode\Observer\CStatisticsDisplay.h" />

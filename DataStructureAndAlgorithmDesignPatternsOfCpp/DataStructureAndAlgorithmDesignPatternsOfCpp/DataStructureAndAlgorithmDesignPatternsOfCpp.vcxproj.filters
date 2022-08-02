@@ -85,11 +85,11 @@
     <Filter Include="src\DesMode\Decorator">
       <UniqueIdentifier>{e636cf42-236c-47db-bc01-067332277129}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\DesMode\Iterator">
-      <UniqueIdentifier>{12fc1b91-5b90-4e1b-b6c7-31203e64ed9d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\DesMode\Iterator">
-      <UniqueIdentifier>{43e875cb-49c5-4334-bf28-5c5df82dcc76}</UniqueIdentifier>
+      <UniqueIdentifier>{c866b58c-3afe-4920-8489-77a671d437d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DesMode\Iterator">
+      <UniqueIdentifier>{37319453-7d65-43dd-8120-208822628e47}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -446,22 +446,22 @@
     <ClInclude Include="include\DesMode\Iterator\CDinnerMenuIterator.h">
       <Filter>include\DesMode\Iterator</Filter>
     </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\ImpIterator.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\ImpMenu.h">
-      <Filter>include\DesMode\Iterator</Filter>
-    </ClInclude>
     <ClInclude Include="include\DesMode\Iterator\CMenuItem.h">
       <Filter>include\DesMode\Iterator</Filter>
     </ClInclude>
     <ClInclude Include="include\DesMode\Iterator\CPancakeHouseIterator.h">
       <Filter>include\DesMode\Iterator</Filter>
     </ClInclude>
+    <ClInclude Include="include\DesMode\Iterator\CPancakeHouseMenu.h">
+      <Filter>include\DesMode\Iterator</Filter>
+    </ClInclude>
     <ClInclude Include="include\DesMode\Iterator\CWaitress.h">
       <Filter>include\DesMode\Iterator</Filter>
     </ClInclude>
-    <ClInclude Include="include\DesMode\Iterator\CPancakeHouseMenu.h">
+    <ClInclude Include="include\DesMode\Iterator\ImpIterator.h">
+      <Filter>include\DesMode\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DesMode\Iterator\ImpMenu.h">
       <Filter>include\DesMode\Iterator</Filter>
     </ClInclude>
   </ItemGroup>

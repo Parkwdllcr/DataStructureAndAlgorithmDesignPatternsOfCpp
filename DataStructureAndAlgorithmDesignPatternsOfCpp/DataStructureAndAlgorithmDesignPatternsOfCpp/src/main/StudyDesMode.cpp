@@ -24,6 +24,8 @@
 #include "DesMode/Decorator/CHouseBlend.h"
 #include "DesMode/Decorator/CSoy.h"
 #include "DesMode/Decorator/CDecaf.h"
+#include "DesMode/Decorator/CSteamedMilk.h"
+
 #include <iostream>
 #include <exception>
 
@@ -176,17 +178,22 @@ CBeverage* GetBeverge(uint32_t uiCase)
 	{
 	case 0:
 		pBerver = CExpresso::GetInstance();
+		break;
 	case 1:
 		pBerver = CDarkRoast::GetInstance();
+		break;
 	case 2:
 		pBerver = CHouseBlend::GetInstance();
+		break;
 	case 3:
 		pBerver = CDecaf::GetInstance();
+		break;
 	default:
 		break;
 	}
 	return pBerver;
 }
+//不要用单例，用单例不能叠加
 void DecoratorMode()
 {
 
@@ -197,7 +204,7 @@ void DecoratorMode()
 	std::cout << "CExpresso::GetInstance dbResuit = " << dbResuit << std::endl;
 
 	CBeverage* pBerverDarkRost = GetBeverge(1);
-	pBerverDarkRost = CMocha::GetInstance(pBerverDarkRost);
+	//pBerverDarkRost = CMocha::GetInstance(pBerverDarkRost);
 	pBerverDarkRost = CMocha::GetInstance(pBerverDarkRost);
 	pBerverDarkRost = CWhip::GetInstance(pBerverDarkRost);
 	strDescription = pBerverDarkRost->GetDescription();
@@ -208,8 +215,9 @@ void DecoratorMode()
 	CBeverage* pBerverHouseBlend = GetBeverge(2);
 	pBerverHouseBlend = CSoy::GetInstance(pBerverHouseBlend);
 	//pBerverHouseBlend = CSoy::GetInstance(pBerverHouseBlend);
-	pBerverHouseBlend = CMocha::GetInstance(pBerverHouseBlend);
+	//pBerverHouseBlend = CMocha::GetInstance(pBerverHouseBlend);
 	//pBerverHouseBlend = CWhip::GetInstance(pBerverHouseBlend);
+	pBerverHouseBlend = CSteamedMilk::GetInstance(pBerverHouseBlend);
 
 	std::string strDescription2 = pBerverHouseBlend->GetDescription();
 	double dbResuit2 = pBerverHouseBlend->Cost();
