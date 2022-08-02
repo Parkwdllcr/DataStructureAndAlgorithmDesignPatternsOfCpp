@@ -17,8 +17,8 @@ class CDarkRoast : public CBeverage
 public:
 	virtual ~CDarkRoast();
 	static CDarkRoast* GetInstance();
-	double Cost();
-	std::string GetDescription() ;
+	virtual double Cost();
+	virtual std::string GetDescription() ;
 private:
 	CDarkRoast();
 

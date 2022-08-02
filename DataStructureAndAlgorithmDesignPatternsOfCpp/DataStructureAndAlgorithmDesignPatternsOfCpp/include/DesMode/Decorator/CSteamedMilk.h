@@ -20,8 +20,8 @@ class CSteamedMilk : public CCondimentDecorator
 public:
 	virtual ~CSteamedMilk();
 	static  CSteamedMilk* GetInstance(CBeverage* pBeverage);
-	double Cost() override;
-	std::string GetDescription();
+	virtual double Cost() override;
+	virtual std::string GetDescription();
 
 private:
 	CSteamedMilk();

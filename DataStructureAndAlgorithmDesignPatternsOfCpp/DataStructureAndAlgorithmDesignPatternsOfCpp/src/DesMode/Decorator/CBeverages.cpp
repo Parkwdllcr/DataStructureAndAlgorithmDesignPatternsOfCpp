@@ -9,7 +9,7 @@
 #include <iostream>
 
 
-CBeverage::CBeverage():m_enumSize(TALL){
+CBeverage::CBeverage():m_dbConstResult(0.0){
 
 }
 
@@ -25,26 +25,11 @@ std::string CBeverage::GetDescription() {
 }
 
 
-bool CBeverage::GetSize(enumBeverageSize enumBerSize)
+bool CBeverage::GetSize(double& dbConstResult)
 {
 	try
 	{
-		enumBerSize = m_enumSize;
-		return true;
-	}
-	catch (...)
-	{
-		std::cout << "CBeverage::GetSize UnKnow Error!" << std::endl;
-		return false;
-	}
-
-}
-
-bool CBeverage::SetSize(const enumBeverageSize enumBerSize)
-{
-	try
-	{
-		 m_enumSize = enumBerSize ;
+		m_dbConstResult = dbConstResult;
 		return true;
 	}
 	catch (...)
@@ -54,5 +39,19 @@ bool CBeverage::SetSize(const enumBeverageSize enumBerSize)
 	}
 }
 
+
+bool CBeverage::SetSize(const double dbConstResult)
+{
+	try
+	{
+		m_dbConstResult = dbConstResult;
+		return true;
+	}
+	catch (...)
+	{
+		std::cout << "CBeverage::SetSize UnKnow Error!" << std::endl;
+		return false;
+	}
+}
 
 

@@ -18,8 +18,12 @@
 #include "DesMode/Adapter/CTurkeyAdapter.h"
 #include "DesMode/Decorator/CDarkRoast.h"
 #include "DesMode/Decorator/CExpresso.h"
-
-
+#include "DesMode/Decorator/CMocha.h"
+#include "DesMode/Decorator/CWhip.h"
+#include "DesMode/Decorator/CSoy.h"
+#include "DesMode/Decorator/CHouseBlend.h"
+#include "DesMode/Decorator/CSoy.h"
+#include "DesMode/Decorator/CDecaf.h"
 #include <iostream>
 #include <exception>
 
@@ -163,14 +167,54 @@ void AdapterMode()
 
 }
 
+//写错了
+
+CBeverage* GetBeverge(uint32_t uiCase)
+{
+	CBeverage* pBerver = nullptr;
+	switch (uiCase)
+	{
+	case 0:
+		pBerver = CExpresso::GetInstance();
+	case 1:
+		pBerver = CDarkRoast::GetInstance();
+	case 2:
+		pBerver = CHouseBlend::GetInstance();
+	case 3:
+		pBerver = CDecaf::GetInstance();
+	default:
+		break;
+	}
+	return pBerver;
+}
 void DecoratorMode()
 {
-	CBeverage* pBerver = CExpresso::GetInstance();
+
+	CBeverage* pBerver = GetBeverge(0);
 	std::string strDescription = pBerver->GetDescription();
 	double dbResuit = pBerver->Cost();
-	std::cout << strDescription << std::endl;
-	std::cout << dbResuit << std::endl;
+	std::cout << "CExpresso::GetInstance strDescription = "<<strDescription << std::endl;
+	std::cout << "CExpresso::GetInstance dbResuit = " << dbResuit << std::endl;
 
+	CBeverage* pBerverDarkRost = GetBeverge(1);
+	pBerverDarkRost = CMocha::GetInstance(pBerverDarkRost);
+	pBerverDarkRost = CMocha::GetInstance(pBerverDarkRost);
+	pBerverDarkRost = CWhip::GetInstance(pBerverDarkRost);
+	strDescription = pBerverDarkRost->GetDescription();
+    dbResuit = pBerverDarkRost->Cost();
+	std::cout << "CDarkRoast::GetInstance strDescription = " << strDescription << std::endl;
+	std::cout << "CDarkRoast::GetInstance dbResuit = " << dbResuit << std::endl;
+
+	CBeverage* pBerverHouseBlend = GetBeverge(2);
+	pBerverHouseBlend = CSoy::GetInstance(pBerverHouseBlend);
+	//pBerverHouseBlend = CSoy::GetInstance(pBerverHouseBlend);
+	pBerverHouseBlend = CMocha::GetInstance(pBerverHouseBlend);
+	//pBerverHouseBlend = CWhip::GetInstance(pBerverHouseBlend);
+
+	std::string strDescription2 = pBerverHouseBlend->GetDescription();
+	double dbResuit2 = pBerverHouseBlend->Cost();
+	std::cout << "CHouseBlend::GetInstance strDescription = " << strDescription2 << std::endl;
+	std::cout << "CHouseBlend::GetInstance dbResuit = " << dbResuit2 << std::endl;
 
 }
 int main()
@@ -192,6 +236,9 @@ int main()
 
 		//适配器模式客户端
 		//AdapterMode();
+
+		//装饰模式客户端
+		DecoratorMode();
 
 		//读xml文件
 		//ReadXMl();

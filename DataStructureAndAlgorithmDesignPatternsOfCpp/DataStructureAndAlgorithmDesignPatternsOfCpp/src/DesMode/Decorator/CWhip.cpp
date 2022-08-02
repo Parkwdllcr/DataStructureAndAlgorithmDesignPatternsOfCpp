@@ -15,14 +15,12 @@ CWhip* CWhip::GetInstance(CBeverage* pBeverage)
 	return &g_instance;
 }
 
-CWhip::CWhip(CBeverage* pBeverage):m_pBeverage(pBeverage) {
-
-}
-
-CWhip::CWhip():m_pBeverage(nullptr) 
+CWhip::CWhip(CBeverage* pBeverage):CCondimentDecorator(pBeverage), m_pBeverage(pBeverage)
 {
 
 }
+
+
 
 CWhip::~CWhip() {
 
@@ -30,7 +28,8 @@ CWhip::~CWhip() {
 
 double CWhip::Cost() {
 	double dbResult = m_pBeverage->Cost();
-	return (dbResult+2.45);
+	dbResult = dbResult + 2.45;
+	return dbResult;
 }
 
 

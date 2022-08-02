@@ -9,7 +9,7 @@
 
 
 
-CMocha* CMocha::Getinstance(CBeverage* pBeverage)
+CMocha* CMocha::GetInstance(CBeverage* pBeverage)
 {
 	static CMocha g_Instance(pBeverage);
 	return &g_Instance;
@@ -17,25 +17,22 @@ CMocha* CMocha::Getinstance(CBeverage* pBeverage)
 
 
 
-CMocha::CMocha():m_pBeverage(nullptr)
-{
-
-}
-
 CMocha::~CMocha() {
 
 }
 
 
 
-CMocha::CMocha(CBeverage* pBeverage):m_pBeverage(pBeverage) {
+CMocha::CMocha(CBeverage* pBeverage):CCondimentDecorator(pBeverage), m_pBeverage(pBeverage)
+{
 
 }
 
 
 double CMocha::Cost() {
 	double dbResult = m_pBeverage->Cost();
-	return (dbResult+1.7);
+	dbResult = dbResult + 1.7;
+	return dbResult;
 }
 
 

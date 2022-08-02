@@ -16,13 +16,12 @@ class CMocha : public CCondimentDecorator
 {
 public:
 	virtual ~CMocha();
-	static CMocha* Getinstance(CBeverage* pBeverage);
-	double Cost() ;
-	std::string GetDescription();
+	static CMocha* GetInstance(CBeverage* pBeverage);
+	virtual double Cost() ;
+	virtual std::string GetDescription();
 
 private:
 	CMocha(CBeverage* pBeverage);
-	CMocha();
 
 private:
 	CBeverage* m_pBeverage;

@@ -17,8 +17,8 @@ class CDecaf : public CBeverage
 public:
 	virtual ~CDecaf();
 	static CDecaf* GetInstance();
-	double Cost();
-	std::string GetDescription();
+	virtual double Cost();
+	virtual std::string GetDescription();
 
 private:
 	CDecaf();

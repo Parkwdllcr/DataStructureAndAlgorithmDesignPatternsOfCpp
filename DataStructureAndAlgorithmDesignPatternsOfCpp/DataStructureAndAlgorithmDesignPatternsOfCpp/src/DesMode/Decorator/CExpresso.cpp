@@ -26,8 +26,10 @@ CExpresso::CExpresso() {
 
 
 double CExpresso::Cost() {
-
-	return 3.9;
+	double dbResult = 3.9;
+	SetSize(dbResult);
+	GetSize(dbResult);
+	return dbResult;
 }
 
 

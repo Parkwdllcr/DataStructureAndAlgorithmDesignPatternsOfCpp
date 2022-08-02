@@ -9,15 +9,18 @@
 
 
 
-
-
-
-CCondimentDecorator::CCondimentDecorator()
+CCondimentDecorator::CCondimentDecorator(CBeverage* pBerver):m_pBeverage(pBerver)
 {
 
 }
 
+
 CCondimentDecorator::~CCondimentDecorator()
 {
 
+}
+
+double CCondimentDecorator::Cost()
+{
+	return this->m_pBeverage->Cost();
 }

@@ -14,18 +14,12 @@ CSoy* CSoy::GetInstance(CBeverage* pBeverage)
 	return &g_instance;
 }
 
-
-CSoy::CSoy() :m_pBeverage(nullptr)
-{
-
-}
-
 CSoy::~CSoy() {
 
 }
 
 
-CSoy::CSoy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
+CSoy::CSoy(CBeverage* pBbeverage):CCondimentDecorator(pBbeverage) ,m_pBeverage(pBbeverage)
 {
 
 }
@@ -33,7 +27,8 @@ CSoy::CSoy(CBeverage* pBbeverage) :m_pBeverage(pBbeverage)
 
 double CSoy::Cost() {
 	double dbResult = m_pBeverage->Cost();
-	return (dbResult+ 0.98);
+	dbResult = dbResult + 0.98;
+	return dbResult;
 }
 
 

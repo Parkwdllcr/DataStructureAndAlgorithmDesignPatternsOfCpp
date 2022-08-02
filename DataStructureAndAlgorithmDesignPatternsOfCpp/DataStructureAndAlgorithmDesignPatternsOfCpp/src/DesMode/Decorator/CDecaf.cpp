@@ -27,8 +27,10 @@ CDecaf::CDecaf() {
 
 
 double CDecaf::Cost() {
-
-	return 2.9;
+	double dbResult = 2.9;
+	SetSize(dbResult);
+	GetSize(dbResult);
+	return dbResult;
 }
 
 

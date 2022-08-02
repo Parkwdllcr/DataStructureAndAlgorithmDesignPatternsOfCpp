@@ -17,8 +17,8 @@ class CExpresso : public CBeverage
 public:
 	virtual ~CExpresso();
 	static CExpresso* GetInstance();
-	double Cost() override;
-	std::string GetDescription() ;
+	virtual double Cost();
+	virtual std::string GetDescription() ;
 
 private:
 	CExpresso();

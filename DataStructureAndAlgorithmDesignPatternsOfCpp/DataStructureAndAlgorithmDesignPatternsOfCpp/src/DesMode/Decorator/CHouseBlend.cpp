@@ -25,7 +25,10 @@ CHouseBlend::CHouseBlend() {
 
 double CHouseBlend::Cost() {
 
-	return 4.9;
+	double dbResult = 4.9;
+	SetSize(dbResult);
+	GetSize(dbResult);
+	return dbResult;
 }
 
 

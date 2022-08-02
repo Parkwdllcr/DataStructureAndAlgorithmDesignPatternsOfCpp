@@ -374,9 +374,6 @@
     <ClInclude Include="include\DesMode\Adapter\CWildTurkey.h">
       <Filter>include\DesMode\Adapter</Filter>
     </ClInclude>
-    <ClInclude Include="include\DesMode\Decorator\BeverageSize.h">
-      <Filter>include\DesMode\Decorator</Filter>
-    </ClInclude>
     <ClInclude Include="include\DesMode\Decorator\CondimentDecorator.h">
       <Filter>include\DesMode\Decorator</Filter>
     </ClInclude>

@@ -20,12 +20,12 @@ public:
 	static CWhip* GetInstance(CBeverage* pBeverage);
 
 public:
-	double Cost() override;
-	std::string GetDescription();
+	virtual double Cost() override;
+	virtual std::string GetDescription();
 
 private:
 	CWhip(CBeverage* pBeverage);
-	CWhip();
+
 private:
 	CBeverage*  m_pBeverage;
 

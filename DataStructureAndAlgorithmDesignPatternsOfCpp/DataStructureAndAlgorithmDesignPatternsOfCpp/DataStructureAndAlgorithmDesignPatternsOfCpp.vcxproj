@@ -235,7 +235,6 @@
     <ClInclude Include="include\DesMode\Adapter\CTurkeyAdapter.h" />
     <ClInclude Include="include\DesMode\Adapter\CWildTurkey.h" />
     <ClInclude Include="include\DesMode\Decorator\CBeverages.h" />
-    <ClInclude Include="include\DesMode\Decorator\BeverageSize.h" />
     <ClInclude Include="include\DesMode\Decorator\CondimentDecorator.h" />
     <ClInclude Include="include\DesMode\Decorator\CDarkRoast.h" />
     <ClInclude Include="include\DesMode\Decorator\CDecaf.h" />

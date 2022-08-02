@@ -15,17 +15,10 @@ CSteamedMilk* CSteamedMilk::GetInstance(CBeverage* pBeverage)
 	return &g_instance;
 }
 
-CSteamedMilk::CSteamedMilk(CBeverage *pBeverage):m_pBeverage(pBeverage)
+CSteamedMilk::CSteamedMilk(CBeverage *pBeverage):CCondimentDecorator(pBeverage), m_pBeverage(pBeverage)
 {
 
 }
-
-CSteamedMilk::CSteamedMilk():m_pBeverage(nullptr) 
-{
-
-}
-
-
 
 CSteamedMilk::~CSteamedMilk() {
 
@@ -33,7 +26,8 @@ CSteamedMilk::~CSteamedMilk() {
 
 double CSteamedMilk::Cost() {
 	double dbResult = m_pBeverage->Cost();
-	return (dbResult+1.45);
+	dbResult = dbResult + 1.45;
+	return dbResult;
 }
 
 

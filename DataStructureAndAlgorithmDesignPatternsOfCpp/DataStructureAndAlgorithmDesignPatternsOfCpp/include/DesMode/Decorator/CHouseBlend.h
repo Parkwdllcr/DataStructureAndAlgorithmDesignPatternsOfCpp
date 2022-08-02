@@ -18,8 +18,8 @@ public:
 	virtual ~CHouseBlend();
 	static CHouseBlend* GetInstance();
 
-	double Cost() ;
-	std::string GetDescription() ;
+	virtual double Cost() ;
+	virtual std::string GetDescription() ;
 
 private:
 	CHouseBlend();

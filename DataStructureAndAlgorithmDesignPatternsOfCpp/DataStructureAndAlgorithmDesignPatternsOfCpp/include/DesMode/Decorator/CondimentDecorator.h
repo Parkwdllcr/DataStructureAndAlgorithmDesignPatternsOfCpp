@@ -16,8 +16,11 @@ class CCondimentDecorator : public CBeverage
 
 public:
 	virtual ~CCondimentDecorator();
+	CCondimentDecorator(CBeverage* pBerver);
+	double   Cost();
 
-	CCondimentDecorator();
+private:
+	CBeverage* m_pBeverage;
 
 };
 #endif 

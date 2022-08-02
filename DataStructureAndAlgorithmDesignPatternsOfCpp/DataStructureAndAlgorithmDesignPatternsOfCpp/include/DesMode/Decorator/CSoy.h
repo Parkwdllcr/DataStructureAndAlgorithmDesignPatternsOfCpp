@@ -22,12 +22,12 @@ public:
 	static CSoy* GetInstance(CBeverage* pBeverage);
 
 public:
-	double Cost() override;
-	std::string GetDescription();
+	virtual double Cost() override;
+	virtual std::string GetDescription();
 
 private:
 	CSoy(CBeverage* pBeverage);
-	CSoy();
+
 private:
 	CBeverage*          m_pBeverage;
 

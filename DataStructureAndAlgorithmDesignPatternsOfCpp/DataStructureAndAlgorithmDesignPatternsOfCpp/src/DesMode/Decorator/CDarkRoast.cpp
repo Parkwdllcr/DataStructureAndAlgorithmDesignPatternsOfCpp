@@ -25,11 +25,12 @@ CDarkRoast::CDarkRoast() {
 
 
 double CDarkRoast::Cost() {
+	double dbResult = 1.9;
+	SetSize(dbResult);
+	GetSize(dbResult);
+	return dbResult;
 
-	return 1.9;
 }
-
-
 std::string CDarkRoast::GetDescription()
 {
 	std::string strName("CDarkRoast::GetDescription");
